@@ -1,0 +1,33 @@
+node_id,type,label,attributes
+P_PMC4835621_01,Patient,Case PMC4835621_01,"{'age': np.float64(81.0), 'gender': 'Female'}"
+EXA_4b90c1,Exam,Hemoglobin a1c,{}
+SYM_5e84c3,Symptom,Headache,{}
+SYM_add7c3,Symptom,Fever,{}
+SYM_eb5b18,Symptom,Nausea,{}
+DIA_d9dd1b,Diagnosis,Hypertension,{}
+EXA_f93aca,Exam,Laboratory tests,{}
+EXA_360e5e,Exam,Forced vital capacity,{}
+EXA_a12e32,Exam,Heart rate,{}
+EXA_e9a012,Exam,Thoracic ct,{}
+EXA_d2eaf3,Exam,White blood cell count,{}
+EXA_f627b1,Exam,Blood sugar,{}
+EXA_d55812,Exam,Reticulocyte count,{}
+VAL_0ad14c,ExamResult,73 %,"{'value': '73', 'unit': '%'}"
+EXA_fe59f4,Exam,Immunoglobulin g,{}
+EXA_a65abc,Exam,Mean arterial blood pressure,{}
+EXA_b03f84,Exam,Mean corpuscular volume,{}
+EXA_9800d3,Exam,Forced expiratory volume,{}
+VAL_47cf20,ExamResult,2.4 %,"{'value': '2.4', 'unit': '%'}"
+EXA_27c405,Exam,Hydroxychloroquine level,{}
+EXA_5b4dfb,Exam,Serum creatinine,{}
+EXA_f0602a,Exam,Lactate dehydrogenase,{}
+EXA_403d70,Exam,Ldh,{}
+EXA_9534a0,Exam,Pd-l1 tps score,{}
+EXA_e96ffc,Exam,Haptoglobin,{}
+EXA_e0fbce,Exam,Adamts13 activity,{}
+VAL_10ea1e,ExamResult,10 %,"{'value': '10', 'unit': '%'}"
+EXA_fd6956,Exam,Computed tomography,{}
+EXA_c4bc1a,Exam,Platelet counts,{}
+DIA_aefa97,Diagnosis,Chronic pancreatitis,{}
+DIA_8b26ea,Diagnosis,Type 2 diabetes,{}
+VAL_515f0c,ExamResult,2.5 %,"{'value': '2.5', 'unit': '%'}"
