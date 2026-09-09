@@ -1,7 +1,5 @@
-# Projeto `<Título do Projeto>`
-# Project `<Title in English>`
+# Equipe Claudio Code
 
-> Incluir nome RA e foco de especialização de cada membro do grupo.
 > |Nome  | RA |
 > |--|--|
 > | Lucas Henrique Bertanha  | 276617  |
