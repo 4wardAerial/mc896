@@ -1,33 +1,7 @@
 node_id,type,label,attributes
-P_PMC4835621_01,Patient,Case PMC4835621_01,"{'age': np.float64(81.0), 'gender': 'Female'}"
-EXA_24f430,Exam,Hemoglobin a1c,{}
-SYM_50048e,Symptom,Headache,{}
-SYM_194a59,Symptom,Fever,{}
-SYM_069569,Symptom,Nausea,{}
-DIA_29098c,Diagnosis,Hypertension,{}
-EXA_77c91c,Exam,Laboratory tests,{}
-EXA_54dc6d,Exam,Forced vital capacity,{}
-EXA_12405f,Exam,Heart rate,{}
-EXA_bbe19c,Exam,Thoracic ct,{}
-EXA_bfeacf,Exam,White blood cell count,{}
-EXA_3b2c20,Exam,Blood sugar,{}
-EXA_f15005,Exam,Reticulocyte count,{}
-VAL_68c02a,ExamResult,73 %,"{'value': '73', 'unit': '%'}"
-EXA_66614b,Exam,Immunoglobulin g,{}
-EXA_a1b34e,Exam,Mean arterial blood pressure,{}
-EXA_8c6724,Exam,Mean corpuscular volume,{}
-EXA_22efdb,Exam,Forced expiratory volume,{}
-VAL_a09b83,ExamResult,2.4 %,"{'value': '2.4', 'unit': '%'}"
-EXA_0b6892,Exam,Hydroxychloroquine level,{}
-EXA_e678de,Exam,Serum creatinine,{}
-EXA_7ba92a,Exam,Lactate dehydrogenase,{}
-EXA_9b4964,Exam,Ldh,{}
-EXA_e5cc22,Exam,Pd-l1 tps score,{}
-EXA_7a4f81,Exam,Haptoglobin,{}
-EXA_61b2ee,Exam,Adamts13 activity,{}
-VAL_b77098,ExamResult,10 %,"{'value': '10', 'unit': '%'}"
-EXA_acf1f5,Exam,Computed tomography,{}
-EXA_0a5f3a,Exam,Platelet counts,{}
-DIA_4aed6a,Diagnosis,Chronic pancreatitis,{}
-DIA_2d5fa4,Diagnosis,Type 2 diabetes,{}
-VAL_9c06aa,ExamResult,2.5 %,"{'value': '2.5', 'unit': '%'}"
+P_PMC4630775_01,Patient,Case PMC4630775_01,"{'age': np.float64(39.0), 'gender': 'Female'}"
+EXA_909cca,Exam,Hemoglobin a1c,{}
+EXA_ab2703,Exam,Immunoglobulin g,{}
+SYM_8b90b3,Symptom,Loss of appetite,{}
+DIA_0dc955,Diagnosis,Acute respiratory distress syndrome,{}
+SYM_c642bc,Symptom,Hypoglycemia symptoms,{}
