@@ -1,33 +1,44 @@
 node_id,type,label,attributes
 P_PMC4835621_01,Patient,Case PMC4835621_01,"{'age': np.float64(81.0), 'gender': 'Female'}"
-EXA_24f430,Exam,Hemoglobin a1c,{}
-SYM_50048e,Symptom,Headache,{}
-SYM_194a59,Symptom,Fever,{}
-SYM_069569,Symptom,Nausea,{}
-DIA_29098c,Diagnosis,Hypertension,{}
-EXA_77c91c,Exam,Laboratory tests,{}
-EXA_54dc6d,Exam,Forced vital capacity,{}
-EXA_12405f,Exam,Heart rate,{}
-EXA_bbe19c,Exam,Thoracic ct,{}
-EXA_bfeacf,Exam,White blood cell count,{}
-EXA_3b2c20,Exam,Blood sugar,{}
-EXA_f15005,Exam,Reticulocyte count,{}
-VAL_68c02a,ExamResult,73 %,"{'value': '73', 'unit': '%'}"
-EXA_66614b,Exam,Immunoglobulin g,{}
-EXA_a1b34e,Exam,Mean arterial blood pressure,{}
-EXA_8c6724,Exam,Mean corpuscular volume,{}
-EXA_22efdb,Exam,Forced expiratory volume,{}
-VAL_a09b83,ExamResult,2.4 %,"{'value': '2.4', 'unit': '%'}"
-EXA_0b6892,Exam,Hydroxychloroquine level,{}
-EXA_e678de,Exam,Serum creatinine,{}
-EXA_7ba92a,Exam,Lactate dehydrogenase,{}
-EXA_9b4964,Exam,Ldh,{}
-EXA_e5cc22,Exam,Pd-l1 tps score,{}
-EXA_7a4f81,Exam,Haptoglobin,{}
-EXA_61b2ee,Exam,Adamts13 activity,{}
-VAL_b77098,ExamResult,10 %,"{'value': '10', 'unit': '%'}"
-EXA_acf1f5,Exam,Computed tomography,{}
-EXA_0a5f3a,Exam,Platelet counts,{}
-DIA_4aed6a,Diagnosis,Chronic pancreatitis,{}
-DIA_2d5fa4,Diagnosis,Type 2 diabetes,{}
-VAL_9c06aa,ExamResult,2.5 %,"{'value': '2.5', 'unit': '%'}"
+SYM_fdc588,Symptom,Headache,{}
+SYM_bbda85,Symptom,Fatigue,{}
+SYM_ef6071,Symptom,Malaise,{}
+SYM_a63d56,Symptom,Fever,{}
+SYM_deb480,Symptom,Night sweats,{}
+SYM_54af68,Symptom,Hematuria,{}
+SYM_e48c91,Symptom,Diarrhea,{}
+SYM_bdee4f,Symptom,Nausea,{}
+SYM_b32990,Symptom,Vomiting,{}
+DIA_ee0287,Diagnosis,Hypertension,{}
+SYM_cea8af,Symptom,Jaundice,{}
+DIA_bfee84,Diagnosis,Splenomegaly,{}
+SYM_3520d0,Symptom,Melena,{}
+SYM_215f70,Symptom,Hematochezia,{}
+EXA_5a7e26,Exam,Ct,{}
+SYM_da3de4,Symptom,Bleeding,{}
+EXA_bc1e18,Exam,White blood cell count,{}
+VAL_e1abf6,ExamResult,73 %,"{'value': '73', 'unit': '%'}"
+EXA_73a78d,Exam,Hemoglobin,{}
+VAL_258ee6,ExamResult,11.3 g/dl,"{'value': '11.3', 'unit': 'g/dl'}"
+EXA_4348a5,Exam,Mean corpuscular volume,{}
+VAL_e98af6,ExamResult,2.4 %,"{'value': '2.4', 'unit': '%'}"
+EXA_dd42cf,Exam,Reticulocyte count,{}
+VAL_a0d817,ExamResult,2.4 %,"{'value': '2.4', 'unit': '%'}"
+EXA_1f90ea,Exam,Creatinine,{}
+EXA_35026c,Exam,Lactate dehydrogenase,{}
+VAL_53da04,ExamResult,405 iu/l,"{'value': '405', 'unit': 'iu/l'}"
+EXA_ba20de,Exam,Ldh,{}
+VAL_d0307d,ExamResult,405 iu/l,"{'value': '405', 'unit': 'iu/l'}"
+EXA_99220d,Exam,Haptoglobin,{}
+VAL_f59eef,ExamResult,15.30 mg/dl,"{'value': '15.30', 'unit': 'mg/dl'}"
+EXA_96149b,Exam,Adamts13 activity,{}
+VAL_9d16e4,ExamResult,10 %,"{'value': '10', 'unit': '%'}"
+TRE_25f2ea,Treatment,Plasmapheresis,{}
+EXA_104c9d,Exam,Computed tomography,{}
+EXA_7be9d5,Exam,Platelet counts,{}
+DIA_62c05c,Diagnosis,Deep vein thrombosis,{}
+TRE_4058da,Treatment,Heparin,{}
+TRE_6710eb,Treatment,Antibiotics,{}
+VAL_d2a4a3,ExamResult,2.5 %,"{'value': '2.5', 'unit': '%'}"
+VAL_7c73e8,ExamResult,2.5 %,"{'value': '2.5', 'unit': '%'}"
+VAL_038d31,ExamResult,31.2 mg/dl,"{'value': '31.2', 'unit': 'mg/dl'}"
