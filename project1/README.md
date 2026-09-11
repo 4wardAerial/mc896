@@ -37,7 +37,28 @@ plt.show();
 
 ## Ferramentas
 
-> Panorama das ferramentas utilizadas incluindo discussão sobre o uso das mesmas.
+Python Notebook -  
+Usado para execução do pipeline por ser recomendado para visualização e manipulação de dados
+
+Expressões regulares (`re`) -  
+ao invés de importar tokenizadores de terceiros, decidimos utilizar o módulo re para contruir nosso próprio pipeline. Usamos para
+
+1. Segmentação de sentenças
+2. Tokenização
+3. Stemming
+4. Extração de medidas  
+
+Dicionários -  
+Usado para mapeamento de tesauros (Gazetteers e busca de entidades). A função `build_lookup` pré-processa as listas de doenças, sintomas, exames e tratamentos, aplicando o mesmo pipeline de tokenização e stemming aos termos de busca. Isso gera um índice reverso em memória que permite buscar palavras e classificar nós clínicos em tempo constante (O(1)), oferecendo alta performance de string matching sem a necessidade de bancos de dados relacionais externos ou algoritmos complexos.
+
+`pandas` -  
+Usado para processar os csv, realizando o merge de cases.csv com metadata.csv, além de armazenar os csv de uma maneira eficiente de se manipular.
+
+`uuid` -  
+Usado para geração de chave primária única, garantindo integridade referencial do grafo.
+
+`Mermaid.js` -  
+Usado para representação gráfica do grafo de conhecimento a fim de facilitar a visualização dos dados obtidos a partir de cada caso. Apresenta visualização mais clara se comparado com outras bibliotecas como `matplotlib` visto que a formatação `flowchart LR` ofereceida pelo `Mermaid.js` lida bem com a hierarquia do grafo.
 
 ## Resultados
 
