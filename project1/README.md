@@ -25,15 +25,16 @@ plt.show();
 
 ## Modelo Lógico
 
-> Modelo de grafo que a equipe criou. Para o modelo de grafos de propriedades, utilize este
-> [modelo de base](https://docs.google.com/presentation/d/10RN7bDKUka_Ro2_41WyEE76Wxm4AioiJOrsh6BRY3Kk/edit?usp=sharing) para construir o seu.
-> Coloque a imagem do PNG do seu modelo lógico como ilustrado abaixo (a imagem estará na pasta `image`):
->
-> ![Modelo Lógico de Grafos](images/modelo-logico-grafos.png)
+![Exemplo de Grafo gerado](images/exemplo.png)
+> Exemplo de Grafo gerado para o paciente PMC4630775_01
 
 ## Análises que podem ser realizadas
 
-> Apresente aqui uma análise  uma discussão de análises que podem ser realizadas com o seu grafo.
+O grafo gerado pelo projeto pode ser usado como uma síntese em características primordiais de cada caso clínico analisado pelo programa. 
+
+- Exemplo: no modelo lógico usado para o paciente PMC4630775_01, o texto dado foi transformado em um grafo que mostra, de forma sucinta, características do paciente como sintomas, exames feitos e diagnóstico, omitindo trechos do texto redundantes e que não oferecem informações ao caso clínico analisado.
+
+Com isso, o grafo funciona como um hub de informações de fácil acesso do caso clínico, facilitando a análise e visualização dos dados de cada cenário avaliado.
 
 ## Ferramentas
 
