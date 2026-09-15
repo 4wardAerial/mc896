@@ -25,7 +25,7 @@ plt.show();
 
 ## Modelo Lógico
 
-![Exemplo de Grafo gerado](images/exemplo.png)
+![Exemplo de Grafo gerado](images/assets/exemplo.png)
 > Exemplo de Grafo gerado para o paciente PMC4630775_01
 
 ## Análises que podem ser realizadas
