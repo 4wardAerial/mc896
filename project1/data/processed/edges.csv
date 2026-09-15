@@ -1,6 +1,6 @@
 edge_id,source,target,type,relation,attributes
-e_bdd8f6,P_PMC4630775_01,EXA_909cca,Exam,UNDERWENT_EXAM,{'source': 'regex_dict'}
-e_f605e7,P_PMC4630775_01,EXA_ab2703,Exam,UNDERWENT_EXAM,{'source': 'regex_dict'}
-e_6cc1eb,P_PMC4630775_01,SYM_8b90b3,Symptom,HAS_SYMPTOM,{'source': 'regex_dict'}
-e_f227a6,P_PMC4630775_01,DIA_0dc955,Diagnosis,DIAGNOSED_WITH,{'source': 'regex_dict'}
-e_94d126,P_PMC4630775_01,SYM_c642bc,Symptom,HAS_SYMPTOM,{'source': 'regex_dict'}
+e_e9f085,P_PMC4630775_01,EXA_738a3f,Exam,UNDERWENT_EXAM,{'source': 'regex_dict'}
+e_2749fd,P_PMC4630775_01,EXA_91e54b,Exam,UNDERWENT_EXAM,{'source': 'regex_dict'}
+e_737eaa,P_PMC4630775_01,SYM_87812b,Symptom,HAS_SYMPTOM,{'source': 'regex_dict'}
+e_3265dd,P_PMC4630775_01,DIA_d2ceb1,Diagnosis,DIAGNOSED_WITH,{'source': 'regex_dict'}
+e_e20337,P_PMC4630775_01,SYM_f8d743,Symptom,HAS_SYMPTOM,{'source': 'regex_dict'}
