@@ -8,11 +8,66 @@
 ## Metodologia
 
 ### Extração dos dados
-### Tokenização
-### Normalização
-### Gazzeteers
-### Extração dos dados
 
+Inicialmente, extraímos os dados de casos clínicos do arquivo `cases.csv` e as informações dos pacientes do arquivo `metadata.csv`, unificando-os em um único dataset por meio de um merge pela coluna `article_id`:
+
+### Tokenização
+
+Utilizamos uma expressão regular (regex) que identifica três classes de tokens: números/notações, palavras e pontuações isoladas. Cada classe considera suas particularidades — por exemplo, notações científicas que, apesar de numéricas, possuem uma formatação diferente (como `10 x 10³`):
+
+~~~python
+token_re = re.compile(r"""
+    \d+(?:\.\d+)?(?:\s*x\s*10\d*)?
+    |[a-zA-Z]+
+    |[.,;:!?()%/]
+""", re.VERBOSE)
+~~~
+
+### Normalização
+
+Em seguida, aplicamos uma normalização simples por meio da função `stem()`, que resolve plurais removendo o `s` final das palavras — exceto quando precedido de outro `s`, evitando remover incorretamente palavras terminadas em "ss" — e converte o token inteiramente para minúsculo:
+
+~~~python
+stem_re = re.compile(r'(?<!s)s$')
+
+def stem(tok):
+    return stem_re.sub('', tok.lower())
+~~~
+
+### Gazetteers
+
+Construímos gazetteers (dicionários de termos) considerando quatro categorias — `Diagnosis`, `Symptom`, `Exam` e `Treatment` — que correspondem aos tipos de nó do grafo. A partir deles, a função `build_lookup` gera um índice de busca, cada termo do gazetteer passa pelo mesmo pipeline de tokenização e stemming aplicado ao texto dos casos e é indexado por uma tupla de tokens normalizados, o que permite reconhecer tanto termos de uma palavra quanto termos compostos de várias palavras (n-gramas):
+
+~~~python
+key = tuple(stem(t[0]) for t in tokenize(kw))
+lookup[key] = (ent_type, kw)
+~~~
+
+### Casamento de entidades
+
+Para casar as entidades no texto, a função `match_entities` percorre os tokens de cada sentença buscando o maior n-grama contíguo que exista no índice, do tamanho máximo até o unitário, marcando os tokens já usados como consumidos para evitar sobreposições. Essa abordagem gulosa evita que um termo composto (como `loss of appetite`) seja fragmentado em correspondências parciais e incorretas com palavras isoladas do meio da frase:
+
+~~~python
+for size in range(max_n, 0, -1):      # do maior n-grama para o menor
+    key = tuple(stem(tokens[k][0]) for k in range(i, i + size))
+    if key in lookup and not any(consumed[i:i + size]):
+        ent_type, keyword = lookup[key]
+~~~
+
+### Grafo
+
+A cada entidade reconhecida, criamos um nó (deduplicado por rótulo, para que a mesma entidade citada várias vezes no texto vire um único nó) e uma aresta ligando o paciente a ela, com o tipo de relação definido pela categoria da entidade (`DIAGNOSED_WITH`, `HAS_SYMPTOM`, `UNDERWENT_EXAM` ou `TREATED_BY`):
+
+~~~python
+if ent_type == 'Diagnosis': relation = 'DIAGNOSED_WITH'
+elif ent_type == 'Symptom': relation = 'HAS_SYMPTOM'
+elif ent_type == 'Exam': relation = 'UNDERWENT_EXAM'
+elif ent_type == 'Treatment': relation = 'TREATED_BY'
+~~~
+
+Além disso, quando a entidade reconhecida é um `Exam`, o pipeline verifica os tokens seguintes em busca de um valor numérico acompanhado de uma unidade válida (por exemplo, `73 %`), criando um nó `ExamResult` conectado ao exame por meio de uma aresta `HAS_RESULT`.
+
+O grafo pode ser obtido com um script simples no fim do código, que retorna a estrutura gerada. É possivel visualizar essa estrutura por meio da plataforma Mermaid.
 
 ## Trabalhos Estudados
 
