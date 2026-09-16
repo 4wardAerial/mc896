@@ -5,8 +5,9 @@
 > | Lucas Henrique Bertanha  | 276617  |
 > | Leonardo Ferreira  | 281289  |
 > | Elton Aquino  | 247059  |
-> | Nome4  | 123456  |
-> | Nome5  | 123456  |
+> | João Gabriel Lucena  | 281255  |
+> | João Murilo Coutinho Martins  | 249798  |
+
 
 # Apresentação
 
