@@ -114,9 +114,15 @@ Usado para representação gráfica do grafo de conhecimento a fim de facilitar 
 
 ## Resultados
 
-> Descrição e discussão dos resultados mais importantes obtidos.
->
-> Você pode apresentar imagens apresentando o grafo e discutir o que obteve.
+Mesmo com as limitações, o projeto conseguiu entregar um baseline funcional, fácil de interpretar e bem rápido. Usar a Lookup Table nos permitiu buscar e classificar as entidades em tempo constante (O(1)), transformando os textos clínicos desestruturados em grafos visuais navegáveis. Em casos mais bem formatados, como o do paciente PMC4835621, o código montou um grafo extenso, identificando vários exames e acertando a extração dos resultados numéricos usando a nossa regex. Por outro lado, a abordagem baseada apenas em regras se mostrou frágil na hora de lidar com a variedade dos textos reais, evidenciando alguns problemas estruturais:  
+
+- Falsos positivos na Lookup Table: O modelo depende muito do dicionário e não limpa as stop-words. No caso PMC4630775, um problema na tabela fez com que a palavra "of" fosse mapeada por engano para o sintoma "Loss of appetite".
+  
+- Rigidez na extração: A nossa regex para os exames exige exatamente o padrão Exame > Resultado Numérico > Unidade de medida. Qualquer desvio desse formato faz a extração falhar, deixando o grafo raso e sem profundidade.
+
+- Falta de contexto e negação: Como fazemos só o string matching, o sistema não entende a semântica da frase. O código não percebe a negação, então se o relato diz "sem febre", ele acaba criando um nó de sintoma de qualquer jeito. 
+
+Resumindo, a solução roda de forma muito rápida (O(1)) e funciona bem para textos padronizados, mas a falta de interpretação de contexto gera erros inevitáveis na prática. Isso confirma que adotar modelos de linguagem seria o caminho mais natural para o futuro do projeto.
 
 ## Como Modelos de Linguagem foram Usados
 
