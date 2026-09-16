@@ -3,7 +3,7 @@
 
 ## Slides
 
-> Coloque aqui o link para o PDF da apresentação da parte 3.
+[Slides em pdf](./assets/slides/MC896-Projeto-1.pdf)
 
 ## Metodologia
 
