@@ -70,7 +70,9 @@ Usado para representação gráfica do grafo de conhecimento a fim de facilitar 
 
 ## Como Modelos de Linguagem foram Usados
 
-> Descreva aqui em que tarefas os modelos de linguagem foram usados.
+Não usamos nenhum modelo de linguagem (embeddings, spaCy, BERT, LLM, etc.) no projeto. O pipeline usa só pandas, re e uuid, e toda a extração foi feita com regras: tokenização e stemming com regex, reconhecimento de entidades com a Lookup Table (gazetteer) e extração dos resultados de exame também com regex (número + unidade).
+
+Fizemos essa escolha pelo mesmo motivo explicado na seção de Ferramentas:  conseguimos "rodar" o pipeline inteiro sem precisar de dados de treino, GPU, ou qualquer modelo pronto, e o resultado é fácil de entender e depurar, já que cada classificação vem direto de uma entrada da Lookup Table.
 
 ## Referências Bibliográficas
 
