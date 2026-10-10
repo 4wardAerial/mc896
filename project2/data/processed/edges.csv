@@ -1,0 +1,6 @@
+edge_id,source,target,type,relation,attributes
+e_455960,P_PMC4630775_01,EXA_cfff6e,Exam,UNDERWENT_EXAM,{'source': 'regex_dict'}
+e_19a258,P_PMC4630775_01,EXA_e631f0,Exam,UNDERWENT_EXAM,{'source': 'regex_dict'}
+e_9f0ef0,P_PMC4630775_01,SYM_debf4a,Symptom,HAS_SYMPTOM,{'source': 'regex_dict'}
+e_a048d5,P_PMC4630775_01,DIA_d4e0c5,Diagnosis,DIAGNOSED_WITH,{'source': 'regex_dict'}
+e_328322,P_PMC4630775_01,SYM_ef9c9e,Symptom,HAS_SYMPTOM,{'source': 'regex_dict'}
