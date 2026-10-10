@@ -1,7 +1,7 @@
 node_id,type,label,attributes
 P_PMC4630775_01,Patient,Case PMC4630775_01,"{'age': np.float64(39.0), 'gender': 'Female'}"
-EXA_909cca,Exam,Hemoglobin a1c,{}
-EXA_ab2703,Exam,Immunoglobulin g,{}
-SYM_8b90b3,Symptom,Loss of appetite,{}
-DIA_0dc955,Diagnosis,Acute respiratory distress syndrome,{}
-SYM_c642bc,Symptom,Hypoglycemia symptoms,{}
+EXA_cfff6e,Exam,Hemoglobin a1c,{}
+EXA_e631f0,Exam,Immunoglobulin g,{}
+SYM_debf4a,Symptom,Loss of appetite,{}
+DIA_d4e0c5,Diagnosis,Acute respiratory distress syndrome,{}
+SYM_ef9c9e,Symptom,Hypoglycemia symptoms,{}
