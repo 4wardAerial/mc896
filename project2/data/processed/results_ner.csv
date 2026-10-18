@@ -1,0 +1,6 @@
+modelo,precision,recall,f1,recall_unseen_terms,n_unseen_gold,f1_Diagnosis,f1_Symptom,f1_Exam,f1_Treatment
+"Regras (Parte 1, léxico reduzido)",1.0,0.8582,0.9237,0.0,20,1.0,0.9254,0.9394,0.8372
+CRF uni,0.8736,0.539,0.6667,0.0,20,0.8235,0.8437,0.5321,0.6842
+CRF uni+bi,0.8721,0.5319,0.6608,0.0,20,0.8235,0.8437,0.5185,0.6842
+CRF uni+bi+tri,0.869,0.5177,0.6489,0.0,20,0.8235,0.8254,0.5047,0.6842
+CRF uni+bi+tri+PMI,0.878,0.5106,0.6457,0.0,20,0.75,0.8254,0.5094,0.6842

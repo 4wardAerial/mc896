@@ -1,0 +1,98 @@
+node_id,type,label,attributes
+P:PMC5137649_01,Patient,Case PMC5137649_01,"{""age"": 44.0, ""gender"": ""Female""}"
+P:PMC5833205_01,Patient,Case PMC5833205_01,"{""age"": 0.0, ""gender"": ""Male""}"
+P:PMC9529523_01,Patient,Case PMC9529523_01,"{""age"": 41.0, ""gender"": ""Female""}"
+P:PMC4630775_01,Patient,Case PMC4630775_01,"{""age"": 39.0, ""gender"": ""Female""}"
+P:PMC7086412_01,Patient,Case PMC7086412_01,"{""age"": 34.0, ""gender"": ""Female""}"
+P:PMC7086412_02,Patient,Case PMC7086412_02,"{""age"": 31.0, ""gender"": ""Female""}"
+P:PMC3557982_01,Patient,Case PMC3557982_01,"{""age"": 1.0, ""gender"": ""Female""}"
+P:PMC9815523_01,Patient,Case PMC9815523_01,"{""age"": 40.0, ""gender"": ""Unknown""}"
+P:PMC4310058_01,Patient,Case PMC4310058_01,"{""age"": 16.0, ""gender"": ""Male""}"
+P:PMC2817501_01,Patient,Case PMC2817501_01,"{""age"": 53.0, ""gender"": ""Male""}"
+P:PMC11783470_01,Patient,Case PMC11783470_01,"{""age"": 22.0, ""gender"": ""Female""}"
+Symptom:abdominal pain,Symptom,abdominal pain,{}
+Symptom:nausea,Symptom,nausea,{}
+Exam:computed tomography,Exam,computed tomography,{}
+R:PMC5137649_01:Exam:computed tomography:6cm,ExamResult,6 cm,"{""value"": ""6"", ""unit"": ""cm""}"
+Exam:carcinoembryonic antigen,Exam,carcinoembryonic antigen,{}
+Exam:cea,Exam,cea,{}
+R:PMC5137649_01:Exam:cea:476.5ng/ml,ExamResult,476.5 ng/ml,"{""value"": ""476.5"", ""unit"": ""ng/ml""}"
+Treatment:resection,Treatment,resection,{}
+Symptom:bleeding,Symptom,bleeding,{}
+Symptom:pain,Symptom,pain,{}
+Symptom:swelling,Symptom,swelling,{}
+Symptom:edema,Symptom,edema,{}
+Symptom:lower extremity edema,Symptom,lower extremity edema,{}
+Exam:albumin,Exam,albumin,{}
+R:PMC5833205_01:Exam:albumin:1.8g/dl,ExamResult,1.8 g/dL,"{""value"": ""1.8"", ""unit"": ""g/dL""}"
+Diagnosis:anemia,Diagnosis,anemia,{}
+Exam:hemoglobin,Exam,hemoglobin,{}
+R:PMC5833205_01:Exam:hemoglobin:6.4mg/dl,ExamResult,6.4 mg/dL,"{""value"": ""6.4"", ""unit"": ""mg/dL""}"
+Exam:mean corpuscular volume,Exam,mean corpuscular volume,{}
+Exam:ferritin,Exam,ferritin,{}
+R:PMC5833205_01:Exam:ferritin:4.9ng/l,ExamResult,4.9 ng/L,"{""value"": ""4.9"", ""unit"": ""ng/L""}"
+R:PMC5833205_01:Exam:albumin:1.6g/dl,ExamResult,1.6 g/dL,"{""value"": ""1.6"", ""unit"": ""g/dL""}"
+Exam:total protein,Exam,total protein,{}
+R:PMC5833205_01:Exam:total protein:3.0g/dl,ExamResult,3.0 g/dL,"{""value"": ""3.0"", ""unit"": ""g/dL""}"
+Symptom:diarrhea,Symptom,diarrhea,{}
+R:PMC5833205_01:Exam:hemoglobin:11.8g/dl,ExamResult,11.8 g/dL,"{""value"": ""11.8"", ""unit"": ""g/dL""}"
+R:PMC5833205_01:Exam:ferritin:29.4ng/l,ExamResult,29.4 ng/L,"{""value"": ""29.4"", ""unit"": ""ng/L""}"
+Treatment:drainage,Treatment,drainage,{}
+Exam:echocardiogram,Exam,echocardiogram,{}
+Diagnosis:endocarditi,Diagnosis,endocarditis,{}
+Exam:igg,Exam,igg,{}
+R:PMC9529523_01:Exam:igg:2317mg/dl,ExamResult,2317 mg/dL,"{""value"": ""2317"", ""unit"": ""mg/dL""}"
+Exam:erythrocyte sedimentation rate,Exam,erythrocyte sedimentation rate,{}
+Exam:esr,Exam,esr,{}
+R:PMC9529523_01:Exam:esr:77mm,ExamResult,77 mm,"{""value"": ""77"", ""unit"": ""mm""}"
+Exam:c-reactive protein,Exam,c-reactive protein,{}
+Exam:crp,Exam,crp,{}
+R:PMC9529523_01:Exam:crp:6.2mg/dl,ExamResult,6.2 mg/dL,"{""value"": ""6.2"", ""unit"": ""mg/dL""}"
+Symptom:weight loss,Symptom,weight loss,{}
+Exam:creatinine,Exam,creatinine,{}
+R:PMC9529523_01:Exam:creatinine:2.14mg/dl,ExamResult,2.14 mg/dL,"{""value"": ""2.14"", ""unit"": ""mg/dL""}"
+R:PMC9529523_01:Exam:esr:90mm,ExamResult,90 mm,"{""value"": ""90"", ""unit"": ""mm""}"
+Diagnosis:hypertension,Diagnosis,hypertension,{}
+Exam:echocardiography,Exam,echocardiography,{}
+Exam:mri,Exam,mri,{}
+Symptom:shortness of breath,Symptom,shortness of breath,{}
+Symptom:dyspnea,Symptom,dyspnea,{}
+Exam:ejection fraction,Exam,ejection fraction,{}
+R:PMC9529523_01:Exam:ejection fraction:10%,ExamResult,10 %,"{""value"": ""10"", ""unit"": ""%""}"
+Exam:c4,Exam,c4,{}
+R:PMC9529523_01:Exam:c4:17mg/dl,ExamResult,17 mg/dL,"{""value"": ""17"", ""unit"": ""mg/dL""}"
+Diagnosis:myocarditi,Diagnosis,myocarditis,{}
+Treatment:prednisone,Treatment,prednisone,{}
+Treatment:monitoring,Treatment,monitoring,{}
+R:PMC7086412_01:Exam:hemoglobin:6.6%,ExamResult,6.6 %,"{""value"": ""6.6"", ""unit"": ""%""}"
+R:PMC7086412_02:Exam:hemoglobin:5.0%,ExamResult,5.0 %,"{""value"": ""5.0"", ""unit"": ""%""}"
+R:PMC7086412_02:Exam:hemoglobin:6.6%,ExamResult,6.6 %,"{""value"": ""6.6"", ""unit"": ""%""}"
+Exam:igm,Exam,igm,{}
+Diagnosis:pneumonia,Diagnosis,pneumonia,{}
+Treatment:antithrombotic,Treatment,antithrombotic,{}
+Treatment:anticoagulation therapy,Treatment,anticoagulation therapy,{}
+Treatment:blood transfusion,Treatment,blood transfusion,{}
+Treatment:surgery,Treatment,surgery,{}
+Treatment:heparin,Treatment,heparin,{}
+Treatment:anticoagulation,Treatment,anticoagulation,{}
+Symptom:chest drain,Symptom,chest drain,{}
+Treatment:antibiotic,Treatment,antibiotic,{}
+Symptom:headache,Symptom,headaches,{}
+Exam:ct,Exam,ct,{}
+Exam:blood pressure,Exam,blood pressure,{}
+R:PMC2817501_01:Exam:blood pressure:80mmhg,ExamResult,80 mmHg,"{""value"": ""80"", ""unit"": ""mmHg""}"
+Exam:heart rate,Exam,heart rate,{}
+R:PMC2817501_01:Exam:ejection fraction:30%,ExamResult,30 %,"{""value"": ""30"", ""unit"": ""%""}"
+Exam:artery pressure,Exam,artery pressure,{}
+R:PMC2817501_01:Exam:artery pressure:68mmhg,ExamResult,68 mmHg,"{""value"": ""68"", ""unit"": ""mmHg""}"
+Symptom:dysphagia,Symptom,dysphagia,{}
+Symptom:odynophagia,Symptom,odynophagia,{}
+Symptom:heartburn,Symptom,heartburn,{}
+Symptom:vomiting,Symptom,vomiting,{}
+Symptom:melena,Symptom,melena,{}
+Symptom:hematochezia,Symptom,hematochezia,{}
+R:PMC11783470_01:Exam:hemoglobin:11.5g/dl,ExamResult,11.5 g/dL,"{""value"": ""11.5"", ""unit"": ""g/dL""}"
+Exam:transferrin saturation,Exam,transferrin saturation,{}
+R:PMC11783470_01:Exam:transferrin saturation:12.8%,ExamResult,12.8 %,"{""value"": ""12.8"", ""unit"": ""%""}"
+R:PMC11783470_01:Exam:ferritin:200ng/ml,ExamResult,200 ng/mL,"{""value"": ""200"", ""unit"": ""ng/mL""}"
+R:PMC11783470_01:Exam:transferrin saturation:20%,ExamResult,20 %,"{""value"": ""20"", ""unit"": ""%""}"
