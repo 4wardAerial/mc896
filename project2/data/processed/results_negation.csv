@@ -1,0 +1,10 @@
+modelo,ngram_max,F1_NEG
+LogReg,1,0.9684
+ComplementNB,1,0.4332
+LinearSVC,1,0.9714
+LogReg,2,0.9806
+ComplementNB,2,0.6048
+LinearSVC,2,0.9838
+LogReg,3,0.9709
+ComplementNB,3,0.6601
+LinearSVC,3,0.9838

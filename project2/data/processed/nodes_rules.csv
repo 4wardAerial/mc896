@@ -1,0 +1,854 @@
+node_id,type,label,attributes
+P:PMC9240706_01,Patient,Case PMC9240706_01,"{""age"": 74.0, ""gender"": ""Female""}"
+P:PMC6305019_01,Patient,Case PMC6305019_01,"{""age"": 74.0, ""gender"": ""Female""}"
+P:PMC3269606_04,Patient,Case PMC3269606_04,"{""age"": 63.0, ""gender"": ""Female""}"
+P:PMC9174430_01,Patient,Case PMC9174430_01,"{""age"": NaN, ""gender"": ""Female""}"
+P:PMC11832233_01,Patient,Case PMC11832233_01,"{""age"": 69.0, ""gender"": ""Male""}"
+P:PMC8110395_01,Patient,Case PMC8110395_01,"{""age"": 9.0, ""gender"": ""Male""}"
+P:PMC3572814_01,Patient,Case PMC3572814_01,"{""age"": NaN, ""gender"": ""Female""}"
+P:PMC10589042_01,Patient,Case PMC10589042_01,"{""age"": 71.0, ""gender"": ""Male""}"
+P:PMC9826567_03,Patient,Case PMC9826567_03,"{""age"": NaN, ""gender"": ""Male""}"
+P:PMC11002118_01,Patient,Case PMC11002118_01,"{""age"": 46.0, ""gender"": ""Male""}"
+P:PMC9792920_01,Patient,Case PMC9792920_01,"{""age"": 51.0, ""gender"": ""Female""}"
+P:PMC6815552_01,Patient,Case PMC6815552_01,"{""age"": 47.0, ""gender"": ""Female""}"
+P:PMC11176893_01,Patient,Case PMC11176893_01,"{""age"": 48.0, ""gender"": ""Male""}"
+P:PMC10353609_02,Patient,Case PMC10353609_02,"{""age"": 0.0, ""gender"": ""Male""}"
+P:PMC4844493_01,Patient,Case PMC4844493_01,"{""age"": 36.0, ""gender"": ""Male""}"
+P:PMC10112343_01,Patient,Case PMC10112343_01,"{""age"": 7.0, ""gender"": ""Unknown""}"
+P:PMC4026854_01,Patient,Case PMC4026854_01,"{""age"": 43.0, ""gender"": ""Male""}"
+P:PMC8168692_01,Patient,Case PMC8168692_01,"{""age"": 30.0, ""gender"": ""Female""}"
+P:PMC10155551_01,Patient,Case PMC10155551_01,"{""age"": 43.0, ""gender"": ""Male""}"
+P:PMC11335634_01,Patient,Case PMC11335634_01,"{""age"": 11.0, ""gender"": ""Male""}"
+P:PMC11199689_01,Patient,Case PMC11199689_01,"{""age"": 22.0, ""gender"": ""Male""}"
+P:PMC10404836_01,Patient,Case PMC10404836_01,"{""age"": 68.0, ""gender"": ""Male""}"
+P:PMC4373030_01,Patient,Case PMC4373030_01,"{""age"": 30.0, ""gender"": ""Female""}"
+P:PMC2442906_01,Patient,Case PMC2442906_01,"{""age"": 2.0, ""gender"": ""Female""}"
+P:PMC8481055_01,Patient,Case PMC8481055_01,"{""age"": 65.0, ""gender"": ""Female""}"
+P:PMC3268175_01,Patient,Case PMC3268175_01,"{""age"": 16.0, ""gender"": ""Male""}"
+P:PMC3701920_01,Patient,Case PMC3701920_01,"{""age"": 27.0, ""gender"": ""Male""}"
+P:PMC5733126_01,Patient,Case PMC5733126_01,"{""age"": 59.0, ""gender"": ""Male""}"
+P:PMC10333627_01,Patient,Case PMC10333627_01,"{""age"": 36.0, ""gender"": ""Male""}"
+P:PMC10331113_01,Patient,Case PMC10331113_01,"{""age"": 22.0, ""gender"": ""Female""}"
+P:PMC3629021_01,Patient,Case PMC3629021_01,"{""age"": 80.0, ""gender"": ""Unknown""}"
+P:PMC10978040_01,Patient,Case PMC10978040_01,"{""age"": 8.0, ""gender"": ""Female""}"
+P:PMC6243302_01,Patient,Case PMC6243302_01,"{""age"": 66.0, ""gender"": ""Female""}"
+P:PMC8263235_03,Patient,Case PMC8263235_03,"{""age"": NaN, ""gender"": ""Female""}"
+P:PMC3792542_01,Patient,Case PMC3792542_01,"{""age"": 27.0, ""gender"": ""Female""}"
+P:PMC11827420_01,Patient,Case PMC11827420_01,"{""age"": 57.0, ""gender"": ""Male""}"
+P:PMC11752478_03,Patient,Case PMC11752478_03,"{""age"": NaN, ""gender"": ""Unknown""}"
+P:PMC5726673_01,Patient,Case PMC5726673_01,"{""age"": 0.0, ""gender"": ""Male""}"
+P:PMC11259471_01,Patient,Case PMC11259471_01,"{""age"": 44.0, ""gender"": ""Female""}"
+P:PMC9768602_02,Patient,Case PMC9768602_02,"{""age"": 74.0, ""gender"": ""Male""}"
+P:PMC11249987_02,Patient,Case PMC11249987_02,"{""age"": 15.0, ""gender"": ""Male""}"
+P:PMC8179784_01,Patient,Case PMC8179784_01,"{""age"": 76.0, ""gender"": ""Female""}"
+P:PMC4323913_01,Patient,Case PMC4323913_01,"{""age"": 40.0, ""gender"": ""Male""}"
+P:PMC5884277_01,Patient,Case PMC5884277_01,"{""age"": 62.0, ""gender"": ""Female""}"
+P:PMC8457348_02,Patient,Case PMC8457348_02,"{""age"": 37.0, ""gender"": ""Male""}"
+P:PMC5565258_01,Patient,Case PMC5565258_01,"{""age"": 72.0, ""gender"": ""Female""}"
+P:PMC4038867_03,Patient,Case PMC4038867_03,"{""age"": 27.0, ""gender"": ""Female""}"
+P:PMC9638726_01,Patient,Case PMC9638726_01,"{""age"": 35.0, ""gender"": ""Male""}"
+P:PMC9763271_01,Patient,Case PMC9763271_01,"{""age"": 22.0, ""gender"": ""Female""}"
+P:PMC4327555_02,Patient,Case PMC4327555_02,"{""age"": 13.0, ""gender"": ""Male""}"
+P:PMC9943965_01,Patient,Case PMC9943965_01,"{""age"": 44.0, ""gender"": ""Female""}"
+P:PMC9177063_01,Patient,Case PMC9177063_01,"{""age"": 40.0, ""gender"": ""Male""}"
+P:PMC6350116_01,Patient,Case PMC6350116_01,"{""age"": 31.0, ""gender"": ""Male""}"
+P:PMC3125656_01,Patient,Case PMC3125656_01,"{""age"": 60.0, ""gender"": ""Male""}"
+P:PMC6350157_01,Patient,Case PMC6350157_01,"{""age"": 39.0, ""gender"": ""Female""}"
+P:PMC4383127_01,Patient,Case PMC4383127_01,"{""age"": 28.0, ""gender"": ""Male""}"
+P:PMC7789998_01,Patient,Case PMC7789998_01,"{""age"": 45.0, ""gender"": ""Male""}"
+P:PMC4195895_04,Patient,Case PMC4195895_04,"{""age"": 71.0, ""gender"": ""Male""}"
+P:PMC9726845_01,Patient,Case PMC9726845_01,"{""age"": 55.0, ""gender"": ""Female""}"
+P:PMC6477473_01,Patient,Case PMC6477473_01,"{""age"": 63.0, ""gender"": ""Male""}"
+P:PMC6436364_06,Patient,Case PMC6436364_06,"{""age"": 53.0, ""gender"": ""Female""}"
+P:PMC3964166_01,Patient,Case PMC3964166_01,"{""age"": 18.0, ""gender"": ""Unknown""}"
+P:PMC5415723_01,Patient,Case PMC5415723_01,"{""age"": 4.0, ""gender"": ""Female""}"
+P:PMC4711050_01,Patient,Case PMC4711050_01,"{""age"": 15.0, ""gender"": ""Female""}"
+P:PMC5987035_03,Patient,Case PMC5987035_03,"{""age"": 36.0, ""gender"": ""Female""}"
+P:PMC6620565_01,Patient,Case PMC6620565_01,"{""age"": 44.0, ""gender"": ""Male""}"
+P:PMC4340331_01,Patient,Case PMC4340331_01,"{""age"": 38.0, ""gender"": ""Male""}"
+P:PMC5578568_02,Patient,Case PMC5578568_02,"{""age"": 34.0, ""gender"": ""Female""}"
+P:PMC11742071_01,Patient,Case PMC11742071_01,"{""age"": 72.0, ""gender"": ""Male""}"
+P:PMC4756803_01,Patient,Case PMC4756803_01,"{""age"": 71.0, ""gender"": ""Male""}"
+P:PMC5398300_01,Patient,Case PMC5398300_01,"{""age"": 74.0, ""gender"": ""Male""}"
+P:PMC11805538_01,Patient,Case PMC11805538_01,"{""age"": 50.0, ""gender"": ""Female""}"
+P:PMC4408310_01,Patient,Case PMC4408310_01,"{""age"": 63.0, ""gender"": ""Male""}"
+P:PMC10641497_01,Patient,Case PMC10641497_01,"{""age"": 19.0, ""gender"": ""Female""}"
+P:PMC5615861_01,Patient,Case PMC5615861_01,"{""age"": 79.0, ""gender"": ""Female""}"
+P:PMC9868999_01,Patient,Case PMC9868999_01,"{""age"": 33.0, ""gender"": ""Female""}"
+P:PMC3927080_02,Patient,Case PMC3927080_02,"{""age"": 21.0, ""gender"": ""Female""}"
+P:PMC5228647_01,Patient,Case PMC5228647_01,"{""age"": 43.0, ""gender"": ""Female""}"
+P:PMC9897705_01,Patient,Case PMC9897705_01,"{""age"": 8.0, ""gender"": ""Male""}"
+P:PMC7337879_01,Patient,Case PMC7337879_01,"{""age"": 46.0, ""gender"": ""Male""}"
+P:PMC10285293_01,Patient,Case PMC10285293_01,"{""age"": 35.0, ""gender"": ""Female""}"
+P:PMC9904919_01,Patient,Case PMC9904919_01,"{""age"": 11.0, ""gender"": ""Male""}"
+P:PMC8541847_01,Patient,Case PMC8541847_01,"{""age"": 5.0, ""gender"": ""Male""}"
+P:PMC8421039_01,Patient,Case PMC8421039_01,"{""age"": NaN, ""gender"": ""Unknown""}"
+P:PMC3605081_01,Patient,Case PMC3605081_01,"{""age"": 15.0, ""gender"": ""Male""}"
+P:PMC6280435_01,Patient,Case PMC6280435_01,"{""age"": 61.0, ""gender"": ""Female""}"
+P:PMC6159161_01,Patient,Case PMC6159161_01,"{""age"": 0.0, ""gender"": ""Female""}"
+P:PMC4322409_01,Patient,Case PMC4322409_01,"{""age"": 5.0, ""gender"": ""Female""}"
+P:PMC3420712_02,Patient,Case PMC3420712_02,"{""age"": 62.0, ""gender"": ""Female""}"
+P:PMC5350306_01,Patient,Case PMC5350306_01,"{""age"": 35.0, ""gender"": ""Female""}"
+P:PMC3994691_01,Patient,Case PMC3994691_01,"{""age"": 65.0, ""gender"": ""Female""}"
+P:PMC6942782_01,Patient,Case PMC6942782_01,"{""age"": 48.0, ""gender"": ""Female""}"
+P:PMC6188187_01,Patient,Case PMC6188187_01,"{""age"": 62.0, ""gender"": ""Male""}"
+P:PMC9551172_01,Patient,Case PMC9551172_01,"{""age"": 52.0, ""gender"": ""Male""}"
+P:PMC6093033_01,Patient,Case PMC6093033_01,"{""age"": 47.0, ""gender"": ""Female""}"
+P:PMC6734004_01,Patient,Case PMC6734004_01,"{""age"": 23.0, ""gender"": ""Male""}"
+P:PMC3934809_01,Patient,Case PMC3934809_01,"{""age"": 59.0, ""gender"": ""Male""}"
+P:PMC7587992_03,Patient,Case PMC7587992_03,"{""age"": 63.0, ""gender"": ""Male""}"
+P:PMC8384003_01,Patient,Case PMC8384003_01,"{""age"": 89.0, ""gender"": ""Male""}"
+P:PMC4794122_01,Patient,Case PMC4794122_01,"{""age"": 12.0, ""gender"": ""Male""}"
+P:PMC5968243_02,Patient,Case PMC5968243_02,"{""age"": 63.0, ""gender"": ""Male""}"
+P:PMC10734362_01,Patient,Case PMC10734362_01,"{""age"": 45.0, ""gender"": ""Male""}"
+P:PMC4518021_01,Patient,Case PMC4518021_01,"{""age"": 32.0, ""gender"": ""Male""}"
+P:PMC9240352_02,Patient,Case PMC9240352_02,"{""age"": 0.0, ""gender"": ""Unknown""}"
+P:PMC5379825_01,Patient,Case PMC5379825_01,"{""age"": 61.0, ""gender"": ""Male""}"
+P:PMC3785211_01,Patient,Case PMC3785211_01,"{""age"": 72.0, ""gender"": ""Female""}"
+P:PMC11694659_01,Patient,Case PMC11694659_01,"{""age"": 48.0, ""gender"": ""Female""}"
+P:PMC6899330_01,Patient,Case PMC6899330_01,"{""age"": 48.0, ""gender"": ""Female""}"
+P:PMC7587992_06,Patient,Case PMC7587992_06,"{""age"": 38.0, ""gender"": ""Female""}"
+P:PMC11097042_01,Patient,Case PMC11097042_01,"{""age"": 26.0, ""gender"": ""Male""}"
+P:PMC3278352_01,Patient,Case PMC3278352_01,"{""age"": 10.0, ""gender"": ""Female""}"
+P:PMC10901064_01,Patient,Case PMC10901064_01,"{""age"": 37.0, ""gender"": ""Female""}"
+P:PMC5884240_02,Patient,Case PMC5884240_02,"{""age"": 62.0, ""gender"": ""Male""}"
+P:PMC10568127_01,Patient,Case PMC10568127_01,"{""age"": 29.0, ""gender"": ""Female""}"
+P:PMC9242433_01,Patient,Case PMC9242433_01,"{""age"": NaN, ""gender"": ""Female""}"
+P:PMC9899151_01,Patient,Case PMC9899151_01,"{""age"": 60.0, ""gender"": ""Female""}"
+P:PMC6875271_01,Patient,Case PMC6875271_01,"{""age"": 81.0, ""gender"": ""Male""}"
+P:PMC3173917_01,Patient,Case PMC3173917_01,"{""age"": 10.0, ""gender"": ""Female""}"
+P:PMC3579083_01,Patient,Case PMC3579083_01,"{""age"": 51.0, ""gender"": ""Female""}"
+P:PMC11789888_01,Patient,Case PMC11789888_01,"{""age"": 52.0, ""gender"": ""Male""}"
+P:PMC11324221_01,Patient,Case PMC11324221_01,"{""age"": 62.0, ""gender"": ""Female""}"
+P:PMC7150708_01,Patient,Case PMC7150708_01,"{""age"": 73.0, ""gender"": ""Female""}"
+P:PMC6824128_01,Patient,Case PMC6824128_01,"{""age"": 21.0, ""gender"": ""Male""}"
+P:PMC4193392_01,Patient,Case PMC4193392_01,"{""age"": 67.0, ""gender"": ""Female""}"
+P:PMC8510818_01,Patient,Case PMC8510818_01,"{""age"": 32.0, ""gender"": ""Female""}"
+P:PMC9372494_08,Patient,Case PMC9372494_08,"{""age"": 33.0, ""gender"": ""Male""}"
+P:PMC9133336_01,Patient,Case PMC9133336_01,"{""age"": NaN, ""gender"": ""Unknown""}"
+P:PMC6055097_03,Patient,Case PMC6055097_03,"{""age"": 13.0, ""gender"": ""Unknown""}"
+P:PMC5404651_01,Patient,Case PMC5404651_01,"{""age"": 34.0, ""gender"": ""Female""}"
+P:PMC9406514_01,Patient,Case PMC9406514_01,"{""age"": 29.0, ""gender"": ""Male""}"
+P:PMC3420442_01,Patient,Case PMC3420442_01,"{""age"": 19.0, ""gender"": ""Male""}"
+P:PMC9827538_01,Patient,Case PMC9827538_01,"{""age"": 70.0, ""gender"": ""Female""}"
+P:PMC3200272_03,Patient,Case PMC3200272_03,"{""age"": NaN, ""gender"": ""Unknown""}"
+P:PMC7603843_01,Patient,Case PMC7603843_01,"{""age"": 46.0, ""gender"": ""Male""}"
+P:PMC5734447_03,Patient,Case PMC5734447_03,"{""age"": NaN, ""gender"": ""Unknown""}"
+P:PMC8142808_03,Patient,Case PMC8142808_03,"{""age"": 1.0, ""gender"": ""Male""}"
+P:PMC6057308_01,Patient,Case PMC6057308_01,"{""age"": 70.0, ""gender"": ""Male""}"
+P:PMC8214534_01,Patient,Case PMC8214534_01,"{""age"": 50.0, ""gender"": ""Male""}"
+P:PMC10623342_01,Patient,Case PMC10623342_01,"{""age"": 43.0, ""gender"": ""Male""}"
+P:PMC10338124_01,Patient,Case PMC10338124_01,"{""age"": 40.0, ""gender"": ""Male""}"
+P:PMC5359445_03,Patient,Case PMC5359445_03,"{""age"": 38.0, ""gender"": ""Female""}"
+P:PMC6051126_01,Patient,Case PMC6051126_01,"{""age"": 64.0, ""gender"": ""Female""}"
+P:PMC11223903_01,Patient,Case PMC11223903_01,"{""age"": 26.0, ""gender"": ""Male""}"
+P:PMC2827170_01,Patient,Case PMC2827170_01,"{""age"": 35.0, ""gender"": ""Female""}"
+P:PMC2817494_01,Patient,Case PMC2817494_01,"{""age"": 34.0, ""gender"": ""Male""}"
+P:PMC7048040_01,Patient,Case PMC7048040_01,"{""age"": 76.0, ""gender"": ""Male""}"
+P:PMC3263008_01,Patient,Case PMC3263008_01,"{""age"": 9.0, ""gender"": ""Female""}"
+P:PMC6526994_03,Patient,Case PMC6526994_03,"{""age"": 53.0, ""gender"": ""Male""}"
+P:PMC7267006_02,Patient,Case PMC7267006_02,"{""age"": 52.0, ""gender"": ""Female""}"
+P:PMC9844961_01,Patient,Case PMC9844961_01,"{""age"": 60.0, ""gender"": ""Male""}"
+P:PMC1242223_01,Patient,Case PMC1242223_01,"{""age"": 41.0, ""gender"": ""Male""}"
+P:PMC10152960_01,Patient,Case PMC10152960_01,"{""age"": 11.0, ""gender"": ""Male""}"
+P:PMC7332718_01,Patient,Case PMC7332718_01,"{""age"": NaN, ""gender"": ""Female""}"
+P:PMC5297267_01,Patient,Case PMC5297267_01,"{""age"": 61.0, ""gender"": ""Female""}"
+P:PMC5514191_01,Patient,Case PMC5514191_01,"{""age"": 36.0, ""gender"": ""Male""}"
+P:PMC9897677_01,Patient,Case PMC9897677_01,"{""age"": 16.0, ""gender"": ""Female""}"
+P:PMC4336392_01,Patient,Case PMC4336392_01,"{""age"": 19.0, ""gender"": ""Male""}"
+P:PMC5828552_01,Patient,Case PMC5828552_01,"{""age"": 79.0, ""gender"": ""Female""}"
+P:PMC6020648_01,Patient,Case PMC6020648_01,"{""age"": 56.0, ""gender"": ""Male""}"
+P:PMC517503_01,Patient,Case PMC517503_01,"{""age"": 65.0, ""gender"": ""Male""}"
+P:PMC5747337_01,Patient,Case PMC5747337_01,"{""age"": 81.0, ""gender"": ""Male""}"
+P:PMC5450456_01,Patient,Case PMC5450456_01,"{""age"": 36.0, ""gender"": ""Female""}"
+P:PMC7234342_01,Patient,Case PMC7234342_01,"{""age"": 57.0, ""gender"": ""Male""}"
+P:PMC10550484_01,Patient,Case PMC10550484_01,"{""age"": 17.0, ""gender"": ""Female""}"
+P:PMC8642115_01,Patient,Case PMC8642115_01,"{""age"": 58.0, ""gender"": ""Female""}"
+P:PMC6057284_01,Patient,Case PMC6057284_01,"{""age"": 41.0, ""gender"": ""Female""}"
+P:PMC6018275_01,Patient,Case PMC6018275_01,"{""age"": 30.0, ""gender"": ""Male""}"
+P:PMC3513810_01,Patient,Case PMC3513810_01,"{""age"": 21.0, ""gender"": ""Female""}"
+P:PMC3716019_02,Patient,Case PMC3716019_02,"{""age"": 18.0, ""gender"": ""Female""}"
+P:PMC9975566_01,Patient,Case PMC9975566_01,"{""age"": 5.0, ""gender"": ""Female""}"
+P:PMC8170123_01,Patient,Case PMC8170123_01,"{""age"": 30.0, ""gender"": ""Male""}"
+P:PMC7214636_01,Patient,Case PMC7214636_01,"{""age"": 53.0, ""gender"": ""Male""}"
+P:PMC3323269_01,Patient,Case PMC3323269_01,"{""age"": 46.0, ""gender"": ""Male""}"
+P:PMC6589247_01,Patient,Case PMC6589247_01,"{""age"": 67.0, ""gender"": ""Female""}"
+P:PMC5786220_01,Patient,Case PMC5786220_01,"{""age"": 33.0, ""gender"": ""Female""}"
+P:PMC4063821_01,Patient,Case PMC4063821_01,"{""age"": NaN, ""gender"": ""Unknown""}"
+P:PMC11409203_04,Patient,Case PMC11409203_04,"{""age"": 40.0, ""gender"": ""Male""}"
+P:PMC7367919_01,Patient,Case PMC7367919_01,"{""age"": 21.0, ""gender"": ""Female""}"
+P:PMC9945965_01,Patient,Case PMC9945965_01,"{""age"": NaN, ""gender"": ""Unknown""}"
+P:PMC6322180_01,Patient,Case PMC6322180_01,"{""age"": 0.0, ""gender"": ""Male""}"
+P:PMC7362981_01,Patient,Case PMC7362981_01,"{""age"": 49.0, ""gender"": ""Female""}"
+P:PMC5052925_01,Patient,Case PMC5052925_01,"{""age"": 3.0, ""gender"": ""Male""}"
+P:PMC6382906_01,Patient,Case PMC6382906_01,"{""age"": NaN, ""gender"": ""Unknown""}"
+P:PMC8011658_01,Patient,Case PMC8011658_01,"{""age"": 71.0, ""gender"": ""Male""}"
+P:PMC11097779_01,Patient,Case PMC11097779_01,"{""age"": 17.0, ""gender"": ""Male""}"
+P:PMC2810823_02,Patient,Case PMC2810823_02,"{""age"": 0.0, ""gender"": ""Male""}"
+P:PMC9632998_01,Patient,Case PMC9632998_01,"{""age"": 55.0, ""gender"": ""Female""}"
+P:PMC8116581_01,Patient,Case PMC8116581_01,"{""age"": 18.0, ""gender"": ""Female""}"
+P:PMC8024097_01,Patient,Case PMC8024097_01,"{""age"": 41.0, ""gender"": ""Male""}"
+P:PMC11222310_01,Patient,Case PMC11222310_01,"{""age"": 13.0, ""gender"": ""Male""}"
+P:PMC4195895_08,Patient,Case PMC4195895_08,"{""age"": 56.0, ""gender"": ""Male""}"
+P:PMC8245233_02,Patient,Case PMC8245233_02,"{""age"": 49.0, ""gender"": ""Female""}"
+P:PMC10155737_01,Patient,Case PMC10155737_01,"{""age"": 60.0, ""gender"": ""Female""}"
+P:PMC2810823_01,Patient,Case PMC2810823_01,"{""age"": 10.0, ""gender"": ""Female""}"
+P:PMC11390182_01,Patient,Case PMC11390182_01,"{""age"": 1.0, ""gender"": ""Female""}"
+P:PMC9949207_02,Patient,Case PMC9949207_02,"{""age"": 51.0, ""gender"": ""Unknown""}"
+P:PMC11154001_01,Patient,Case PMC11154001_01,"{""age"": 67.0, ""gender"": ""Male""}"
+P:PMC10599586_04,Patient,Case PMC10599586_04,"{""age"": 11.0, ""gender"": ""Female""}"
+P:PMC3202111_02,Patient,Case PMC3202111_02,"{""age"": 15.0, ""gender"": ""Female""}"
+P:PMC3884731_01,Patient,Case PMC3884731_01,"{""age"": 13.0, ""gender"": ""Male""}"
+P:PMC8813978_02,Patient,Case PMC8813978_02,"{""age"": 20.0, ""gender"": ""Male""}"
+P:PMC10965197_03,Patient,Case PMC10965197_03,"{""age"": 64.0, ""gender"": ""Male""}"
+P:PMC9826567_02,Patient,Case PMC9826567_02,"{""age"": NaN, ""gender"": ""Male""}"
+P:PMC5066582_01,Patient,Case PMC5066582_01,"{""age"": 66.0, ""gender"": ""Male""}"
+P:PMC4382857_01,Patient,Case PMC4382857_01,"{""age"": 0.0, ""gender"": ""Female""}"
+P:PMC5632866_01,Patient,Case PMC5632866_01,"{""age"": 24.0, ""gender"": ""Female""}"
+P:PMC3655500_01,Patient,Case PMC3655500_01,"{""age"": 64.0, ""gender"": ""Male""}"
+P:PMC8355933_01,Patient,Case PMC8355933_01,"{""age"": 13.0, ""gender"": ""Male""}"
+P:PMC6749008_01,Patient,Case PMC6749008_01,"{""age"": 14.0, ""gender"": ""Female""}"
+P:PMC10233604_01,Patient,Case PMC10233604_01,"{""age"": NaN, ""gender"": ""Female""}"
+P:PMC10302517_01,Patient,Case PMC10302517_01,"{""age"": 64.0, ""gender"": ""Female""}"
+P:PMC9997864_01,Patient,Case PMC9997864_01,"{""age"": 27.0, ""gender"": ""Female""}"
+P:PMC10422905_01,Patient,Case PMC10422905_01,"{""age"": 1.0, ""gender"": ""Female""}"
+P:PMC5025422_05,Patient,Case PMC5025422_05,"{""age"": 0.0, ""gender"": ""Male""}"
+P:PMC5842392_01,Patient,Case PMC5842392_01,"{""age"": 76.0, ""gender"": ""Male""}"
+P:PMC4700628_01,Patient,Case PMC4700628_01,"{""age"": 20.0, ""gender"": ""Female""}"
+P:PMC3623112_01,Patient,Case PMC3623112_01,"{""age"": 26.0, ""gender"": ""Female""}"
+P:PMC5546592_01,Patient,Case PMC5546592_01,"{""age"": 42.0, ""gender"": ""Female""}"
+P:PMC10846499_01,Patient,Case PMC10846499_01,"{""age"": 18.0, ""gender"": ""Male""}"
+P:PMC9193368_02,Patient,Case PMC9193368_02,"{""age"": 51.0, ""gender"": ""Female""}"
+P:PMC7737524_02,Patient,Case PMC7737524_02,"{""age"": 13.0, ""gender"": ""Female""}"
+P:PMC11831705_01,Patient,Case PMC11831705_01,"{""age"": 57.0, ""gender"": ""Female""}"
+P:PMC6280912_01,Patient,Case PMC6280912_01,"{""age"": 55.0, ""gender"": ""Male""}"
+P:PMC10323798_01,Patient,Case PMC10323798_01,"{""age"": 80.0, ""gender"": ""Male""}"
+P:PMC10957731_01,Patient,Case PMC10957731_01,"{""age"": 74.0, ""gender"": ""Female""}"
+P:PMC11823850_01,Patient,Case PMC11823850_01,"{""age"": 40.0, ""gender"": ""Female""}"
+P:PMC7585506_04,Patient,Case PMC7585506_04,"{""age"": 65.0, ""gender"": ""Male""}"
+P:PMC10522853_02,Patient,Case PMC10522853_02,"{""age"": 9.0, ""gender"": ""Male""}"
+P:PMC5836251_01,Patient,Case PMC5836251_01,"{""age"": 66.0, ""gender"": ""Female""}"
+P:PMC5501020_01,Patient,Case PMC5501020_01,"{""age"": 45.0, ""gender"": ""Male""}"
+P:PMC6387695_01,Patient,Case PMC6387695_01,"{""age"": 15.0, ""gender"": ""Male""}"
+P:PMC3502818_01,Patient,Case PMC3502818_01,"{""age"": 0.0, ""gender"": ""Female""}"
+P:PMC8216418_04,Patient,Case PMC8216418_04,"{""age"": NaN, ""gender"": ""Female""}"
+P:PMC6232820_01,Patient,Case PMC6232820_01,"{""age"": 66.0, ""gender"": ""Female""}"
+P:PMC8559649_01,Patient,Case PMC8559649_01,"{""age"": 9.0, ""gender"": ""Female""}"
+P:PMC2797364_02,Patient,Case PMC2797364_02,"{""age"": 12.0, ""gender"": ""Unknown""}"
+P:PMC10462920_05,Patient,Case PMC10462920_05,"{""age"": 60.0, ""gender"": ""Male""}"
+P:PMC10866083_01,Patient,Case PMC10866083_01,"{""age"": 45.0, ""gender"": ""Female""}"
+P:PMC10312018_01,Patient,Case PMC10312018_01,"{""age"": 28.0, ""gender"": ""Male""}"
+P:PMC4274647_01,Patient,Case PMC4274647_01,"{""age"": 19.0, ""gender"": ""Female""}"
+P:PMC11007559_01,Patient,Case PMC11007559_01,"{""age"": 70.0, ""gender"": ""Male""}"
+P:PMC4265529_01,Patient,Case PMC4265529_01,"{""age"": 84.0, ""gender"": ""Female""}"
+P:PMC7422691_03,Patient,Case PMC7422691_03,"{""age"": 17.0, ""gender"": ""Male""}"
+P:PMC11782939_01,Patient,Case PMC11782939_01,"{""age"": 65.0, ""gender"": ""Female""}"
+P:PMC11374122_01,Patient,Case PMC11374122_01,"{""age"": 71.0, ""gender"": ""Male""}"
+P:PMC3341764_01,Patient,Case PMC3341764_01,"{""age"": 16.0, ""gender"": ""Female""}"
+P:PMC7191402_01,Patient,Case PMC7191402_01,"{""age"": 49.0, ""gender"": ""Female""}"
+P:PMC8295552_01,Patient,Case PMC8295552_01,"{""age"": 3.0, ""gender"": ""Male""}"
+P:PMC4214559_01,Patient,Case PMC4214559_01,"{""age"": 64.0, ""gender"": ""Female""}"
+P:PMC6476807_01,Patient,Case PMC6476807_01,"{""age"": 4.0, ""gender"": ""Female""}"
+P:PMC6533965_01,Patient,Case PMC6533965_01,"{""age"": 6.0, ""gender"": ""Female""}"
+P:PMC11822436_02,Patient,Case PMC11822436_02,"{""age"": NaN, ""gender"": ""Unknown""}"
+P:PMC10832596_01,Patient,Case PMC10832596_01,"{""age"": 33.0, ""gender"": ""Female""}"
+P:PMC8631449_04,Patient,Case PMC8631449_04,"{""age"": 50.0, ""gender"": ""Unknown""}"
+P:PMC10238064_01,Patient,Case PMC10238064_01,"{""age"": 22.0, ""gender"": ""Female""}"
+P:PMC11770387_01,Patient,Case PMC11770387_01,"{""age"": 9.0, ""gender"": ""Female""}"
+P:PMC4855355_01,Patient,Case PMC4855355_01,"{""age"": 23.0, ""gender"": ""Male""}"
+P:PMC11794817_01,Patient,Case PMC11794817_01,"{""age"": 33.0, ""gender"": ""Male""}"
+P:PMC9756760_01,Patient,Case PMC9756760_01,"{""age"": 80.0, ""gender"": ""Female""}"
+P:PMC3851144_01,Patient,Case PMC3851144_01,"{""age"": 75.0, ""gender"": ""Female""}"
+P:PMC9699833_01,Patient,Case PMC9699833_01,"{""age"": 50.0, ""gender"": ""Female""}"
+P:PMC8126709_03,Patient,Case PMC8126709_03,"{""age"": NaN, ""gender"": ""Unknown""}"
+P:PMC9400896_01,Patient,Case PMC9400896_01,"{""age"": 66.0, ""gender"": ""Male""}"
+P:PMC9895772_01,Patient,Case PMC9895772_01,"{""age"": 68.0, ""gender"": ""Male""}"
+P:PMC5133399_02,Patient,Case PMC5133399_02,"{""age"": 0.0, ""gender"": ""Female""}"
+P:PMC11755473_01,Patient,Case PMC11755473_01,"{""age"": 82.0, ""gender"": ""Male""}"
+P:PMC8541758_01,Patient,Case PMC8541758_01,"{""age"": 75.0, ""gender"": ""Female""}"
+P:PMC4845414_01,Patient,Case PMC4845414_01,"{""age"": 56.0, ""gender"": ""Male""}"
+P:PMC8024635_04,Patient,Case PMC8024635_04,"{""age"": NaN, ""gender"": ""Male""}"
+P:PMC6882554_01,Patient,Case PMC6882554_01,"{""age"": 0.0, ""gender"": ""Unknown""}"
+P:PMC11382222_01,Patient,Case PMC11382222_01,"{""age"": NaN, ""gender"": ""Male""}"
+P:PMC4940809_01,Patient,Case PMC4940809_01,"{""age"": 74.0, ""gender"": ""Male""}"
+P:PMC4899579_04,Patient,Case PMC4899579_04,"{""age"": 82.0, ""gender"": ""Male""}"
+P:PMC9500246_01,Patient,Case PMC9500246_01,"{""age"": 55.0, ""gender"": ""Male""}"
+P:PMC11191613_01,Patient,Case PMC11191613_01,"{""age"": 18.0, ""gender"": ""Female""}"
+P:PMC2909771_02,Patient,Case PMC2909771_02,"{""age"": NaN, ""gender"": ""Unknown""}"
+P:PMC8302369_01,Patient,Case PMC8302369_01,"{""age"": 5.0, ""gender"": ""Female""}"
+P:PMC7428098_01,Patient,Case PMC7428098_01,"{""age"": 18.0, ""gender"": ""Male""}"
+P:PMC6889285_01,Patient,Case PMC6889285_01,"{""age"": 15.0, ""gender"": ""Female""}"
+P:PMC11835113_01,Patient,Case PMC11835113_01,"{""age"": 60.0, ""gender"": ""Female""}"
+P:PMC10624449_03,Patient,Case PMC10624449_03,"{""age"": 26.0, ""gender"": ""Male""}"
+P:PMC8033192_02,Patient,Case PMC8033192_02,"{""age"": 21.0, ""gender"": ""Male""}"
+P:PMC5061938_01,Patient,Case PMC5061938_01,"{""age"": 65.0, ""gender"": ""Female""}"
+P:PMC4996068_01,Patient,Case PMC4996068_01,"{""age"": 52.0, ""gender"": ""Male""}"
+P:PMC5390919_01,Patient,Case PMC5390919_01,"{""age"": 79.0, ""gender"": ""Male""}"
+P:PMC8221693_01,Patient,Case PMC8221693_01,"{""age"": 65.0, ""gender"": ""Male""}"
+P:PMC7587992_04,Patient,Case PMC7587992_04,"{""age"": 57.0, ""gender"": ""Male""}"
+P:PMC3863824_01,Patient,Case PMC3863824_01,"{""age"": 5.0, ""gender"": ""Male""}"
+P:PMC3310634_02,Patient,Case PMC3310634_02,"{""age"": 24.0, ""gender"": ""Unknown""}"
+P:PMC4439787_01,Patient,Case PMC4439787_01,"{""age"": 60.0, ""gender"": ""Male""}"
+P:PMC7355372_01,Patient,Case PMC7355372_01,"{""age"": 50.0, ""gender"": ""Female""}"
+P:PMC10266911_01,Patient,Case PMC10266911_01,"{""age"": 46.0, ""gender"": ""Male""}"
+P:PMC4414853_01,Patient,Case PMC4414853_01,"{""age"": 40.0, ""gender"": ""Female""}"
+P:PMC4063613_01,Patient,Case PMC4063613_01,"{""age"": 62.0, ""gender"": ""Female""}"
+P:PMC10077769_01,Patient,Case PMC10077769_01,"{""age"": 0.0, ""gender"": ""Female""}"
+P:PMC544880_01,Patient,Case PMC544880_01,"{""age"": 24.0, ""gender"": ""Male""}"
+P:PMC8298177_01,Patient,Case PMC8298177_01,"{""age"": 66.0, ""gender"": ""Male""}"
+P:PMC9788876_01,Patient,Case PMC9788876_01,"{""age"": 52.0, ""gender"": ""Male""}"
+P:PMC11765613_01,Patient,Case PMC11765613_01,"{""age"": 18.0, ""gender"": ""Female""}"
+P:PMC8045707_01,Patient,Case PMC8045707_01,"{""age"": NaN, ""gender"": ""Female""}"
+P:PMC3965948_01,Patient,Case PMC3965948_01,"{""age"": 40.0, ""gender"": ""Male""}"
+P:PMC11378234_09,Patient,Case PMC11378234_09,"{""age"": 4.0, ""gender"": ""Male""}"
+P:PMC3025371_02,Patient,Case PMC3025371_02,"{""age"": NaN, ""gender"": ""Female""}"
+Symptom:tachycardia,Symptom,tachycardia,{}
+Diagnosis:hypertension,Diagnosis,hypertension,{}
+Exam:echocardiography,Exam,echocardiography,{}
+Exam:ejection fraction,Exam,ejection fraction,{}
+R:PMC9240706_01:Exam:ejection fraction:62mm,ExamResult,62 mm,"{""value"": ""62"", ""unit"": ""mm""}"
+Exam:computed tomography,Exam,computed tomography,{}
+Exam:ct,Exam,ct,{}
+R:PMC9240706_01:Exam:ejection fraction:50%,ExamResult,50 %,"{""value"": ""50"", ""unit"": ""%""}"
+Treatment:anticoagulation,Treatment,anticoagulation,{}
+Diagnosis:asthma,Diagnosis,asthma,{}
+Symptom:chest pain,Symptom,chest pain,{}
+Symptom:vomiting,Symptom,vomiting,{}
+Symptom:pain,Symptom,pain,{}
+Diagnosis:cancer,Diagnosis,cancer,{}
+Exam:blood pressure,Exam,blood pressure,{}
+R:PMC6305019_01:Exam:blood pressure:79mmhg,ExamResult,79 mmHg,"{""value"": ""79"", ""unit"": ""mmHg""}"
+Exam:x-ray,Exam,x-ray,{}
+Exam:troponin,Exam,troponin,{}
+Treatment:antiplatelet therapy,Treatment,antiplatelet therapy,{}
+Treatment:heparin,Treatment,heparin,{}
+Diagnosis:myocardial infarction,Diagnosis,myocardial infarction,{}
+Exam:echocardiogram,Exam,echocardiogram,{}
+Exam:lvef,Exam,lvef,{}
+R:PMC6305019_01:Exam:lvef:35%,ExamResult,35 %,"{""value"": ""35"", ""unit"": ""%""}"
+R:PMC6305019_01:Exam:lvef:69%,ExamResult,69 %,"{""value"": ""69"", ""unit"": ""%""}"
+Treatment:aspirin,Treatment,aspirin,{}
+Treatment:warfarin,Treatment,warfarin,{}
+R:PMC3269606_04:Exam:blood pressure:65mmhg,ExamResult,65 mmHg,"{""value"": ""65"", ""unit"": ""mmHg""}"
+Treatment:hydrocortisone,Treatment,hydrocortisone,{}
+Treatment:ibuprofen,Treatment,ibuprofen,{}
+Symptom:fever,Symptom,fever,{}
+Symptom:chill,Symptom,chills,{}
+Symptom:diarrhea,Symptom,diarrhea,{}
+Symptom:nausea,Symptom,nausea,{}
+Treatment:surgery,Treatment,surgery,{}
+Symptom:swelling,Symptom,swelling,{}
+Symptom:paresthesia,Symptom,paresthesia,{}
+Treatment:analgesia,Treatment,analgesia,{}
+Exam:laboratory test,Exam,laboratory tests,{}
+Symptom:dyspnea,Symptom,dyspnea,{}
+Symptom:syncope,Symptom,syncope,{}
+Diagnosis:respiratory failure,Diagnosis,respiratory failure,{}
+Symptom:shortness of breath,Symptom,shortness of breath,{}
+Diagnosis:pneumonia,Diagnosis,pneumonia,{}
+Symptom:productive cough,Symptom,productive cough,{}
+Treatment:antibiotic,Treatment,antibiotic,{}
+R:PMC10589042_01:Exam:blood pressure:85mmhg,ExamResult,85 mmHg,"{""value"": ""85"", ""unit"": ""mmHg""}"
+Exam:heart rate,Exam,heart rate,{}
+Exam:respiratory rate,Exam,respiratory rate,{}
+Exam:oxygen saturation,Exam,oxygen saturation,{}
+R:PMC10589042_01:Exam:oxygen saturation:98%,ExamResult,98 %,"{""value"": ""98"", ""unit"": ""%""}"
+Exam:erythrocyte sedimentation rate,Exam,erythrocyte sedimentation rate,{}
+Exam:esr,Exam,esr,{}
+R:PMC10589042_01:Exam:esr:104mm,ExamResult,104 mm,"{""value"": ""104"", ""unit"": ""mm""}"
+Exam:c-reactive protein,Exam,c-reactive protein,{}
+Exam:crp,Exam,crp,{}
+R:PMC10589042_01:Exam:crp:18.1mg/dl,ExamResult,18.1 mg/dL,"{""value"": ""18.1"", ""unit"": ""mg/dL""}"
+Exam:igg,Exam,igg,{}
+Treatment:prednisone,Treatment,prednisone,{}
+Diagnosis:encephaliti,Diagnosis,encephalitis,{}
+Exam:mri,Exam,mri,{}
+Treatment:monitoring,Treatment,monitoring,{}
+Symptom:epigastric pain,Symptom,epigastric pain,{}
+Symptom:hypotension,Symptom,hypotension,{}
+Diagnosis:thrombocytopenia,Diagnosis,thrombocytopenia,{}
+Exam:ldh,Exam,ldh,{}
+Exam:ultrasound,Exam,ultrasound,{}
+Exam:igm,Exam,igm,{}
+Diagnosis:hepatiti,Diagnosis,hepatitis,{}
+Diagnosis:hemolytic anemia,Diagnosis,hemolytic anemia,{}
+Exam:c3,Exam,c3,{}
+Exam:c4,Exam,c4,{}
+Symptom:fatigue,Symptom,fatigue,{}
+R:PMC6815552_01:Exam:ultrasound:88mm,ExamResult,88 mm,"{""value"": ""88"", ""unit"": ""mm""}"
+Exam:cea,Exam,cea,{}
+R:PMC6815552_01:Exam:cea:0.5ug/l,ExamResult,0.5 ug/L,"{""value"": ""0.5"", ""unit"": ""ug/L""}"
+Exam:creatinine,Exam,creatinine,{}
+R:PMC6815552_01:Exam:creatinine:72mmol/l,ExamResult,72 mmol/L,"{""value"": ""72"", ""unit"": ""mmol/L""}"
+Treatment:laparoscopy,Treatment,laparoscopy,{}
+Treatment:resection,Treatment,resection,{}
+Treatment:drainage,Treatment,drainage,{}
+Symptom:weight loss,Symptom,weight loss,{}
+Symptom:night sweat,Symptom,night sweats,{}
+Symptom:loss of appetite,Symptom,loss of appetite,{}
+Treatment:radiotherapy,Treatment,radiotherapy,{}
+Treatment:observation,Treatment,observation,{}
+Symptom:bleeding,Symptom,bleeding,{}
+Symptom:weakness,Symptom,weakness,{}
+Symptom:easy bruising,Symptom,easy bruising,{}
+Diagnosis:diabete mellitu,Diagnosis,diabetes mellitus,{}
+R:PMC4026854_01:Exam:respiratory rate:90mmhg,ExamResult,90 mmHg,"{""value"": ""90"", ""unit"": ""mmHg""}"
+Exam:lactate dehydrogenase,Exam,lactate dehydrogenase,{}
+Diagnosis:lymphoma,Diagnosis,lymphoma,{}
+Treatment:pain control,Treatment,pain control,{}
+R:PMC11335634_01:Exam:blood pressure:110mmhg,ExamResult,110 mmHg,"{""value"": ""110"", ""unit"": ""mmHg""}"
+Exam:total protein,Exam,total protein,{}
+R:PMC11335634_01:Exam:total protein:7.7g/dl,ExamResult,7.7 g/dL,"{""value"": ""7.7"", ""unit"": ""g/dL""}"
+R:PMC11335634_01:Exam:c-reactive protein:198mg/l,ExamResult,198 mg/L,"{""value"": ""198"", ""unit"": ""mg/L""}"
+Diagnosis:tumor,Diagnosis,tumors,{}
+Treatment:nutritional support,Treatment,nutritional support,{}
+Symptom:cough,Symptom,cough,{}
+Exam:forced vital capacity,Exam,forced vital capacity,{}
+R:PMC11199689_01:Exam:forced vital capacity:83.7%,ExamResult,83.7 %,"{""value"": ""83.7"", ""unit"": ""%""}"
+Exam:forced expiratory volume,Exam,forced expiratory volume,{}
+R:PMC11199689_01:Exam:forced expiratory volume:83.1%,ExamResult,83.1 %,"{""value"": ""83.1"", ""unit"": ""%""}"
+Exam:dlco,Exam,dlco,{}
+R:PMC11199689_01:Exam:dlco:84.6%,ExamResult,84.6 %,"{""value"": ""84.6"", ""unit"": ""%""}"
+Symptom:arthralgia,Symptom,arthralgia,{}
+Symptom:joint pain,Symptom,joint pain,{}
+Treatment:immunotherapy,Treatment,immunotherapy,{}
+Symptom:burning sensation,Symptom,burning sensation,{}
+Symptom:sleep disturbance,Symptom,sleep disturbances,{}
+Treatment:debridement,Treatment,debridement,{}
+Treatment:transplantation,Treatment,transplantation,{}
+Symptom:abdominal pain,Symptom,abdominal pain,{}
+R:PMC8481055_01:Exam:blood pressure:64mmhg,ExamResult,64 mmHg,"{""value"": ""64"", ""unit"": ""mmHg""}"
+R:PMC8481055_01:Exam:heart rate:63bpm,ExamResult,63 bpm,"{""value"": ""63"", ""unit"": ""bpm""}"
+Exam:white blood cell count,Exam,white blood cell count,{}
+R:PMC8481055_01:Exam:white blood cell count:11.7x 109,ExamResult,11.7 x 109,"{""value"": ""11.7"", ""unit"": ""x 109""}"
+Symptom:flank pain,Symptom,flank pain,{}
+Symptom:dysuria,Symptom,dysuria,{}
+Symptom:hematuria,Symptom,hematuria,{}
+R:PMC3701920_01:Exam:blood pressure:75mmhg,ExamResult,75 mmHg,"{""value"": ""75"", ""unit"": ""mmHg""}"
+Symptom:headache,Symptom,headache,{}
+Treatment:analgesic,Treatment,analgesics,{}
+Treatment:prophylactic antibiotic,Treatment,prophylactic antibiotics,{}
+Symptom:malaise,Symptom,malaise,{}
+Treatment:paracetamol,Treatment,paracetamol,{}
+Diagnosis:leukemia,Diagnosis,leukemia,{}
+Treatment:chemotherapy,Treatment,chemotherapy,{}
+Treatment:supportive care,Treatment,supportive care,{}
+Diagnosis:metastatic disease,Diagnosis,metastatic disease,{}
+Symptom:anorexia,Symptom,anorexia,{}
+R:PMC6243302_01:Exam:blood pressure:90mmhg,ExamResult,90 mmHg,"{""value"": ""90"", ""unit"": ""mmHg""}"
+R:PMC6243302_01:Exam:white blood cell count:11x 109,ExamResult,11 x 109,"{""value"": ""11"", ""unit"": ""x 109""}"
+R:PMC6243302_01:Exam:ct:2.8cm,ExamResult,2.8 cm,"{""value"": ""2.8"", ""unit"": ""cm""}"
+Treatment:laparotomy,Treatment,laparotomy,{}
+Exam:hemoglobin,Exam,hemoglobin,{}
+Exam:hematocrit,Exam,hematocrit,{}
+R:PMC8263235_03:Exam:hematocrit:9.1g/dl,ExamResult,9.1 g/dL,"{""value"": ""9.1"", ""unit"": ""g/dL""}"
+Symptom:jaundice,Symptom,jaundice,{}
+Exam:albumin,Exam,albumin,{}
+R:PMC3792542_01:Exam:albumin:22g/l,ExamResult,22 g/L,"{""value"": ""22"", ""unit"": ""g/L""}"
+Diagnosis:sepsi,Diagnosis,sepsis,{}
+Exam:ferritin,Exam,ferritin,{}
+R:PMC3792542_01:Exam:ferritin:1481ng/ml,ExamResult,1481 ng/mL,"{""value"": ""1481"", ""unit"": ""ng/mL""}"
+R:PMC3792542_01:Exam:albumin:26g/l,ExamResult,26 g/L,"{""value"": ""26"", ""unit"": ""g/L""}"
+Treatment:blood transfusion,Treatment,blood transfusion,{}
+R:PMC3792542_01:Exam:igg:5.53g/l,ExamResult,5.53 g/L,"{""value"": ""5.53"", ""unit"": ""g/L""}"
+R:PMC3792542_01:Exam:igm:0.63g/l,ExamResult,0.63 g/L,"{""value"": ""0.63"", ""unit"": ""g/L""}"
+Treatment:intravenou immunoglobulin,Treatment,intravenous immunoglobulin,{}
+Diagnosis:cirrhosi,Diagnosis,cirrhosis,{}
+Symptom:abdominal distension,Symptom,abdominal distension,{}
+Treatment:targeted therapy,Treatment,targeted therapy,{}
+Symptom:thirst,Symptom,thirst,{}
+R:PMC11827420_01:Exam:blood pressure:82mmhg,ExamResult,82 mmHg,"{""value"": ""82"", ""unit"": ""mmHg""}"
+R:PMC11827420_01:Exam:laboratory test:29.3mmol/l,ExamResult,29.3 mmol/L,"{""value"": ""29.3"", ""unit"": ""mmol/L""}"
+R:PMC11827420_01:Exam:albumin:28.25%,ExamResult,28.25 %,"{""value"": ""28.25"", ""unit"": ""%""}"
+Exam:hba1c,Exam,hba1c,{}
+R:PMC11827420_01:Exam:hba1c:8.74%,ExamResult,8.74 %,"{""value"": ""8.74"", ""unit"": ""%""}"
+Treatment:insulin,Treatment,insulin,{}
+R:PMC11827420_01:Exam:albumin:29.81%,ExamResult,29.81 %,"{""value"": ""29.81"", ""unit"": ""%""}"
+Diagnosis:anemia,Diagnosis,anemia,{}
+Diagnosis:septic shock,Diagnosis,septic shock,{}
+Symptom:anxiety,Symptom,anxiety,{}
+Symptom:back pain,Symptom,back pain,{}
+R:PMC11249987_02:Exam:ultrasound:1.5cm,ExamResult,1.5 cm,"{""value"": ""1.5"", ""unit"": ""cm""}"
+Symptom:edema,Symptom,edema,{}
+Diagnosis:type 2 diabete,Diagnosis,type 2 diabetes,{}
+Symptom:gastroesophageal reflux,Symptom,gastroesophageal reflux,{}
+Treatment:steroid therapy,Treatment,steroid therapy,{}
+Symptom:lower extremity edema,Symptom,lower extremity edema,{}
+Symptom:hematochezia,Symptom,hematochezia,{}
+Symptom:melena,Symptom,melena,{}
+R:PMC4323913_01:Exam:blood pressure:70mm,ExamResult,70 mm,"{""value"": ""70"", ""unit"": ""mm""}"
+Exam:serum creatinine,Exam,serum creatinine,{}
+R:PMC4323913_01:Exam:serum creatinine:2.06mg/dl,ExamResult,2.06 mg/dl,"{""value"": ""2.06"", ""unit"": ""mg/dl""}"
+R:PMC4323913_01:Exam:hemoglobin:138g/l,ExamResult,138 g/L,"{""value"": ""138"", ""unit"": ""g/L""}"
+Exam:platelet count,Exam,platelet count,{}
+R:PMC4323913_01:Exam:albumin:2.5g/dl,ExamResult,2.5 g/dl,"{""value"": ""2.5"", ""unit"": ""g/dl""}"
+R:PMC4323913_01:Exam:c3:110mg/dl,ExamResult,110 mg/dl,"{""value"": ""110"", ""unit"": ""mg/dl""}"
+R:PMC4323913_01:Exam:c4:20mg/dl,ExamResult,20 mg/dl,"{""value"": ""20"", ""unit"": ""mg/dl""}"
+Treatment:dexamethasone,Treatment,dexamethasone,{}
+R:PMC4323913_01:Exam:albumin:0.9mg/dl,ExamResult,0.9 mg/dl,"{""value"": ""0.9"", ""unit"": ""mg/dl""}"
+Symptom:vertigo,Symptom,vertigo,{}
+Treatment:rehabilitation,Treatment,rehabilitation,{}
+Exam:ecg,Exam,ecg,{}
+Diagnosis:congestive heart failure,Diagnosis,congestive heart failure,{}
+Symptom:numbness,Symptom,numbness,{}
+Diagnosis:solid mass,Diagnosis,solid mass,{}
+R:PMC9638726_01:Exam:blood pressure:85mmhg,ExamResult,85 mmHg,"{""value"": ""85"", ""unit"": ""mmHg""}"
+Symptom:bloating,Symptom,bloating,{}
+R:PMC9763271_01:Exam:ultrasound:7.7cm,ExamResult,7.7 cm,"{""value"": ""7.7"", ""unit"": ""cm""}"
+R:PMC9763271_01:Exam:ultrasound:1.5cm,ExamResult,1.5 cm,"{""value"": ""1.5"", ""unit"": ""cm""}"
+R:PMC9763271_01:Exam:blood pressure:48mmhg,ExamResult,48 mmHg,"{""value"": ""48"", ""unit"": ""mmHg""}"
+R:PMC9763271_01:Exam:hemoglobin:7.9g/dl,ExamResult,7.9 g/dL,"{""value"": ""7.9"", ""unit"": ""g/dL""}"
+R:PMC9763271_01:Exam:hemoglobin:8.2g/dl,ExamResult,8.2 g/dL,"{""value"": ""8.2"", ""unit"": ""g/dL""}"
+Treatment:physical therapy,Treatment,physical therapy,{}
+R:PMC7789998_01:Exam:igg:0.67g/l,ExamResult,0.67 g/l,"{""value"": ""0.67"", ""unit"": ""g/l""}"
+R:PMC7789998_01:Exam:igm:0.156g/l,ExamResult,0.156 g/l,"{""value"": ""0.156"", ""unit"": ""g/l""}"
+Symptom:weight gain,Symptom,weight gain,{}
+Symptom:polyuria,Symptom,polyuria,{}
+Diagnosis:deep vein thrombosi,Diagnosis,deep vein thrombosis,{}
+R:PMC7789998_01:Exam:heart rate:74bpm,ExamResult,74 bpm,"{""value"": ""74"", ""unit"": ""bpm""}"
+R:PMC7789998_01:Exam:hemoglobin:92g/l,ExamResult,92 g/l,"{""value"": ""92"", ""unit"": ""g/l""}"
+Exam:mean corpuscular volume,Exam,mean corpuscular volume,{}
+R:PMC7789998_01:Exam:albumin:35g/l,ExamResult,35 g/l,"{""value"": ""35"", ""unit"": ""g/l""}"
+R:PMC7789998_01:Exam:total protein:46g/l,ExamResult,46 g/l,"{""value"": ""46"", ""unit"": ""g/l""}"
+Treatment:ivig,Treatment,ivig,{}
+Exam:igg level,Exam,igg level,{}
+R:PMC7789998_01:Exam:igg level:10g/l,ExamResult,10 g/l,"{""value"": ""10"", ""unit"": ""g/l""}"
+R:PMC4195895_04:Exam:igg:1630mg/dl,ExamResult,1630 mg/dL,"{""value"": ""1630"", ""unit"": ""mg/dL""}"
+Symptom:palpitation,Symptom,palpitations,{}
+Symptom:leg swelling,Symptom,leg swelling,{}
+Symptom:constipation,Symptom,constipation,{}
+Treatment:metformin,Treatment,metformin,{}
+R:PMC9726845_01:Exam:ejection fraction:50%,ExamResult,50 %,"{""value"": ""50"", ""unit"": ""%""}"
+R:PMC6477473_01:Exam:white blood cell count:11.4x 103/mul,ExamResult,11.4 x 103/muL,"{""value"": ""11.4"", ""unit"": ""x 103/muL""}"
+R:PMC6477473_01:Exam:c-reactive protein:1.06mg/dl,ExamResult,1.06 mg/dL,"{""value"": ""1.06"", ""unit"": ""mg/dL""}"
+Symptom:muscle weakness,Symptom,muscle weakness,{}
+Diagnosis:pulmonary embolism,Diagnosis,pulmonary embolism,{}
+Symptom:insomnia,Symptom,insomnia,{}
+Symptom:depression,Symptom,depression,{}
+R:PMC5415723_01:Exam:creatinine:0.5mg/dl,ExamResult,0.5 mg/dL,"{""value"": ""0.5"", ""unit"": ""mg/dL""}"
+Treatment:dialysi,Treatment,dialysis,{}
+Treatment:vaccination,Treatment,vaccinations,{}
+R:PMC6620565_01:Exam:hemoglobin:7%,ExamResult,7 %,"{""value"": ""7"", ""unit"": ""%""}"
+R:PMC5578568_02:Exam:heart rate:3.2mmol/l,ExamResult,3.2 mmol/L,"{""value"": ""3.2"", ""unit"": ""mmol/L""}"
+Symptom:tremor,Symptom,tremor,{}
+Symptom:urinary retention,Symptom,urinary retention,{}
+R:PMC11805538_01:Exam:ultrasound:10cm,ExamResult,10 cm,"{""value"": ""10"", ""unit"": ""cm""}"
+Treatment:acetaminophen,Treatment,acetaminophen,{}
+R:PMC4408310_01:Exam:ldh:1091iu/l,ExamResult,1091 IU/l,"{""value"": ""1091"", ""unit"": ""IU/l""}"
+R:PMC10641497_01:Exam:ldh:308u/l,ExamResult,308 U/L,"{""value"": ""308"", ""unit"": ""U/L""}"
+Diagnosis:appendiciti,Diagnosis,appendicitis,{}
+R:PMC9897705_01:Exam:c-reactive protein:16.73mg/l,ExamResult,16.73 mg/L,"{""value"": ""16.73"", ""unit"": ""mg/L""}"
+Diagnosis:acute pancreatiti,Diagnosis,acute pancreatitis,{}
+Treatment:corticosteroid,Treatment,corticosteroid,{}
+R:PMC10285293_01:Exam:echocardiography:56.7%,ExamResult,56.7 %,"{""value"": ""56.7"", ""unit"": ""%""}"
+Exam:creatine kinase,Exam,creatine kinase,{}
+Exam:myoglobin,Exam,myoglobin,{}
+R:PMC8541847_01:Exam:troponin:2700ng/l,ExamResult,2700 ng/L,"{""value"": ""2700"", ""unit"": ""ng/L""}"
+R:PMC8541847_01:Exam:troponin:3400ng/l,ExamResult,3400 ng/L,"{""value"": ""3400"", ""unit"": ""ng/L""}"
+R:PMC6159161_01:Exam:ct:5.4mm,ExamResult,5.4 mm,"{""value"": ""5.4"", ""unit"": ""mm""}"
+R:PMC6159161_01:Exam:ct:10.3mm,ExamResult,10.3 mm,"{""value"": ""10.3"", ""unit"": ""mm""}"
+Symptom:cyanosi,Symptom,cyanosis,{}
+Diagnosis:cholangiti,Diagnosis,cholangitis,{}
+Diagnosis:liver abscess,Diagnosis,liver abscess,{}
+R:PMC5350306_01:Exam:blood pressure:58mmhg,ExamResult,58 mmHg,"{""value"": ""58"", ""unit"": ""mmHg""}"
+R:PMC5350306_01:Exam:ejection fraction:55%,ExamResult,55 %,"{""value"": ""55"", ""unit"": ""%""}"
+Exam:reticulocyte count,Exam,reticulocyte count,{}
+R:PMC5350306_01:Exam:reticulocyte count:3.2%,ExamResult,3.2 %,"{""value"": ""3.2"", ""unit"": ""%""}"
+R:PMC5350306_01:Exam:erythrocyte sedimentation rate:3mm,ExamResult,3 mm,"{""value"": ""3"", ""unit"": ""mm""}"
+R:PMC5350306_01:Exam:c-reactive protein:9mg/l,ExamResult,9 mg/L,"{""value"": ""9"", ""unit"": ""mg/L""}"
+R:PMC5350306_01:Exam:lactate dehydrogenase:184u/l,ExamResult,184 U/L,"{""value"": ""184"", ""unit"": ""U/L""}"
+Exam:haptoglobin,Exam,haptoglobin,{}
+R:PMC5350306_01:Exam:haptoglobin:95mg/dl,ExamResult,95 mg/dL,"{""value"": ""95"", ""unit"": ""mg/dL""}"
+R:PMC5350306_01:Exam:ferritin:38mug/l,ExamResult,38 mug/L,"{""value"": ""38"", ""unit"": ""mug/L""}"
+R:PMC5350306_01:Exam:c4:110mg/dl,ExamResult,110 mg/dL,"{""value"": ""110"", ""unit"": ""mg/dL""}"
+R:PMC5350306_01:Exam:echocardiography:52.64mmhg,ExamResult,52.64 mmHg,"{""value"": ""52.64"", ""unit"": ""mmHg""}"
+Symptom:neck pain,Symptom,neck pain,{}
+R:PMC6942782_01:Exam:ejection fraction:65%,ExamResult,65 %,"{""value"": ""65"", ""unit"": ""%""}"
+Symptom:dizziness,Symptom,dizziness,{}
+R:PMC6734004_01:Exam:igg level:69.3mg/l,ExamResult,69.3 mg/L,"{""value"": ""69.3"", ""unit"": ""mg/L""}"
+R:PMC6734004_01:Exam:white blood cell count:1.62g/l,ExamResult,1.62 g/L,"{""value"": ""1.62"", ""unit"": ""g/L""}"
+R:PMC3934809_01:Exam:hemoglobin:13.7g/dl,ExamResult,13.7 g/dl,"{""value"": ""13.7"", ""unit"": ""g/dl""}"
+R:PMC3934809_01:Exam:platelet count:27.1x 104/mm,ExamResult,27.1 x 104/mm,"{""value"": ""27.1"", ""unit"": ""x 104/mm""}"
+R:PMC3934809_01:Exam:total protein:6.8g/dl,ExamResult,6.8 g/dl,"{""value"": ""6.8"", ""unit"": ""g/dl""}"
+R:PMC3934809_01:Exam:lactate dehydrogenase:256iu/l,ExamResult,256 IU/l,"{""value"": ""256"", ""unit"": ""IU/l""}"
+R:PMC3934809_01:Exam:creatinine:0.8mg/dl,ExamResult,0.8 mg/dl,"{""value"": ""0.8"", ""unit"": ""mg/dl""}"
+R:PMC3934809_01:Exam:c-reactive protein:1.71mg/dl,ExamResult,1.71 mg/dl,"{""value"": ""1.71"", ""unit"": ""mg/dl""}"
+Exam:carcinoembryonic antigen,Exam,carcinoembryonic antigen,{}
+R:PMC3934809_01:Exam:cea:6.5ng/ml,ExamResult,6.5 ng/ml,"{""value"": ""6.5"", ""unit"": ""ng/ml""}"
+Diagnosis:chronic pancreatiti,Diagnosis,chronic pancreatitis,{}
+R:PMC8384003_01:Exam:hemoglobin:9.6g/dl,ExamResult,9.6 g/dl,"{""value"": ""9.6"", ""unit"": ""g/dl""}"
+Treatment:platelet transfusion,Treatment,platelet transfusion,{}
+Treatment:intravenou fluid,Treatment,intravenous fluids,{}
+R:PMC5968243_02:Exam:lvef:38%,ExamResult,38 %,"{""value"": ""38"", ""unit"": ""%""}"
+Diagnosis:acute kidney injury,Diagnosis,acute kidney injury,{}
+R:PMC10734362_01:Exam:oxygen saturation:88%,ExamResult,88 %,"{""value"": ""88"", ""unit"": ""%""}"
+R:PMC10734362_01:Exam:albumin:3.6g/dl,ExamResult,3.6 g/dl,"{""value"": ""3.6"", ""unit"": ""g/dl""}"
+R:PMC10734362_01:Exam:ecg:78bpm,ExamResult,78 bpm,"{""value"": ""78"", ""unit"": ""bpm""}"
+R:PMC10734362_01:Exam:ecg:83bpm,ExamResult,83 bpm,"{""value"": ""83"", ""unit"": ""bpm""}"
+Exam:troponin i,Exam,troponin i,{}
+R:PMC11694659_01:Exam:echocardiogram:18mm,ExamResult,18 mm,"{""value"": ""18"", ""unit"": ""mm""}"
+Diagnosis:atrial fibrillation,Diagnosis,atrial fibrillation,{}
+R:PMC6899330_01:Exam:blood pressure:60mmhg,ExamResult,60 mmHg,"{""value"": ""60"", ""unit"": ""mmHg""}"
+R:PMC6899330_01:Exam:heart rate:80bpm,ExamResult,80 bpm,"{""value"": ""80"", ""unit"": ""bpm""}"
+R:PMC6899330_01:Exam:troponin i:54ng/dl,ExamResult,54 ng/dl,"{""value"": ""54"", ""unit"": ""ng/dl""}"
+Treatment:thrombolysi,Treatment,thrombolysis,{}
+Symptom:myalgia,Symptom,myalgia,{}
+Diagnosis:ischemic stroke,Diagnosis,ischemic stroke,{}
+R:PMC5884240_02:Exam:creatinine:78.6ml/min,ExamResult,78.6 mL/min,"{""value"": ""78.6"", ""unit"": ""mL/min""}"
+Symptom:odynophagia,Symptom,odynophagia,{}
+Symptom:hoarseness,Symptom,hoarseness,{}
+Symptom:itching,Symptom,itching,{}
+Diagnosis:gastrointestinal bleeding,Diagnosis,gastrointestinal bleeding,{}
+R:PMC6875271_01:Exam:blood pressure:67mmhg,ExamResult,67 mmHg,"{""value"": ""67"", ""unit"": ""mmHg""}"
+R:PMC6875271_01:Exam:platelet count:249g/l,ExamResult,249 G/L,"{""value"": ""249"", ""unit"": ""G/L""}"
+R:PMC6875271_01:Exam:creatinine:41ml/min,ExamResult,41 ml/min,"{""value"": ""41"", ""unit"": ""ml/min""}"
+R:PMC11789888_01:Exam:blood pressure:62mm,ExamResult,62 mm,"{""value"": ""62"", ""unit"": ""mm""}"
+R:PMC11789888_01:Exam:troponin:1.29ng/ml,ExamResult,1.29 ng/mL,"{""value"": ""1.29"", ""unit"": ""ng/mL""}"
+Exam:ck-mb,Exam,ck-mb,{}
+R:PMC11789888_01:Exam:ck-mb:38.1u/l,ExamResult,38.1 U/L,"{""value"": ""38.1"", ""unit"": ""U/L""}"
+R:PMC11789888_01:Exam:crp:237.07mg/l,ExamResult,237.07 mg/L,"{""value"": ""237.07"", ""unit"": ""mg/L""}"
+R:PMC11789888_01:Exam:blood pressure:45mm,ExamResult,45 mm,"{""value"": ""45"", ""unit"": ""mm""}"
+Treatment:enteral nutrition,Treatment,enteral nutrition,{}
+Treatment:blood pressure control,Treatment,blood pressure control,{}
+R:PMC11789888_01:Exam:heart rate:66bpm,ExamResult,66 bpm,"{""value"": ""66"", ""unit"": ""bpm""}"
+R:PMC11789888_01:Exam:ejection fraction:64%,ExamResult,64 %,"{""value"": ""64"", ""unit"": ""%""}"
+Symptom:confusion,Symptom,confusion,{}
+R:PMC7150708_01:Exam:blood pressure:90mmhg,ExamResult,90 mmHg,"{""value"": ""90"", ""unit"": ""mmHg""}"
+R:PMC7150708_01:Exam:oxygen saturation:97%,ExamResult,97 %,"{""value"": ""97"", ""unit"": ""%""}"
+R:PMC7150708_01:Exam:troponin i:0.343ng/ml,ExamResult,0.343 ng/ml,"{""value"": ""0.343"", ""unit"": ""ng/ml""}"
+R:PMC7150708_01:Exam:ejection fraction:60%,ExamResult,60 %,"{""value"": ""60"", ""unit"": ""%""}"
+Treatment:renal replacement therapy,Treatment,renal replacement therapy,{}
+Exam:total leukocyte count,Exam,total leukocyte count,{}
+R:PMC4193392_01:Exam:serum creatinine:3.1mg/dl,ExamResult,3.1 mg/dL,"{""value"": ""3.1"", ""unit"": ""mg/dL""}"
+R:PMC4193392_01:Exam:serum creatinine:1.47mg/dl,ExamResult,1.47 mg/dL,"{""value"": ""1.47"", ""unit"": ""mg/dL""}"
+Diagnosis:pyelonephriti,Diagnosis,pyelonephritis,{}
+R:PMC4193392_01:Exam:serum creatinine:1.16mg/dl,ExamResult,1.16 mg/dL,"{""value"": ""1.16"", ""unit"": ""mg/dL""}"
+Diagnosis:endocarditi,Diagnosis,endocarditis,{}
+R:PMC8510818_01:Exam:ejection fraction:45mm,ExamResult,45 mm,"{""value"": ""45"", ""unit"": ""mm""}"
+R:PMC8510818_01:Exam:blood pressure:43mm,ExamResult,43 mm,"{""value"": ""43"", ""unit"": ""mm""}"
+R:PMC9133336_01:Exam:echocardiography:42mm,ExamResult,42 mm,"{""value"": ""42"", ""unit"": ""mm""}"
+R:PMC9406514_01:Exam:hemoglobin:68g/l,ExamResult,68 g/L,"{""value"": ""68"", ""unit"": ""g/L""}"
+Treatment:antiepileptic therapy,Treatment,antiepileptic therapy,{}
+Exam:endoscopic ultrasound,Exam,endoscopic ultrasound,{}
+Exam:eu,Exam,eus,{}
+R:PMC9827538_01:Exam:eu:5.71cm,ExamResult,5.71 cm,"{""value"": ""5.71"", ""unit"": ""cm""}"
+R:PMC8142808_03:Exam:oxygen saturation:97%,ExamResult,97 %,"{""value"": ""97"", ""unit"": ""%""}"
+R:PMC8142808_03:Exam:ferritin:2010mcg/l,ExamResult,2010 mcg/L,"{""value"": ""2010"", ""unit"": ""mcg/L""}"
+R:PMC8142808_03:Exam:crp:31mg/l,ExamResult,31 mg/L,"{""value"": ""31"", ""unit"": ""mg/L""}"
+R:PMC8142808_03:Exam:lvef:45%,ExamResult,45 %,"{""value"": ""45"", ""unit"": ""%""}"
+R:PMC8142808_03:Exam:lvef:53%,ExamResult,53 %,"{""value"": ""53"", ""unit"": ""%""}"
+R:PMC6051126_01:Exam:blood pressure:85mmhg,ExamResult,85 mmHg,"{""value"": ""85"", ""unit"": ""mmHg""}"
+R:PMC11223903_01:Exam:blood pressure:40mmhg,ExamResult,40 mmHg,"{""value"": ""40"", ""unit"": ""mmHg""}"
+R:PMC11223903_01:Exam:oxygen saturation:98%,ExamResult,98 %,"{""value"": ""98"", ""unit"": ""%""}"
+R:PMC11223903_01:Exam:lvef:20%,ExamResult,20 %,"{""value"": ""20"", ""unit"": ""%""}"
+R:PMC11223903_01:Exam:troponin:17.2ng/ml,ExamResult,17.2 ng/ml,"{""value"": ""17.2"", ""unit"": ""ng/ml""}"
+R:PMC11223903_01:Exam:lvef:55%,ExamResult,55 %,"{""value"": ""55"", ""unit"": ""%""}"
+Treatment:immunosuppressive therapy,Treatment,immunosuppressive therapy,{}
+Symptom:hemoptysi,Symptom,hemoptysis,{}
+R:PMC7048040_01:Exam:lvef:50%,ExamResult,50 %,"{""value"": ""50"", ""unit"": ""%""}"
+Exam:blood sugar,Exam,blood sugar,{}
+R:PMC5297267_01:Exam:erythrocyte sedimentation rate:41mm,ExamResult,41 mm,"{""value"": ""41"", ""unit"": ""mm""}"
+R:PMC5828552_01:Exam:cea:1.43ng/ml,ExamResult,1.43 ng/ml,"{""value"": ""1.43"", ""unit"": ""ng/ml""}"
+R:PMC6020648_01:Exam:cea:16.3ng/ml,ExamResult,16.3 ng/mL,"{""value"": ""16.3"", ""unit"": ""ng/mL""}"
+R:PMC6020648_01:Exam:cea:4.2ng/ml,ExamResult,4.2 ng/mL,"{""value"": ""4.2"", ""unit"": ""ng/mL""}"
+R:PMC6020648_01:Exam:cea:8.3ng/ml,ExamResult,8.3 ng/mL,"{""value"": ""8.3"", ""unit"": ""ng/mL""}"
+R:PMC6020648_01:Exam:cea:6.3ng/ml,ExamResult,6.3 ng/mL,"{""value"": ""6.3"", ""unit"": ""ng/mL""}"
+R:PMC5747337_01:Exam:creatinine:0.9mg/dl,ExamResult,0.9 mg/dl,"{""value"": ""0.9"", ""unit"": ""mg/dl""}"
+R:PMC5747337_01:Exam:hematocrit:42.1%,ExamResult,42.1 %,"{""value"": ""42.1"", ""unit"": ""%""}"
+R:PMC5747337_01:Exam:hemoglobin:14.1g/dl,ExamResult,14.1 g/dl,"{""value"": ""14.1"", ""unit"": ""g/dl""}"
+Exam:fev1,Exam,fev1,{}
+R:PMC5747337_01:Exam:fev1:47%,ExamResult,47 %,"{""value"": ""47"", ""unit"": ""%""}"
+Exam:fvc,Exam,fvc,{}
+R:PMC5747337_01:Exam:fvc:55%,ExamResult,55 %,"{""value"": ""55"", ""unit"": ""%""}"
+Treatment:respiratory physiotherapy,Treatment,respiratory physiotherapy,{}
+R:PMC5747337_01:Exam:fev1:60%,ExamResult,60 %,"{""value"": ""60"", ""unit"": ""%""}"
+R:PMC5747337_01:Exam:fvc:66%,ExamResult,66 %,"{""value"": ""66"", ""unit"": ""%""}"
+R:PMC5450456_01:Exam:computed tomography:11mm,ExamResult,11 mm,"{""value"": ""11"", ""unit"": ""mm""}"
+R:PMC7234342_01:Exam:blood pressure:84mmhg,ExamResult,84 mmHg,"{""value"": ""84"", ""unit"": ""mmHg""}"
+R:PMC7234342_01:Exam:oxygen saturation:94%,ExamResult,94 %,"{""value"": ""94"", ""unit"": ""%""}"
+R:PMC7234342_01:Exam:creatine kinase:522iu/l,ExamResult,522 IU/L,"{""value"": ""522"", ""unit"": ""IU/L""}"
+Diagnosis:arrhythmia,Diagnosis,arrhythmias,{}
+R:PMC9975566_01:Exam:echocardiography:4mm,ExamResult,4 mm,"{""value"": ""4"", ""unit"": ""mm""}"
+R:PMC9975566_01:Exam:ejection fraction:64%,ExamResult,64 %,"{""value"": ""64"", ""unit"": ""%""}"
+R:PMC9975566_01:Exam:ejection fraction:49%,ExamResult,49 %,"{""value"": ""49"", ""unit"": ""%""}"
+R:PMC9975566_01:Exam:echocardiography:2mm,ExamResult,2 mm,"{""value"": ""2"", ""unit"": ""mm""}"
+R:PMC9975566_01:Exam:ejection fraction:62.5%,ExamResult,62.5 %,"{""value"": ""62.5"", ""unit"": ""%""}"
+R:PMC9975566_01:Exam:ejection fraction:64.6%,ExamResult,64.6 %,"{""value"": ""64.6"", ""unit"": ""%""}"
+R:PMC8170123_01:Exam:blood pressure:110mmhg,ExamResult,110 mmHg,"{""value"": ""110"", ""unit"": ""mmHg""}"
+R:PMC8170123_01:Exam:hemoglobin:6.4g/dl,ExamResult,6.4 g/dL,"{""value"": ""6.4"", ""unit"": ""g/dL""}"
+R:PMC8170123_01:Exam:platelet count:100x 109/mm,ExamResult,100 x 109/mm,"{""value"": ""100"", ""unit"": ""x 109/mm""}"
+R:PMC8170123_01:Exam:serum creatinine:18.3mg/dl,ExamResult,18.3 mg/dL,"{""value"": ""18.3"", ""unit"": ""mg/dL""}"
+Treatment:plasma exchange,Treatment,plasma exchange,{}
+R:PMC8170123_01:Exam:hemoglobin:7.6g/dl,ExamResult,7.6 g/dl,"{""value"": ""7.6"", ""unit"": ""g/dl""}"
+R:PMC8170123_01:Exam:ldh:950ui/l,ExamResult,950 UI/L,"{""value"": ""950"", ""unit"": ""UI/L""}"
+Diagnosis:urinary tract infection,Diagnosis,urinary tract infection,{}
+Symptom:dysphagia,Symptom,dysphagia,{}
+R:PMC6589247_01:Exam:ultrasound:5.8cm,ExamResult,5.8 cm,"{""value"": ""5.8"", ""unit"": ""cm""}"
+R:PMC6589247_01:Exam:ct:3mm,ExamResult,3 mm,"{""value"": ""3"", ""unit"": ""mm""}"
+Treatment:statin therapy,Treatment,statin therapy,{}
+R:PMC7367919_01:Exam:blood pressure:60mm,ExamResult,60 mm,"{""value"": ""60"", ""unit"": ""mm""}"
+R:PMC7367919_01:Exam:blood pressure:50mm,ExamResult,50 mm,"{""value"": ""50"", ""unit"": ""mm""}"
+R:PMC7367919_01:Exam:oxygen saturation:52%,ExamResult,52 %,"{""value"": ""52"", ""unit"": ""%""}"
+R:PMC7367919_01:Exam:blood pressure:46mm,ExamResult,46 mm,"{""value"": ""46"", ""unit"": ""mm""}"
+Treatment:vasopressor support,Treatment,vasopressor support,{}
+R:PMC7362981_01:Exam:blood pressure:90mmhg,ExamResult,90 mmHg,"{""value"": ""90"", ""unit"": ""mmHg""}"
+R:PMC11097779_01:Exam:troponin i:408.3pg/ml,ExamResult,408.3 pg/ml,"{""value"": ""408.3"", ""unit"": ""pg/ml""}"
+R:PMC11097779_01:Exam:troponin:890.1pg/ml,ExamResult,890.1 pg/ml,"{""value"": ""890.1"", ""unit"": ""pg/ml""}"
+R:PMC11097779_01:Exam:crp:1.88mg/dl,ExamResult,1.88 mg/dl,"{""value"": ""1.88"", ""unit"": ""mg/dl""}"
+R:PMC11097779_01:Exam:ejection fraction:20%,ExamResult,20 %,"{""value"": ""20"", ""unit"": ""%""}"
+Diagnosis:acute heart failure,Diagnosis,acute heart failure,{}
+R:PMC9632998_01:Exam:ct:1cm,ExamResult,1 cm,"{""value"": ""1"", ""unit"": ""cm""}"
+Treatment:parenteral nutrition,Treatment,parenteral nutrition,{}
+R:PMC8116581_01:Exam:hemoglobin:7%,ExamResult,7 %,"{""value"": ""7"", ""unit"": ""%""}"
+Treatment:fluid resuscitation,Treatment,fluid resuscitation,{}
+R:PMC11154001_01:Exam:oxygen saturation:93%,ExamResult,93 %,"{""value"": ""93"", ""unit"": ""%""}"
+R:PMC11154001_01:Exam:lactate dehydrogenase:359u/l,ExamResult,359 U/L,"{""value"": ""359"", ""unit"": ""U/L""}"
+R:PMC10965197_03:Exam:hba1c:9.9%,ExamResult,9.9 %,"{""value"": ""9.9"", ""unit"": ""%""}"
+R:PMC10965197_03:Exam:hba1c:7.1%,ExamResult,7.1 %,"{""value"": ""7.1"", ""unit"": ""%""}"
+R:PMC10965197_03:Exam:hba1c:7.7%,ExamResult,7.7 %,"{""value"": ""7.7"", ""unit"": ""%""}"
+R:PMC5066582_01:Exam:heart rate:90bpm,ExamResult,90 bpm,"{""value"": ""90"", ""unit"": ""bpm""}"
+R:PMC5066582_01:Exam:respiratory rate:99%,ExamResult,99 %,"{""value"": ""99"", ""unit"": ""%""}"
+R:PMC5066582_01:Exam:hemoglobin:7.9g/dl,ExamResult,7.9 g/dL,"{""value"": ""7.9"", ""unit"": ""g/dL""}"
+R:PMC5066582_01:Exam:total protein:59mg/dl,ExamResult,59 mg/dL,"{""value"": ""59"", ""unit"": ""mg/dL""}"
+Diagnosis:chronic kidney disease,Diagnosis,chronic kidney disease,{}
+Exam:hemoglobin a1c,Exam,hemoglobin a1c,{}
+Symptom:bruising,Symptom,bruising,{}
+R:PMC10233604_01:Exam:ultrasound:0.5cm,ExamResult,0.5 cm,"{""value"": ""0.5"", ""unit"": ""cm""}"
+Treatment:palliative care,Treatment,palliative care,{}
+Symptom:delirium,Symptom,delirium,{}
+R:PMC9997864_01:Exam:hemoglobin:12.5mg/dl,ExamResult,12.5 mg/dl,"{""value"": ""12.5"", ""unit"": ""mg/dl""}"
+R:PMC10422905_01:Exam:hba1c:5.8%,ExamResult,5.8 %,"{""value"": ""5.8"", ""unit"": ""%""}"
+R:PMC10422905_01:Exam:hba1c:5.3%,ExamResult,5.3 %,"{""value"": ""5.3"", ""unit"": ""%""}"
+R:PMC10422905_01:Exam:hba1c:5.9%,ExamResult,5.9 %,"{""value"": ""5.9"", ""unit"": ""%""}"
+R:PMC10422905_01:Exam:hba1c:5.6%,ExamResult,5.6 %,"{""value"": ""5.6"", ""unit"": ""%""}"
+R:PMC7737524_02:Exam:serum creatinine:0.45mg/dl,ExamResult,0.45 mg/dL,"{""value"": ""0.45"", ""unit"": ""mg/dL""}"
+R:PMC7737524_02:Exam:c3:10mg/dl,ExamResult,10 mg/dL,"{""value"": ""10"", ""unit"": ""mg/dL""}"
+Diagnosis:meningiti,Diagnosis,meningitis,{}
+Treatment:immunization,Treatment,immunization,{}
+R:PMC7737524_02:Exam:serum creatinine:0.78mg/dl,ExamResult,0.78 mg/dL,"{""value"": ""0.78"", ""unit"": ""mg/dL""}"
+Treatment:oxygen therapy,Treatment,oxygen therapy,{}
+R:PMC11831705_01:Exam:crp:1.9mg/dl,ExamResult,1.9 mg/dL,"{""value"": ""1.9"", ""unit"": ""mg/dL""}"
+R:PMC11831705_01:Exam:esr:25mm,ExamResult,25 mm,"{""value"": ""25"", ""unit"": ""mm""}"
+R:PMC11831705_01:Exam:c3:119mg/dl,ExamResult,119 mg/dL,"{""value"": ""119"", ""unit"": ""mg/dL""}"
+R:PMC11831705_01:Exam:c4:19mg/dl,ExamResult,19 mg/dL,"{""value"": ""19"", ""unit"": ""mg/dL""}"
+R:PMC11831705_01:Exam:c3:180mg/dl,ExamResult,180 mg/dL,"{""value"": ""180"", ""unit"": ""mg/dL""}"
+R:PMC11831705_01:Exam:c4:36mg/dl,ExamResult,36 mg/dL,"{""value"": ""36"", ""unit"": ""mg/dL""}"
+R:PMC10323798_01:Exam:ejection fraction:38%,ExamResult,38 %,"{""value"": ""38"", ""unit"": ""%""}"
+R:PMC10323798_01:Exam:blood pressure:92mmhg,ExamResult,92 mmHg,"{""value"": ""92"", ""unit"": ""mmHg""}"
+R:PMC10323798_01:Exam:oxygen saturation:95%,ExamResult,95 %,"{""value"": ""95"", ""unit"": ""%""}"
+R:PMC10323798_01:Exam:white blood cell count:6.7x109,ExamResult,6.7 x109,"{""value"": ""6.7"", ""unit"": ""x109""}"
+R:PMC10323798_01:Exam:creatinine:1.71mg/dl,ExamResult,1.71 mg/dL,"{""value"": ""1.71"", ""unit"": ""mg/dL""}"
+Diagnosis:renal failure,Diagnosis,renal failure,{}
+Treatment:conservative management,Treatment,conservative management,{}
+R:PMC6232820_01:Exam:blood pressure:67mmhg,ExamResult,67 mmHg,"{""value"": ""67"", ""unit"": ""mmHg""}"
+Exam:immunoglobulin g,Exam,immunoglobulin g,{}
+R:PMC6232820_01:Exam:igg:14.5g/l,ExamResult,14.5 g/L,"{""value"": ""14.5"", ""unit"": ""g/L""}"
+R:PMC6232820_01:Exam:c-reactive protein:29.50mg/l,ExamResult,29.50 mg/L,"{""value"": ""29.50"", ""unit"": ""mg/L""}"
+R:PMC6232820_01:Exam:igg:745mg/l,ExamResult,745 mg/L,"{""value"": ""745"", ""unit"": ""mg/L""}"
+R:PMC8559649_01:Exam:respiratory rate:80%,ExamResult,80 %,"{""value"": ""80"", ""unit"": ""%""}"
+R:PMC8559649_01:Exam:oxygen saturation:90%,ExamResult,90 %,"{""value"": ""90"", ""unit"": ""%""}"
+R:PMC8559649_01:Exam:blood pressure:55mmhg,ExamResult,55 mmHg,"{""value"": ""55"", ""unit"": ""mmHg""}"
+R:PMC8559649_01:Exam:ldh:552u/l,ExamResult,552 U/l,"{""value"": ""552"", ""unit"": ""U/l""}"
+Treatment:enoxaparin,Treatment,enoxaparin,{}
+Symptom:tingling,Symptom,tingling,{}
+Symptom:visual disturbance,Symptom,visual disturbances,{}
+R:PMC4274647_01:Exam:blood pressure:62mmhg,ExamResult,62 mmHg,"{""value"": ""62"", ""unit"": ""mmHg""}"
+R:PMC4274647_01:Exam:oxygen saturation:98%,ExamResult,98 %,"{""value"": ""98"", ""unit"": ""%""}"
+R:PMC4274647_01:Exam:hemoglobin:11.8g/dl,ExamResult,11.8 g/dL,"{""value"": ""11.8"", ""unit"": ""g/dL""}"
+R:PMC4274647_01:Exam:platelet count:287x 103/mul,ExamResult,287 x 103/muL,"{""value"": ""287"", ""unit"": ""x 103/muL""}"
+R:PMC4274647_01:Exam:c-reactive protein:10.3mg/dl,ExamResult,10.3 mg/dL,"{""value"": ""10.3"", ""unit"": ""mg/dL""}"
+R:PMC11007559_01:Exam:erythrocyte sedimentation rate:23mm,ExamResult,23 mm,"{""value"": ""23"", ""unit"": ""mm""}"
+R:PMC11782939_01:Exam:cea:0.7ng/ml,ExamResult,0.7 ng/mL,"{""value"": ""0.7"", ""unit"": ""ng/mL""}"
+Symptom:blurred vision,Symptom,blurred vision,{}
+R:PMC8631449_04:Exam:ct:30mm,ExamResult,30 mm,"{""value"": ""30"", ""unit"": ""mm""}"
+R:PMC8631449_04:Exam:cea:1.6mug/l,ExamResult,1.6 mug/L,"{""value"": ""1.6"", ""unit"": ""mug/L""}"
+R:PMC8631449_04:Exam:ct:13mm,ExamResult,13 mm,"{""value"": ""13"", ""unit"": ""mm""}"
+R:PMC11770387_01:Exam:oxygen saturation:89%,ExamResult,89 %,"{""value"": ""89"", ""unit"": ""%""}"
+Exam:thoracic ct,Exam,thoracic ct,{}
+R:PMC9756760_01:Exam:laboratory test:5.28x 103/mul,ExamResult,5.28 x 103/muL,"{""value"": ""5.28"", ""unit"": ""x 103/muL""}"
+R:PMC9756760_01:Exam:hemoglobin:11.4g/dl,ExamResult,11.4 g/dL,"{""value"": ""11.4"", ""unit"": ""g/dL""}"
+R:PMC9756760_01:Exam:platelet count:256x 103/mul,ExamResult,256 x 103/muL,"{""value"": ""256"", ""unit"": ""x 103/muL""}"
+R:PMC9756760_01:Exam:crp:1.41mg/l,ExamResult,1.41 mg/L,"{""value"": ""1.41"", ""unit"": ""mg/L""}"
+R:PMC9756760_01:Exam:esr:12mm,ExamResult,12 mm,"{""value"": ""12"", ""unit"": ""mm""}"
+R:PMC3851144_01:Exam:platelet count:837x 109/l,ExamResult,837 x 109/L,"{""value"": ""837"", ""unit"": ""x 109/L""}"
+Treatment:erythrocyte transfusion,Treatment,erythrocytes transfusion,{}
+R:PMC9699833_01:Exam:oxygen saturation:98%,ExamResult,98 %,"{""value"": ""98"", ""unit"": ""%""}"
+R:PMC9699833_01:Exam:blood pressure:86mmhg,ExamResult,86 mmHg,"{""value"": ""86"", ""unit"": ""mmHg""}"
+R:PMC9400896_01:Exam:creatinine:126umol/l,ExamResult,126 umol/L,"{""value"": ""126"", ""unit"": ""umol/L""}"
+R:PMC9895772_01:Exam:hba1c:4.8%,ExamResult,4.8 %,"{""value"": ""4.8"", ""unit"": ""%""}"
+R:PMC9895772_01:Exam:hba1c:5.1%,ExamResult,5.1 %,"{""value"": ""5.1"", ""unit"": ""%""}"
+R:PMC9895772_01:Exam:hba1c:5.7%,ExamResult,5.7 %,"{""value"": ""5.7"", ""unit"": ""%""}"
+R:PMC8541758_01:Exam:blood pressure:200mmhg,ExamResult,200 mmHg,"{""value"": ""200"", ""unit"": ""mmHg""}"
+R:PMC8541758_01:Exam:blood pressure:120mmhg,ExamResult,120 mmHg,"{""value"": ""120"", ""unit"": ""mmHg""}"
+R:PMC11382222_01:Exam:ultrasound:24mm,ExamResult,24 mm,"{""value"": ""24"", ""unit"": ""mm""}"
+R:PMC11382222_01:Exam:oxygen saturation:85%,ExamResult,85 %,"{""value"": ""85"", ""unit"": ""%""}"
+R:PMC4940809_01:Exam:blood pressure:57mmhg,ExamResult,57 mmHg,"{""value"": ""57"", ""unit"": ""mmHg""}"
+Diagnosis:hemorrhagic stroke,Diagnosis,hemorrhagic stroke,{}
+R:PMC4940809_01:Exam:creatinine:13.8mmol/l,ExamResult,13.8 mmol/L,"{""value"": ""13.8"", ""unit"": ""mmol/L""}"
+R:PMC4940809_01:Exam:lvef:30%,ExamResult,30 %,"{""value"": ""30"", ""unit"": ""%""}"
+R:PMC4940809_01:Exam:troponin:54mug/l,ExamResult,54 mug/L,"{""value"": ""54"", ""unit"": ""mug/L""}"
+R:PMC4940809_01:Exam:ejection fraction:30%,ExamResult,30 %,"{""value"": ""30"", ""unit"": ""%""}"
+R:PMC4940809_01:Exam:lvef:50%,ExamResult,50 %,"{""value"": ""50"", ""unit"": ""%""}"
+Diagnosis:acute respiratory distress syndrome,Diagnosis,acute respiratory distress syndrome,{}
+R:PMC4899579_04:Exam:albumin:3.6g/dl,ExamResult,3.6 g/dL,"{""value"": ""3.6"", ""unit"": ""g/dL""}"
+R:PMC4899579_04:Exam:hematocrit:45.2g/l,ExamResult,45.2 g/L,"{""value"": ""45.2"", ""unit"": ""g/L""}"
+R:PMC4899579_04:Exam:creatinine:2.15mg/dl,ExamResult,2.15 mg/dL,"{""value"": ""2.15"", ""unit"": ""mg/dL""}"
+Treatment:proton pump inhibitor,Treatment,proton pump inhibitors,{}
+Treatment:ppi,Treatment,ppis,{}
+Symptom:epigastric tenderness,Symptom,epigastric tenderness,{}
+R:PMC11191613_01:Exam:hemoglobin:7.8g/dl,ExamResult,7.8 g/dL,"{""value"": ""7.8"", ""unit"": ""g/dL""}"
+Diagnosis:pseudocyst,Diagnosis,pseudocyst,{}
+Treatment:inotropic support,Treatment,inotropic support,{}
+R:PMC11835113_01:Exam:hemoglobin:99.0g/l,ExamResult,99.0 g/L,"{""value"": ""99.0"", ""unit"": ""g/L""}"
+R:PMC8033192_02:Exam:oxygen saturation:85%,ExamResult,85 %,"{""value"": ""85"", ""unit"": ""%""}"
+R:PMC8033192_02:Exam:blood pressure:88mmhg,ExamResult,88 mmHg,"{""value"": ""88"", ""unit"": ""mmHg""}"
+R:PMC5061938_01:Exam:lvef:70%,ExamResult,70 %,"{""value"": ""70"", ""unit"": ""%""}"
+R:PMC5061938_01:Exam:hemoglobin:8.4g/dl,ExamResult,8.4 g/dL,"{""value"": ""8.4"", ""unit"": ""g/dL""}"
+R:PMC5061938_01:Exam:albumin:2.4mg/dl,ExamResult,2.4 mg/dL,"{""value"": ""2.4"", ""unit"": ""mg/dL""}"
+R:PMC5061938_01:Exam:serum creatinine:1.4mg/dl,ExamResult,1.4 mg/dL,"{""value"": ""1.4"", ""unit"": ""mg/dL""}"
+R:PMC5061938_01:Exam:ldh:618iu/l,ExamResult,618 IU/L,"{""value"": ""618"", ""unit"": ""IU/L""}"
+R:PMC5061938_01:Exam:hemoglobin:7gm/dl,ExamResult,7 gm/dL,"{""value"": ""7"", ""unit"": ""gm/dL""}"
+R:PMC5061938_01:Exam:platelet count:139th/ul,ExamResult,139 TH/uL,"{""value"": ""139"", ""unit"": ""TH/uL""}"
+Exam:flow cytometry,Exam,flow cytometry,{}
+R:PMC5390919_01:Exam:serum creatinine:8.33mg/dl,ExamResult,8.33 mg/dL,"{""value"": ""8.33"", ""unit"": ""mg/dL""}"
+R:PMC5390919_01:Exam:hemoglobin:8.6g/dl,ExamResult,8.6 g/dL,"{""value"": ""8.6"", ""unit"": ""g/dL""}"
+R:PMC5390919_01:Exam:platelet count:275x 103/microl,ExamResult,275 x 103/microL,"{""value"": ""275"", ""unit"": ""x 103/microL""}"
+R:PMC5390919_01:Exam:albumin:4.0g/dl,ExamResult,4.0 g/dL,"{""value"": ""4.0"", ""unit"": ""g/dL""}"
+R:PMC5390919_01:Exam:c3:92mg/dl,ExamResult,92 mg/dL,"{""value"": ""92"", ""unit"": ""mg/dL""}"
+R:PMC5390919_01:Exam:c4:31mg/dl,ExamResult,31 mg/dL,"{""value"": ""31"", ""unit"": ""mg/dL""}"
+R:PMC5390919_01:Exam:c-reactive protein:0.21mg/dl,ExamResult,0.21 mg/dL,"{""value"": ""0.21"", ""unit"": ""mg/dL""}"
+R:PMC8221693_01:Exam:flow cytometry:69.2%,ExamResult,69.2 %,"{""value"": ""69.2"", ""unit"": ""%""}"
+R:PMC4439787_01:Exam:blood pressure:110mmhg,ExamResult,110 mmHg,"{""value"": ""110"", ""unit"": ""mmHg""}"
+R:PMC7355372_01:Exam:computed tomography:16cm,ExamResult,16 cm,"{""value"": ""16"", ""unit"": ""cm""}"
+Symptom:rigor,Symptom,rigors,{}
+Exam:leucocytosi,Exam,leucocytosis,{}
+Symptom:sore throat,Symptom,sore throat,{}
+Treatment:antihistamine,Treatment,antihistamines,{}
+R:PMC4414853_01:Exam:white blood cell count:67.200mm,ExamResult,67.200 mm,"{""value"": ""67.200"", ""unit"": ""mm""}"
+R:PMC4414853_01:Exam:erythrocyte sedimentation rate:49mm,ExamResult,49 mm,"{""value"": ""49"", ""unit"": ""mm""}"
+R:PMC4414853_01:Exam:c-reactive protein:43mg/dl,ExamResult,43 mg/dl,"{""value"": ""43"", ""unit"": ""mg/dl""}"
+R:PMC4414853_01:Exam:ferritin:1650mug/l,ExamResult,1650 mug/L,"{""value"": ""1650"", ""unit"": ""mug/L""}"
+R:PMC4414853_01:Exam:lactate dehydrogenase:1200iu/l,ExamResult,1200 IU/L,"{""value"": ""1200"", ""unit"": ""IU/L""}"
+R:PMC4414853_01:Exam:albumin:4g/l,ExamResult,4 g/L,"{""value"": ""4"", ""unit"": ""g/L""}"
+R:PMC4063613_01:Exam:c-reactive protein:3.65mg/l,ExamResult,3.65 mg/L,"{""value"": ""3.65"", ""unit"": ""mg/L""}"
+R:PMC4063613_01:Exam:ferritin:1442ng/ml,ExamResult,1442 ng/mL,"{""value"": ""1442"", ""unit"": ""ng/mL""}"
+R:PMC4063613_01:Exam:lactate dehydrogenase:1098u/l,ExamResult,1098 U/L,"{""value"": ""1098"", ""unit"": ""U/L""}"
+R:PMC4063613_01:Exam:esr:27mm,ExamResult,27 mm,"{""value"": ""27"", ""unit"": ""mm""}"
+R:PMC4063613_01:Exam:igm:10.86mg/dl,ExamResult,10.86 mg/dL,"{""value"": ""10.86"", ""unit"": ""mg/dL""}"
+R:PMC4063613_01:Exam:igg:12.8mg/dl,ExamResult,12.8 mg/dL,"{""value"": ""12.8"", ""unit"": ""mg/dL""}"
+R:PMC10077769_01:Exam:oxygen saturation:65%,ExamResult,65 %,"{""value"": ""65"", ""unit"": ""%""}"
+R:PMC10077769_01:Exam:oxygen saturation:80%,ExamResult,80 %,"{""value"": ""80"", ""unit"": ""%""}"
+R:PMC10077769_01:Exam:oxygen saturation:15mm,ExamResult,15 mm,"{""value"": ""15"", ""unit"": ""mm""}"
+R:PMC10077769_01:Exam:oxygen saturation:60%,ExamResult,60 %,"{""value"": ""60"", ""unit"": ""%""}"
+R:PMC10077769_01:Exam:blood pressure:60mm,ExamResult,60 mm,"{""value"": ""60"", ""unit"": ""mm""}"
+R:PMC544880_01:Exam:blood pressure:58mmhg,ExamResult,58 mmHg,"{""value"": ""58"", ""unit"": ""mmHg""}"
+R:PMC544880_01:Exam:laboratory test:2.04mg/dl,ExamResult,2.04 mg/dl,"{""value"": ""2.04"", ""unit"": ""mg/dl""}"
+R:PMC544880_01:Exam:serum creatinine:33.3mg/dl,ExamResult,33.3 mg/dl,"{""value"": ""33.3"", ""unit"": ""mg/dl""}"
+R:PMC544880_01:Exam:serum creatinine:2.49mg/dl,ExamResult,2.49 mg/dl,"{""value"": ""2.49"", ""unit"": ""mg/dl""}"
+R:PMC544880_01:Exam:c3:29mg/dl,ExamResult,29 mg/dl,"{""value"": ""29"", ""unit"": ""mg/dl""}"
+R:PMC544880_01:Exam:crp:2.8mg/dl,ExamResult,2.8 mg/dl,"{""value"": ""2.8"", ""unit"": ""mg/dl""}"
+R:PMC544880_01:Exam:esr:104mm,ExamResult,104 mm,"{""value"": ""104"", ""unit"": ""mm""}"
+R:PMC544880_01:Exam:serum creatinine:6.21mg/dl,ExamResult,6.21 mg/dl,"{""value"": ""6.21"", ""unit"": ""mg/dl""}"
+R:PMC544880_01:Exam:esr:11mm,ExamResult,11 mm,"{""value"": ""11"", ""unit"": ""mm""}"
+R:PMC544880_01:Exam:serum creatinine:0.72mg/dl,ExamResult,0.72 mg/dl,"{""value"": ""0.72"", ""unit"": ""mg/dl""}"
+R:PMC8045707_01:Exam:ferritin:280.90ng/ml,ExamResult,280.90 ng/ml,"{""value"": ""280.90"", ""unit"": ""ng/ml""}"

@@ -1,0 +1,8 @@
+ngram,n,count,pmi,npmi,in_gazetteer,suggested_type
+spontaneous respiration,2,15,10.24831130636837,0.9450743193256775,False,Treatment
+one-lung ventilation,2,5,11.428883552010191,0.9195422504511063,False,Treatment
+intensive care,2,6,10.750811646897553,0.883687732580214,False,Treatment
+physical examination,2,15,9.24831130636837,0.8528567538094541,False,Treatment
+sedimentation rate,2,5,10.291380028260255,0.8280212768262499,False,Exam
+cell count,2,7,8.449642112176988,0.707470400474886,False,Exam
+blood cell count,3,6,8.338594666681088,0.6854100002794974,False,Exam

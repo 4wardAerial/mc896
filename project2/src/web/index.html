@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Grafo Clínico MultiCaRe</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=JetBrains+Mono:wght@400;600&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: prontuário em duas colunas — texto do caso à esquerda, grafo à direita; seções numeradas seguem a ordem do pipeline. */
+:root {
+  --bg: #f3f6f5;
+  --surface: #ffffff;
+  --ink: #12201d;
+  --ink-2: #44524f;
+  --muted: #6c7a76;
+  --line: #d8e0dd;
+  --line-strong: #aab7b3;
+  --accent: #0e6b63;
+  --accent-ink: #0b5a53;
+  --accent-wash: #e1efec;
+  --c-dx: #2a78d6;
+  --c-sx: #eb6834;
+  --c-ex: #1baf7a;
+  --c-tx: #eda100;
+  --seq: #2a78d6;
+  --seq-light: #86b6ef;
+  --only-r: #6250d6;
+  --only-m: #d4497f;
+  --neg: #c23b3b;
+  --on-strong: #ffffff;
+  --font-display: "Archivo", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  --radius: 6px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1413; --surface: #161e1d; --ink: #e5edea; --ink-2: #b9c6c2; --muted: #8b9a96;
+    --line: #26312f; --line-strong: #43514e; --accent: #3fb3a5; --accent-ink: #67c9bc; --accent-wash: #16302c;
+    --c-dx: #3987e5; --c-sx: #d95926; --c-ex: #199e70; --c-tx: #c98500;
+    --seq: #3987e5; --seq-light: #184f95; --only-r: #9085e9; --only-m: #e0709a; --neg: #e66767;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1413; --surface: #161e1d; --ink: #e5edea; --ink-2: #b9c6c2; --muted: #8b9a96;
+  --line: #26312f; --line-strong: #43514e; --accent: #3fb3a5; --accent-ink: #67c9bc; --accent-wash: #16302c;
+  --c-dx: #3987e5; --c-sx: #d95926; --c-ex: #199e70; --c-tx: #c98500;
+  --seq: #3987e5; --seq-light: #184f95; --only-r: #9085e9; --only-m: #e0709a; --neg: #e66767;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: var(--font-body); font-size: 16px; line-height: 1.5;
+}
+a { color: var(--accent-ink); }
+a:focus-visible, button:focus-visible, select:focus-visible, mark:focus-visible, label:focus-within {
+  outline: 2px solid var(--accent); outline-offset: 2px;
+}
+.wrap {
+  max-width: 1240px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; }
+h2 { font-size: 1.6rem; font-weight: 700; font-stretch: 87%; letter-spacing: -0.01em; }
+h3 { font-size: 1.05rem; font-weight: 700; font-stretch: 95%; }
+p { margin: 0; }
+.eyebrow {
+  font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted);
+}
+.lede { color: var(--ink-2); max-width: 68ch; }
+.num { font-variant-numeric: tabular-nums; }
+.mono { font-family: var(--font-mono); }
+
+/* cabeçalho */
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+.topbar {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  background: var(--surface); border-bottom: 1px solid var(--line);
+}
+.topbar .wrap { display: flex; align-items: center; gap: 16px; padding-block: 10px; flex-wrap: wrap; }
+.brand { font-family: var(--font-display); font-weight: 800; font-stretch: 80%; font-size: 1.05rem; letter-spacing: 0.01em; }
+.brand span { color: var(--accent-ink); }
+.nav { display: flex; gap: 4px; flex-wrap: wrap; margin-left: auto; }
+.nav a {
+  text-decoration: none; color: var(--ink-2); font-size: 0.9rem; padding: 4px 10px; border-radius: 99px;
+}
+.nav a:hover { background: var(--accent-wash); color: var(--accent-ink); }
+
+.hero { padding-block: 40px 28px; display: grid; gap: 18px; }
+.hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; font-stretch: 75%; line-height: 1.02; letter-spacing: -0.015em; max-width: 22ch; }
+.hero h1 em { font-style: normal; color: var(--accent-ink); }
+.pipeline { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-family: var(--font-mono); font-size: 0.78rem; }
+.pipeline span { border: 1px solid var(--line-strong); border-radius: 99px; padding: 3px 10px; background: var(--surface); }
+.pipeline i { color: var(--muted); font-style: normal; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.fact { background: var(--surface); padding: 14px 16px; display: grid; gap: 2px; }
+.fact b { font-family: var(--font-display); font-size: 1.6rem; font-stretch: 85%; font-weight: 700; }
+.fact small { color: var(--ink-2); font-size: 0.85rem; }
+
+section.block { padding-block: 36px; border-top: 1px solid var(--line); display: grid; gap: 18px; }
+.block-head { display: grid; gap: 6px; }
+
+/* controles */
+.controls { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; }
+.field { display: grid; gap: 4px; min-width: 0; }
+.field > span { font-size: 0.78rem; color: var(--muted); }
+select {
+  font: inherit; font-size: 0.92rem; color: var(--ink); background: var(--surface);
+  border: 1px solid var(--line-strong); border-radius: var(--radius); padding: 6px 8px; max-width: 100%;
+}
+.seg { display: inline-flex; border: 1px solid var(--line-strong); border-radius: var(--radius); overflow: hidden; }
+.seg button {
+  font: inherit; font-size: 0.9rem; border: 0; background: var(--surface); color: var(--ink-2);
+  padding: 6px 12px; cursor: pointer; border-right: 1px solid var(--line);
+}
+.seg button:last-child { border-right: 0; }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--on-strong); }
+.btn {
+  font: inherit; font-size: 0.88rem; border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink);
+  border-radius: var(--radius); padding: 6px 10px; cursor: pointer;
+}
+.btn:hover { border-color: var(--accent); color: var(--accent-ink); }
+
+/* explorador */
+.explorer { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 16px; }
+@media (max-width: 900px) { .explorer { grid-template-columns: minmax(0, 1fr); } }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); min-width: 0; display: grid; grid-template-rows: auto 1fr auto; }
+.panel-head { padding: 12px 14px; border-bottom: 1px solid var(--line); display: grid; gap: 6px; }
+.case-title { font-family: var(--font-display); font-stretch: 92%; font-weight: 600; font-size: 1rem; line-height: 1.3; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-size: 0.78rem; border: 1px solid var(--line); border-radius: 99px; padding: 1px 8px; color: var(--ink-2); background: var(--bg); }
+.case-text { padding: 14px; max-height: 560px; overflow: auto; line-height: 1.75; font-size: 0.97rem; }
+.case-text p + p { margin-top: 0; }
+mark.ent {
+  background: color-mix(in srgb, var(--tc) 16%, transparent); color: inherit;
+  border-bottom: 2px solid var(--tc); border-radius: 2px; padding: 0 1px; cursor: help;
+}
+mark.ent.t-Diagnosis { --tc: var(--c-dx); }
+mark.ent.t-Symptom { --tc: var(--c-sx); }
+mark.ent.t-Exam { --tc: var(--c-ex); }
+mark.ent.t-Treatment { --tc: var(--c-tx); }
+mark.ent.neg { text-decoration: line-through; text-decoration-color: var(--neg); text-decoration-thickness: 2px; border-bottom-style: dashed; }
+mark.ent.src-rules { outline: 2px dotted var(--only-r); outline-offset: 1px; }
+mark.ent.src-ml { outline: 2px dashed var(--only-m); outline-offset: 1px; }
+mark.ent.hit { box-shadow: 0 0 0 3px var(--accent); }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 0.8rem; color: var(--ink-2); padding: 10px 14px; border-top: 1px solid var(--line); align-items: center; }
+.legend .sw { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: -1px; margin-right: 5px; }
+.legend .ln { display: inline-block; width: 22px; height: 0; border-top: 3px solid; vertical-align: 3px; margin-right: 5px; }
+.graph { height: 560px; min-height: 360px; position: relative; }
+@media (max-width: 600px) { .graph { height: 440px; } .case-text { max-height: 380px; } }
+.graph-tools { position: absolute; right: 8px; top: 8px; z-index: 2; display: flex; gap: 6px; }
+.counts { display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 0.85rem; color: var(--ink-2); padding: 10px 14px; border-top: 1px solid var(--line); }
+.counts b { color: var(--ink); font-variant-numeric: tabular-nums; }
+
+/* grafo do corpus */
+.corpus { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 16px; }
+@media (max-width: 900px) { .corpus { grid-template-columns: minmax(0, 1fr); } }
+.corpus .graph { height: 600px; }
+.side { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px; display: grid; gap: 12px; align-content: start; min-width: 0; }
+.side ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.side li button { width: 100%; text-align: left; }
+.check { display: flex; gap: 6px; align-items: center; font-size: 0.9rem; cursor: pointer; }
+
+/* resultados */
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 16px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; display: grid; gap: 12px; align-content: start; min-width: 0; }
+.card .note { font-size: 0.9rem; color: var(--ink-2); }
+.card .note b { color: var(--ink); }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 0.88rem; }
+th, td { padding: 6px 8px; text-align: right; border-bottom: 1px solid var(--line); white-space: nowrap; }
+th:first-child, td:first-child { text-align: left; }
+th { font-weight: 600; color: var(--muted); font-size: 0.78rem; }
+td.v { font-variant-numeric: tabular-nums; }
+td.best { font-weight: 700; }
+
+.bars { display: grid; gap: 10px; }
+.bar-row { display: grid; grid-template-columns: minmax(110px, 190px) minmax(0, 1fr); gap: 10px; align-items: center; }
+.bar-row .lbl { font-size: 0.85rem; color: var(--ink-2); line-height: 1.2; }
+.bar-track { position: relative; display: grid; gap: 3px; }
+.bar { height: 12px; border-radius: 0 4px 4px 0; position: relative; min-width: 2px; }
+.bar-val { position: absolute; left: calc(100% + 6px); top: -3px; font-size: 0.78rem; color: var(--ink-2); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.axis { display: grid; grid-template-columns: minmax(110px, 190px) minmax(0, 1fr); gap: 10px; }
+.axis-ticks { position: relative; height: 16px; border-top: 1px solid var(--line-strong); font-size: 0.72rem; color: var(--muted); }
+.axis-ticks span { position: absolute; top: 2px; transform: translateX(-50%); font-variant-numeric: tabular-nums; }
+.axis-ticks span:first-child { transform: none; }
+.axis-ticks span:last-child { transform: translateX(-100%); }
+.key { display: flex; gap: 14px; flex-wrap: wrap; font-size: 0.8rem; color: var(--ink-2); }
+.key i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: -1px; margin-right: 5px; }
+
+.ng-list { display: grid; gap: 4px; }
+.ng { display: grid; grid-template-columns: minmax(0, 1fr) 90px 44px; gap: 8px; align-items: center; font-size: 0.88rem; }
+.ng .mono { font-size: 0.82rem; overflow-wrap: anywhere; }
+.ng .mini { height: 8px; background: var(--seq); border-radius: 0 3px 3px 0; }
+.ng .val { text-align: right; font-variant-numeric: tabular-nums; color: var(--ink-2); font-size: 0.8rem; }
+.typechip { font-size: 0.72rem; border-radius: 99px; padding: 0 7px; border: 1px solid var(--tc); color: var(--ink); background: color-mix(in srgb, var(--tc) 14%, transparent); white-space: nowrap; }
+.typechip.t-Diagnosis { --tc: var(--c-dx); } .typechip.t-Symptom { --tc: var(--c-sx); }
+.typechip.t-Exam { --tc: var(--c-ex); } .typechip.t-Treatment { --tc: var(--c-tx); }
+.pat { display: grid; gap: 6px; }
+.pat .chips span { font-family: var(--font-mono); font-size: 0.78rem; background: var(--accent-wash); color: var(--accent-ink); border-radius: 4px; padding: 1px 6px; }
+
+.compare th, .compare td { white-space: normal; text-align: left; vertical-align: top; }
+.compare td:first-child { font-weight: 600; width: 22%; }
+.tag-ok { color: var(--accent-ink); font-weight: 600; }
+
+footer { border-top: 1px solid var(--line); padding-block: 28px 40px; color: var(--ink-2); font-size: 0.9rem; display: grid; gap: 8px; }
+footer code { font-family: var(--font-mono); font-size: 0.82rem; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; }
+
+#tip {
+  position: fixed; z-index: 20; pointer-events: none; background: var(--ink); color: var(--bg);
+  font-size: 0.8rem; padding: 5px 8px; border-radius: 4px; max-width: 280px; line-height: 1.35;
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand">MC896 · <span>Grafo Clínico</span></div>
+    <nav class="nav" aria-label="Seções">
+      <a href="#caso">Caso</a>
+      <a href="#corpus">Corpus</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#ngramas">N-gramas</a>
+      <a href="#p1p2">P1 × P2</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <p class="eyebrow">Processamento de Linguagem Natural · Unicamp 2026 · Projeto 2</p>
+    <h1>Do relato clínico ao grafo, com <em>N-gramas</em> e aprendizado de máquina</h1>
+    <p class="lede">Casos clínicos do MultiCaRe viram um grafo de pacientes, sintomas, diagnósticos, exames e tratamentos. Comparamos as regras do Projeto 1 com modelos treinados por supervisão fraca: CRF para entidades, classificadores de n-gramas para relações e negação. Nenhum modelo de linguagem pré-treinado é usado na extração.</p>
+    <div class="pipeline" aria-label="Etapas do pipeline">
+      <span>gazetteer + matcher</span><i>→</i><span>N-gramas · PMI/NPMI</span><i>→</i><span>CRF (NER)</span><i>→</i><span>relações · TF-IDF + LogReg/NB/SVM</span><i>→</i><span>negação</span><i>→</i><span>grafo</span>
+    </div>
+    <div class="facts" id="facts"></div>
+  </section>
+
+  <section class="block" id="caso">
+    <div class="block-head">
+      <p class="eyebrow">Explorador</p>
+      <h2>Um caso clínico, duas extrações</h2>
+      <p class="lede">Escolha um caso do conjunto de teste. O texto mostra as entidades encontradas e o grafo mostra o paciente ligado a elas. Em <b>Diferença</b>, o que só as regras acharam aparece em violeta pontilhado e o que só o ML achou, em rosa tracejado. Clique num nó para localizar a menção no texto.</p>
+    </div>
+    <div class="controls">
+      <label class="field" for="caseSel"><span>Caso de teste (ordenado pela quantidade de entidades)</span><select id="caseSel"></select></label>
+      <div class="field"><span>Extração</span>
+        <div class="seg" role="group" aria-label="Extração">
+          <button type="button" data-mode="rules" aria-pressed="false">Regras</button>
+          <button type="button" data-mode="ml" aria-pressed="true">ML</button>
+          <button type="button" data-mode="diff" aria-pressed="false">Diferença</button>
+        </div>
+      </div>
+      <div class="field"><span>&nbsp;</span><button type="button" class="btn" id="randCase">Caso aleatório</button></div>
+    </div>
+    <div class="explorer">
+      <div class="panel">
+        <div class="panel-head">
+          <div class="case-title" id="caseTitle"></div>
+          <div class="chips" id="caseMeta"></div>
+        </div>
+        <div class="case-text" id="caseText" tabindex="0" aria-label="Texto do caso"></div>
+        <div class="legend">
+          <span><i class="sw" style="background:var(--c-dx)"></i>Diagnóstico</span>
+          <span><i class="sw" style="background:var(--c-sx)"></i>Sintoma</span>
+          <span><i class="sw" style="background:var(--c-ex)"></i>Exame</span>
+          <span><i class="sw" style="background:var(--c-tx)"></i>Tratamento</span>
+          <span><s style="text-decoration-color:var(--neg)">riscado</s> = negado</span>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><h3 id="graphTitle">Grafo do paciente</h3></div>
+        <div class="graph" id="caseGraph" role="img" aria-label="Grafo do paciente selecionado">
+          <div class="graph-tools"><button type="button" class="btn" id="fitCase">Centralizar</button></div>
+        </div>
+        <div>
+          <div class="counts" id="caseCounts"></div>
+          <div class="legend">
+            <span>◼ Diagnóstico</span><span>● Sintoma</span><span>◆ Exame</span><span>▲ Tratamento</span>
+            <span><i class="ln" style="border-color:var(--accent)"></i>relação entre entidades</span>
+            <span><i class="ln" style="border-color:var(--neg);border-top-style:dashed"></i>negado</span>
+            <span class="diffkey"><i class="ln" style="border-color:var(--only-r);border-top-style:dotted"></i>só regras</span>
+            <span class="diffkey"><i class="ln" style="border-color:var(--only-m);border-top-style:dashed"></i>só ML</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="corpus">
+    <div class="block-head">
+      <p class="eyebrow">Corpus de teste · 303 casos</p>
+      <h2>Relações entre entidades</h2>
+      <p class="lede">O Projeto 1 só ligava o paciente às entidades. Aqui estão as relações entre as próprias entidades, agregadas em todos os casos de teste. A espessura da aresta é o número de casos em que a relação aparece. Clique numa aresta para ver os casos e abri-los no explorador.</p>
+    </div>
+    <div class="controls">
+      <div class="field"><span>Extração</span>
+        <div class="seg" role="group" aria-label="Extração do corpus">
+          <button type="button" data-cmode="rules" aria-pressed="false">Regras</button>
+          <button type="button" data-cmode="ml" aria-pressed="false">ML</button>
+          <button type="button" data-cmode="diff" aria-pressed="true">Diferença</button>
+        </div>
+      </div>
+      <div class="field"><span>Relações</span><div class="chips" id="relFilter"></div></div>
+    </div>
+    <div class="corpus">
+      <div class="panel" style="grid-template-rows:1fr auto">
+        <div class="graph" id="corpusGraph" role="img" aria-label="Grafo de relações entre entidades do corpus">
+          <div class="graph-tools"><button type="button" class="btn" id="fitCorpus">Centralizar</button></div>
+        </div>
+        <div class="legend">
+          <span><i class="ln" style="border-color:var(--line-strong)"></i>regras e ML</span>
+          <span><i class="ln" style="border-color:var(--only-r);border-top-style:dotted"></i>só regras</span>
+          <span><i class="ln" style="border-color:var(--only-m);border-top-style:dashed"></i>só ML</span>
+          <span>◼ Diagnóstico · ● Sintoma · ◆ Exame · ▲ Tratamento</span>
+        </div>
+      </div>
+      <aside class="side" id="corpusSide" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <section class="block" id="resultados">
+    <div class="block-head">
+      <p class="eyebrow">Avaliação</p>
+      <h2>Resultados</h2>
+      <p class="lede">As métricas <b>silver</b> comparam os modelos com rótulos gerados pelas próprias regras, então medem concordância com elas. As métricas <b>ouro</b> usam 211 exemplos anotados (130 pares de relação e 81 menções de negação) e são a comparação real entre regras e ML.</p>
+    </div>
+    <div class="grid2">
+      <div class="card">
+        <h3>Entidades (NER): CRF × regras</h3>
+        <div class="key"><span><i style="background:var(--seq-light)"></i>56 casos (base do P1)</span><span><i style="background:var(--seq)"></i>1.500 casos (MultiCaRe completo)</span></div>
+        <div class="bars" id="nerBars"></div>
+        <p class="note">F1 silver no teste. Com a base ampliada o CRF passa de 0,67 para <b>0,87</b> e empata com as regras. O CRF ainda recupera <b id="unseenTxt"></b> das menções de termos escondidos do treino; as regras, por construção, recuperam 0%.</p>
+      </div>
+      <div class="card">
+        <h3>Relações contra o conjunto ouro</h3>
+        <div class="scroll"><table id="relGold"></table></div>
+        <p class="note">A negação remove falsos <i>revela</i> como “CT showed <b>no</b> pneumonia”. As regras ficam à frente no macro-F1; o ML ganha em <b>TREATS</b>, achando casos como “diabetes <b>on</b> insulin therapy”, que nenhuma regra cobre.</p>
+      </div>
+      <div class="card">
+        <h3>Negação contra o conjunto ouro</h3>
+        <div class="scroll"><table id="negGold"></table></div>
+        <p class="note">Erros típicos das regras: “no intraoperative complication, and <b>surgery</b> was completed” (o “no” vaza) e gatilhos a mais de 5 palavras da entidade.</p>
+      </div>
+      <div class="card">
+        <h3>Ablação de n-gramas (silver)</h3>
+        <div class="scroll"><table id="ablation"></table></div>
+        <p class="note">Tamanho máximo do n-grama nas features TF-IDF. Para relações, bigramas ajudam LogReg e NB; para negação, o ComplementNB depende muito de trigramas. No CRF, n-gramas maiores não ajudaram.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="ngramas">
+    <div class="block-head">
+      <p class="eyebrow">Análise de N-gramas</p>
+      <h2>O que as estatísticas encontraram</h2>
+      <p class="lede">NPMI mede quanto duas palavras aparecem juntas acima do acaso (1 = sempre juntas). Os candidatos são colocações fora do gazetteer com tipo sugerido pelo sufixo (<span class="mono">-itis</span>, <span class="mono">-scopy</span>…). Os padrões vêm dos maiores pesos da regressão logística.</p>
+    </div>
+    <div class="grid2">
+      <div class="card"><h3>Candidatos a entidade nova</h3><div class="ng-list" id="cand"></div></div>
+      <div class="card"><h3>Colocações mais fortes</h3><div class="ng-list" id="colloc"></div></div>
+      <div class="card"><h3>Padrões aprendidos por relação</h3><div class="pat" id="relPat"></div></div>
+      <div class="card"><h3>Padrões de negação e entidades mais negadas</h3><div class="ng-list" id="negPat"></div><div class="chips" id="topNeg"></div></div>
+    </div>
+  </section>
+
+  <section class="block" id="p1p2">
+    <div class="block-head">
+      <p class="eyebrow">Confronto</p>
+      <h2>Projeto 1 × Projeto 2</h2>
+    </div>
+    <div class="grid2">
+      <div class="card scroll">
+        <table class="compare">
+          <thead><tr><th>Aspecto</th><th>Projeto 1</th><th>Projeto 2</th></tr></thead>
+          <tbody>
+            <tr><td>Casamento de entidades</td><td>Palavra a palavra; “of” virava “loss of appetite”</td><td class="tag-ok">Frase inteira, maior casamento</td></tr>
+            <tr><td>Escala</td><td>1 caso processado</td><td class="tag-ok">1.500 casos, treino/teste por artigo</td></tr>
+            <tr><td>Termos novos</td><td>Só o gazetteer fixo</td><td class="tag-ok">PMI e CRF propõem termos novos</td></tr>
+            <tr><td>Forma do grafo</td><td>Estrela: paciente → entidade</td><td class="tag-ok">Relações entre entidades (revela, trata, causa)</td></tr>
+            <tr><td>Negação</td><td>“no fever” virava sintoma</td><td class="tag-ok">Arestas NEG_*; entidades negadas não formam relações</td></tr>
+            <tr><td>Avaliação</td><td>Qualitativa</td><td class="tag-ok">P/R/F1, ablação, conjunto ouro, métricas de grafo</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card">
+        <h3>Estrutura dos grafos (casos de teste)</h3>
+        <div class="scroll"><table id="stats"></table></div>
+        <p class="note" id="jaccTxt"></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p><b>Como reproduzir.</b> Rode <code>project2/pipelines/notebooks/notebook.ipynb</code> com o MultiCaRe v2.1 (Zenodo 14994046) em <code>project2/data/raw/</code>. A última célula gera <code>src/web/data.js</code>, lido por esta página.</p>
+  <p><b>Modelos de linguagem.</b> Nenhum LLM ou Transformer é usado na extração. O Claude foi usado como apoio ao código e na pré-anotação do conjunto ouro, revisada pela equipe.</p>
+</footer>
+
+<div id="tip" hidden></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.28.1/cytoscape.min.js"></script>
+<script src="data.js"></script>
+<script>
+(function () {
+  const D = window.DATA;
+  const $ = (s, el = document) => el.querySelector(s);
+  const css = (v) => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const fmt = (v, d = 2) => (v == null || isNaN(v)) ? '–' : Number(v).toLocaleString('pt-BR', { minimumFractionDigits: d, maximumFractionDigits: d });
+  const pct = (v) => (v * 100).toLocaleString('pt-BR', { maximumFractionDigits: 1 }) + '%';
+  const norm = (s) => s.toLowerCase().replace(/\s+/g, ' ').trim();
+
+  const TYPE_PT = { Diagnosis: 'Diagnóstico', Symptom: 'Sintoma', Exam: 'Exame', Treatment: 'Tratamento', Patient: 'Paciente', ExamResult: 'Resultado' };
+  const REL_PT = { REVEALS: 'revela', TREATS: 'trata', CAUSES: 'causa', ASSOCIATED_WITH: 'associado a' };
+  const GENDER_PT = { Female: 'Feminino', Male: 'Masculino' };
+  const PAT_RELS = new Set(['HAS_SYMPTOM', 'DIAGNOSED_WITH', 'UNDERWENT_EXAM', 'TREATED_BY', 'HAS_RESULT']);
+  const isPat = (r) => PAT_RELS.has(r) || r.startsWith('NEG_');
+  const relLabel = (r) => r === 'CAUSED_BY' ? 'causado por' : (REL_PT[r] || r);
+
+  /* ---------- tooltip ---------- */
+  const tip = $('#tip');
+  document.addEventListener('mouseover', (e) => {
+    const t = e.target.closest('[data-tip]');
+    if (!t) { tip.hidden = true; return; }
+    tip.textContent = t.dataset.tip; tip.hidden = false;
+  });
+  document.addEventListener('mousemove', (e) => {
+    if (tip.hidden) return;
+    const x = Math.min(e.clientX + 14, window.innerWidth - tip.offsetWidth - 8);
+    tip.style.left = x + 'px'; tip.style.top = (e.clientY + 16) + 'px';
+  });
+
+  /* ---------- índices dos grafos ---------- */
+  const G = {};
+  for (const src of ['rules', 'ml']) {
+    const g = D.graphs[src];
+    const nodes = new Map(g.nodes.map((n) => [n[0], { id: n[0], type: n[1], label: n[2] }]));
+    const edges = g.edges.map((e) => ({ s: e[0], t: e[1], rel: e[2], n: e[3], cases: (e[4] || '').split(';') }));
+    const byCase = new Map();
+    for (const e of edges) for (const c of e.cases) { if (!byCase.has(c)) byCase.set(c, []); byCase.get(c).push(e); }
+    G[src] = { nodes, edges, byCase };
+  }
+  const nodeInfo = (id) => G.rules.nodes.get(id) || G.ml.nodes.get(id) || { id, type: 'Patient', label: id };
+  const ekey = (e) => e.s + '|' + e.t + '|' + e.rel;
+  function mergeEdges(mode, rulesE, mlE) {
+    if (mode === 'rules') return rulesE.map((e) => ({ ...e, src: 'both' }));
+    if (mode === 'ml') return mlE.map((e) => ({ ...e, src: 'both' }));
+    const m = new Map();
+    for (const e of rulesE) m.set(ekey(e), { ...e, src: 'rules' });
+    for (const e of mlE) { const k = ekey(e); if (m.has(k)) m.get(k).src = 'both'; else m.set(k, { ...e, src: 'ml' }); }
+    return [...m.values()];
+  }
+
+  /* ---------- estilo do cytoscape a partir dos tokens ---------- */
+  function cyStyle() {
+    const c = css;
+    return [
+      { selector: 'node', style: {
+        label: 'data(label)', 'font-family': 'Source Sans 3, Segoe UI, sans-serif', 'font-size': 10, color: c('--ink'),
+        'text-valign': 'bottom', 'text-margin-y': 3, width: 14, height: 14, 'background-color': c('--muted'),
+        'border-width': 2, 'border-color': c('--surface'), 'text-wrap': 'wrap', 'text-max-width': 100,
+        'text-background-color': c('--surface'), 'text-background-opacity': 0.8, 'text-background-padding': 1 } },
+      { selector: 'node[deg]', style: { width: 'mapData(deg, 1, 12, 12, 34)', height: 'mapData(deg, 1, 12, 12, 34)' } },
+      { selector: 'node.t-Patient', style: { 'background-color': c('--ink'), width: 30, height: 30, 'font-weight': 700, 'font-size': 11 } },
+      { selector: 'node.t-Diagnosis', style: { 'background-color': c('--c-dx'), shape: 'round-rectangle' } },
+      { selector: 'node.t-Symptom', style: { 'background-color': c('--c-sx'), shape: 'ellipse' } },
+      { selector: 'node.t-Exam', style: { 'background-color': c('--c-ex'), shape: 'diamond' } },
+      { selector: 'node.t-Treatment', style: { 'background-color': c('--c-tx'), shape: 'triangle' } },
+      { selector: 'node.t-ExamResult', style: { 'background-color': c('--line-strong'), shape: 'rectangle', width: 9, height: 9, 'font-size': 9, color: c('--ink-2') } },
+      { selector: 'node.only-rules', style: { 'border-color': c('--only-r'), 'border-width': 3, 'border-style': 'dotted' } },
+      { selector: 'node.only-ml', style: { 'border-color': c('--only-m'), 'border-width': 3, 'border-style': 'dashed' } },
+      { selector: 'node:selected', style: { 'border-color': c('--accent'), 'border-width': 4 } },
+      { selector: 'edge', style: {
+        width: 1.2, 'line-color': c('--line-strong'), 'curve-style': 'bezier', 'target-arrow-shape': 'triangle',
+        'target-arrow-color': c('--line-strong'), 'arrow-scale': 0.7 } },
+      { selector: 'edge.ee', style: {
+        width: 'mapData(n, 1, 5, 2.5, 7)', 'line-color': c('--accent'), 'target-arrow-color': c('--accent'),
+        label: 'data(lab)', 'font-size': 9, color: c('--accent-ink'), 'text-rotation': 'autorotate',
+        'text-background-color': c('--surface'), 'text-background-opacity': 1, 'text-background-padding': 2 } },
+      { selector: 'edge.neg', style: { 'line-style': 'dashed', 'line-color': c('--neg'), 'target-arrow-color': c('--neg'), width: 1.6 } },
+      { selector: 'edge.src-rules', style: { 'line-color': c('--only-r'), 'target-arrow-color': c('--only-r'), 'line-style': 'dotted', width: 3, color: c('--only-r') } },
+      { selector: 'edge.src-ml', style: { 'line-color': c('--only-m'), 'target-arrow-color': c('--only-m'), 'line-style': 'dashed', width: 3, color: c('--only-m') } },
+      { selector: '.faded', style: { opacity: 0.15 } },
+    ];
+  }
+
+  function toElements(edges, nodeSrc) {
+    const ids = new Map();
+    edges.forEach((e) => { ids.set(e.s, (ids.get(e.s) || 0) + 1); ids.set(e.t, (ids.get(e.t) || 0) + 1); });
+    const nodes = [...ids.keys()].map((id) => {
+      const n = nodeInfo(id);
+      const cls = ['t-' + n.type];
+      if (nodeSrc && nodeSrc.get(id) && nodeSrc.get(id) !== 'both') cls.push('only-' + nodeSrc.get(id));
+      return { data: { id, label: n.type === 'Patient' ? 'Paciente' : n.label, type: n.type, deg: ids.get(id) }, classes: cls.join(' ') };
+    });
+    const els = edges.map((e, i) => {
+      const cls = [isPat(e.rel) ? 'pat' : 'ee'];
+      if (e.rel.startsWith('NEG_')) cls.push('neg');
+      if (e.src && e.src !== 'both') cls.push('src-' + e.src);
+      const lab = isPat(e.rel) ? '' : (REL_PT[e.rel] || e.rel);
+      return { data: { id: 'e' + i, source: e.s, target: e.t, rel: e.rel, n: e.n, lab, cases: e.cases.join(';') }, classes: cls.join(' ') };
+    });
+    return [...nodes, ...els];
+  }
+
+  /* ---------- fatos do topo ---------- */
+  const relGoldN = 130, negGoldN = 81;
+  $('#facts').innerHTML = [
+    ['1.500', 'casos amostrados de 93.816 do MultiCaRe'],
+    [D.meta.n_sent_train.toLocaleString('pt-BR'), 'sentenças de treino (supervisão fraca)'],
+    [D.meta.hidden_terms, 'termos escondidos para testar generalização'],
+    [String(relGoldN + negGoldN), 'exemplos anotados no conjunto ouro'],
+  ].map(([b, s]) => `<div class="fact"><b class="num">${b}</b><small>${s}</small></div>`).join('');
+
+  /* ---------- explorador de caso ---------- */
+  const cases = D.cases.map((c) => {
+    let n = 0, neg = 0;
+    c.sents.forEach((s) => { n += s.m.length; neg += s.m.filter((x) => x[3]).length; });
+    const ee = (G.ml.byCase.get(c.id) || []).filter((e) => !isPat(e.rel)).length;
+    return { ...c, nEnt: n, nNeg: neg, nEE: ee, score: n + 6 * ee + 4 * neg };
+  }).sort((a, b) => b.nEnt - a.nEnt);
+  const caseById = new Map(cases.map((c) => [c.id, c]));
+  const sel = $('#caseSel');
+  sel.innerHTML = cases.map((c) => `<option value="${c.id}">${c.id} · ${c.nEnt} entidades${c.nNeg ? ' · ' + c.nNeg + ' negadas' : ''}${c.nEE ? ' · ' + c.nEE + ' relações' : ''}</option>`).join('');
+  const defaultCase = [...cases].sort((a, b) => b.score - a.score)[0];
+
+  let mode = 'ml', current = defaultCase.id, cyCase = null;
+
+  function spansFor(s) {
+    const tag = (arr, src) => arr.map(([a, b, t, n]) => ({ a, b, t, n, src }));
+    if (mode === 'rules') return tag(s.r, 'both');
+    if (mode === 'ml') return tag(s.m, 'both');
+    const m = new Map();
+    for (const x of tag(s.r, 'rules')) m.set(x.a + '-' + x.b + '-' + x.t, x);
+    for (const x of tag(s.m, 'ml')) { const k = x.a + '-' + x.b + '-' + x.t; if (m.has(k)) { m.get(k).src = 'both'; m.get(k).n = m.get(k).n || x.n; } else m.set(k, x); }
+    return [...m.values()];
+  }
+  function renderSent(s) {
+    const spans = spansFor(s).sort((x, y) => x.a - y.a || (y.b - y.a) - (x.b - x.a));
+    let out = '', pos = 0;
+    for (const sp of spans) {
+      if (sp.a < pos) continue;
+      out += esc(s.t.slice(pos, sp.a));
+      const txt = s.t.slice(sp.a, sp.b);
+      const parts = [TYPE_PT[sp.t]];
+      if (sp.n) parts.push('negado');
+      if (sp.src === 'rules') parts.push('só regras'); else if (sp.src === 'ml') parts.push('só ML');
+      out += `<mark class="ent t-${sp.t}${sp.n ? ' neg' : ''} src-${sp.src}" data-label="${esc(norm(txt))}" data-tip="${esc(parts.join(' · '))}">${esc(txt)}</mark>`;
+      pos = sp.b;
+    }
+    return out + esc(s.t.slice(pos));
+  }
+
+  function renderCase() {
+    const c = caseById.get(current);
+    sel.value = c.id;
+    $('#caseTitle').innerHTML = c.link ? `<a href="${esc(c.link)}" target="_blank" rel="noopener">${esc(c.title || c.article)}</a>` : esc(c.title || c.article);
+    const meta = [c.id];
+    if (c.age != null) meta.push(Math.round(c.age) + ' anos');
+    if (c.gender) meta.push(GENDER_PT[c.gender] || c.gender);
+    $('#caseMeta').innerHTML = meta.map((m) => `<span class="chip">${esc(m)}</span>`).join('');
+    $('#caseText').innerHTML = c.sents.map(renderSent).join(' ');
+    document.querySelectorAll('.diffkey').forEach((el) => { el.hidden = mode !== 'diff'; });
+
+    const rulesE = G.rules.byCase.get(c.id) || [], mlE = G.ml.byCase.get(c.id) || [];
+    const edges = mergeEdges(mode, rulesE, mlE);
+    let nodeSrc = null;
+    if (mode === 'diff') {
+      const inR = new Set(), inM = new Set();
+      rulesE.forEach((e) => { inR.add(e.s); inR.add(e.t); }); mlE.forEach((e) => { inM.add(e.s); inM.add(e.t); });
+      nodeSrc = new Map([...new Set([...inR, ...inM])].map((id) => [id, inR.has(id) && inM.has(id) ? 'both' : (inR.has(id) ? 'rules' : 'ml')]));
+    }
+    const els = toElements(edges, nodeSrc);
+    $('#graphTitle').textContent = 'Grafo do paciente · ' + ({ rules: 'Regras', ml: 'ML', diff: 'Regras × ML' }[mode]);
+
+    const count = (E) => {
+      const ents = new Set(E.filter((e) => isPat(e.rel) && e.rel !== 'HAS_RESULT').map((e) => e.t));
+      return { ents: ents.size, neg: E.filter((e) => e.rel.startsWith('NEG_')).length, ee: E.filter((e) => !isPat(e.rel)).length };
+    };
+    const r = count(rulesE), m = count(mlE);
+    $('#caseCounts').innerHTML =
+      `<span>Entidades: <b>${r.ents}</b> regras · <b>${m.ents}</b> ML</span>` +
+      `<span>Negadas: <b>${r.neg}</b> · <b>${m.neg}</b></span>` +
+      `<span>Relações entre entidades: <b>${r.ee}</b> · <b>${m.ee}</b></span>`;
+
+    if (cyCase) cyCase.destroy();
+    cyCase = cytoscape({
+      container: $('#caseGraph'), elements: els, style: cyStyle(), wheelSensitivity: 0.3, minZoom: 0.2, maxZoom: 3,
+      layout: { name: 'concentric', animate: false, minNodeSpacing: 26, levelWidth: () => 1,
+        concentric: (n) => n.hasClass('t-Patient') ? 3 : (n.connectedEdges('.ee').length ? 2 : (n.hasClass('t-ExamResult') ? 0 : 1)) },
+    });
+    cyCase.on('tap', 'node', (ev) => {
+      const lab = norm(ev.target.data('label'));
+      const marks = [...document.querySelectorAll('#caseText mark')];
+      marks.forEach((mk) => mk.classList.toggle('hit', mk.dataset.label === lab));
+      const first = marks.find((mk) => mk.dataset.label === lab);
+      if (first) first.scrollIntoView({ block: 'center', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    });
+  }
+
+  document.querySelectorAll('[data-mode]').forEach((b) => b.addEventListener('click', () => {
+    mode = b.dataset.mode;
+    document.querySelectorAll('[data-mode]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    renderCase();
+  }));
+  sel.addEventListener('change', () => { current = sel.value; renderCase(); });
+  $('#randCase').addEventListener('click', () => { current = cases[Math.floor(Math.random() * cases.length)].id; renderCase(); });
+  $('#fitCase').addEventListener('click', () => cyCase && cyCase.fit(undefined, 20));
+
+  /* ---------- grafo do corpus ---------- */
+  const RELS = ['REVEALS', 'TREATS', 'CAUSES', 'ASSOCIATED_WITH'];
+  const relOn = new Set(RELS);
+  let cmode = 'diff', cyCorpus = null;
+  $('#relFilter').innerHTML = RELS.map((r) => `<label class="check chip" for="rf-${r}"><input type="checkbox" id="rf-${r}" value="${r}" checked> ${REL_PT[r]}</label>`).join('');
+  $('#relFilter').addEventListener('change', (e) => { e.target.checked ? relOn.add(e.target.value) : relOn.delete(e.target.value); renderCorpus(); });
+
+  function sideDefault() {
+    const j = D.jaccard;
+    $('#corpusSide').innerHTML = `<h3>Concordância</h3>
+      <p class="note">Jaccard das relações entre entidades: <b class="num">${fmt(j.edges)}</b>. ${j.edges_only_ml} relações só no ML, ${j.edges_only_rules} só nas regras.</p>
+      <p class="note">Clique numa aresta para ver os casos.</p>`;
+  }
+  function renderCorpus() {
+    const pick = (src) => G[src].edges.filter((e) => !isPat(e.rel) && relOn.has(e.rel));
+    const edges = mergeEdges(cmode, pick('rules'), pick('ml'));
+    if (cyCorpus) cyCorpus.destroy();
+    cyCorpus = cytoscape({
+      container: $('#corpusGraph'), elements: toElements(edges, null), style: cyStyle(), wheelSensitivity: 0.3, minZoom: 0.2, maxZoom: 3,
+      layout: { name: 'cose', animate: false, randomize: true, nodeRepulsion: () => 9000, idealEdgeLength: () => 70, nodeOverlap: 12, padding: 20 },
+    });
+    cyCorpus.on('tap', 'edge', (ev) => {
+      const d = ev.target.data();
+      const a = nodeInfo(d.source), b = nodeInfo(d.target);
+      const cs = d.cases.split(';').filter((x) => caseById.has(x));
+      $('#corpusSide').innerHTML = `<h3>${esc(a.label)} <span style="color:var(--accent-ink)">${esc(REL_PT[d.rel])}</span> ${esc(b.label)}</h3>
+        <p class="note">${cs.length} caso(s). Abrir no explorador:</p>
+        <ul>${cs.map((c) => `<li><button type="button" class="btn" data-open="${c}">${c}</button></li>`).join('')}</ul>`;
+    });
+    cyCorpus.on('tap', (ev) => { if (ev.target === cyCorpus) sideDefault(); });
+    sideDefault();
+  }
+  $('#corpusSide').addEventListener('click', (e) => {
+    const b = e.target.closest('[data-open]');
+    if (!b) return;
+    current = b.dataset.open; renderCase();
+    document.getElementById('caso').scrollIntoView({ behavior: 'smooth' });
+  });
+  document.querySelectorAll('[data-cmode]').forEach((b) => b.addEventListener('click', () => {
+    cmode = b.dataset.cmode;
+    document.querySelectorAll('[data-cmode]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    renderCorpus();
+  }));
+  $('#fitCorpus').addEventListener('click', () => cyCorpus && cyCorpus.fit(undefined, 20));
+
+  /* ---------- resultados ---------- */
+  function axisHTML() {
+    return `<div class="axis"><span></span><div class="axis-ticks">${[0, 0.25, 0.5, 0.75, 1].map((t) => `<span style="left:${t * 100}%">${fmt(t)}</span>`).join('')}</div></div>`;
+  }
+  const nameNer = (m) => m.replace('Regras (Parte 1, léxico reduzido)', 'Regras (P1)');
+  const base = new Map(D.ner_base56.map((r) => [r.modelo, r]));
+  $('#nerBars').innerHTML = D.ner.map((r) => {
+    const b = base.get(r.modelo);
+    const bar = (v, color, lab) => `<div class="bar" style="width:${v * 100}%;background:var(${color})" data-tip="${esc(nameNer(r.modelo))} · ${lab}: F1 ${fmt(v, 3)}"><span class="bar-val">${fmt(v)}</span></div>`;
+    return `<div class="bar-row"><div class="lbl">${esc(nameNer(r.modelo))}</div><div class="bar-track">${b ? bar(b.f1, '--seq-light', '56 casos') : ''}${bar(r.f1, '--seq', '1.500 casos')}</div></div>`;
+  }).join('') + axisHTML();
+  const bestUnseen = Math.max(...D.ner.map((r) => r.recall_unseen_terms || 0));
+  $('#unseenTxt').textContent = pct(bestUnseen);
+
+  function table(el, cols, rows, opts = {}) {
+    const best = {};
+    cols.forEach((c) => { if (c.best) best[c.key] = Math.max(...rows.map((r) => r[c.key] ?? -1)); });
+    const head = '<thead><tr>' + cols.map((c) => `<th scope="col">${c.label}</th>`).join('') + '</tr></thead>';
+    const body = rows.map((r) => '<tr>' + cols.map((c, i) => {
+      const v = r[c.key];
+      if (i === 0) return `<td>${esc(c.fmt ? c.fmt(v) : v)}</td>`;
+      const isBest = c.best && v === best[c.key];
+      const shade = c.heat ? ` style="background:color-mix(in srgb, var(--seq) ${Math.round(8 + 50 * Math.max(0, v))}%, var(--surface));${v > 0.72 ? 'color:var(--on-strong)' : ''}"` : '';
+      return `<td class="v${isBest ? ' best' : ''}"${shade}>${fmt(v, 3)}</td>`;
+    }).join('') + '</tr>').join('');
+    el.innerHTML = head + '<tbody>' + body + '</tbody>';
+  }
+  if (D.rel_gold.length) {
+    const rels = Object.keys(D.rel_gold[0]).filter((k) => k.startsWith('F1_'));
+    table($('#relGold'), [{ key: 'modelo', label: 'Modelo' }, { key: 'acurácia', label: 'Acurácia', best: 1 }, { key: 'macroF1_relações', label: 'Macro-F1', best: 1 },
+      ...rels.map((k) => ({ key: k, label: 'F1 ' + relLabel(k.slice(3)), best: 1 }))], D.rel_gold);
+  }
+  table($('#negGold'), [{ key: 'modelo', label: 'Modelo' }, { key: 'acurácia', label: 'Acurácia', best: 1 }, { key: 'F1_NEG', label: 'F1 negado', best: 1 }], D.neg_gold);
+
+  const abl = [];
+  for (const [task, rows, key] of [['Relações', D.rel_silver, 'macroF1_relações'], ['Negação', D.neg_silver, 'F1_NEG']]) {
+    const models = [...new Set(rows.map((r) => r.modelo))];
+    models.forEach((m) => {
+      const o = { modelo: task + ' · ' + m };
+      rows.filter((r) => r.modelo === m).forEach((r) => { o['n' + r.ngram_max] = r[key]; });
+      abl.push(o);
+    });
+  }
+  table($('#ablation'), [{ key: 'modelo', label: 'Tarefa · modelo' }, { key: 'n1', label: 'n ≤ 1', heat: 1 }, { key: 'n2', label: 'n ≤ 2', heat: 1 }, { key: 'n3', label: 'n ≤ 3', heat: 1 }], abl);
+
+  /* ---------- n-gramas ---------- */
+  const typeChip = (t) => t ? `<span class="typechip t-${t}">${TYPE_PT[t]}</span>` : '';
+  $('#cand').innerHTML = D.cand.slice(0, 16).map((r) =>
+    `<div class="ng" data-tip="${esc(r.ngram)} · ${r.count} ocorrências · NPMI ${fmt(r.npmi, 3)}"><span class="mono">${esc(r.ngram)} ${typeChip(r.suggested_type)}</span><div class="mini" style="width:${r.npmi * 100}%"></div><span class="val">${fmt(r.npmi)}</span></div>`).join('');
+  $('#colloc').innerHTML = D.colloc.slice(0, 16).map((r) =>
+    `<div class="ng" data-tip="${esc(r.ngram)} · ${r.count} ocorrências · PMI ${fmt(r.pmi, 1)}"><span class="mono">${esc(r.ngram)}</span><div class="mini" style="width:${r.npmi * 100}%"></div><span class="val">${fmt(r.npmi)}</span></div>`).join('');
+  $('#relPat').innerHTML = Object.entries(D.rel_patterns).map(([rel, pats]) =>
+    `<div><div class="eyebrow">${esc(relLabel(rel))}</div><div class="chips">${pats.map((p) => `<span>${esc(p)}</span>`).join('')}</div></div>`).join('');
+  const maxW = Math.max(...D.neg_patterns.map((p) => p[2]));
+  $('#negPat').innerHTML = D.neg_patterns.slice(0, 10).map(([side, g, w]) =>
+    `<div class="ng" data-tip="peso ${fmt(w, 2)} na regressão logística"><span class="mono">${side === 'left' ? esc(g) + ' <i style="color:var(--muted)">[entidade]</i>' : '<i style="color:var(--muted)">[entidade]</i> ' + esc(g)}</span><div class="mini" style="width:${w / maxW * 100}%;background:var(--neg)"></div><span class="val">${fmt(w, 1)}</span></div>`).join('');
+  $('#topNeg').innerHTML = '<span class="eyebrow" style="width:100%">Mais negadas no teste</span>' + D.top_negated.slice(0, 10).map(([t, e, c]) => `<span class="typechip t-${t}">${esc(e)} · ${c}</span>`).join('');
+
+  /* ---------- estrutura dos grafos ---------- */
+  const keys = Object.keys(D.stats.regras);
+  $('#stats').innerHTML = '<thead><tr><th>Métrica</th><th>Regras</th><th>ML</th></tr></thead><tbody>' +
+    keys.map((k) => {
+      const a = D.stats.regras[k], b = D.stats.ML[k];
+      const isInt = Number.isInteger(a) && Number.isInteger(b);
+      return `<tr><td>${esc(k.trim())}</td><td class="v">${isInt ? a : fmt(a, 3)}</td><td class="v">${isInt ? b : fmt(b, 3)}</td></tr>`;
+    }).join('') + '</tbody>';
+  $('#jaccTxt').innerHTML = `Jaccard de nós de entidade: <b>${fmt(D.jaccard.nodes)}</b>. Jaccard das relações entre entidades: <b>${fmt(D.jaccard.edges)}</b>.`;
+
+  /* ---------- tema ---------- */
+  function restyle() { if (cyCase) cyCase.style(cyStyle()); if (cyCorpus) cyCorpus.style(cyStyle()); }
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', restyle);
+  new MutationObserver(restyle).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
+  renderCase();
+  renderCorpus();
+})();
+</script>
+</body>
+</html>

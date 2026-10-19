@@ -1,0 +1,133 @@
+source,target,relation,count,n_cases,method
+P:PMC5137649_01,Symptom:abdominal pain,HAS_SYMPTOM,1,1,rules
+P:PMC5137649_01,Symptom:nausea,HAS_SYMPTOM,2,1,rules
+P:PMC5137649_01,Symptom:constipation,HAS_SYMPTOM,1,1,rules
+P:PMC5137649_01,Exam:computed tomography,UNDERWENT_EXAM,1,1,rules
+Exam:computed tomography,R:PMC5137649_01:Exam:computed tomography:6cm,HAS_RESULT,1,1,rules
+P:PMC5137649_01,Exam:carcinoembryonic antigen,UNDERWENT_EXAM,1,1,rules
+P:PMC5137649_01,Exam:cea,UNDERWENT_EXAM,1,1,rules
+Exam:cea,R:PMC5137649_01:Exam:cea:476.5ng/ml,HAS_RESULT,1,1,rules
+P:PMC5137649_01,Treatment:resection,TREATED_BY,3,1,rules
+P:PMC5137649_01,Symptom:bleeding,HAS_SYMPTOM,1,1,rules
+P:PMC5137649_01,Symptom:pain,HAS_SYMPTOM,1,1,rules
+P:PMC5833205_01,Symptom:swelling,HAS_SYMPTOM,2,1,rules
+P:PMC5833205_01,Symptom:edema,HAS_SYMPTOM,4,1,rules
+P:PMC5833205_01,Symptom:abdominal distension,HAS_SYMPTOM,1,1,rules
+P:PMC5833205_01,Symptom:lower extremity edema,HAS_SYMPTOM,1,1,rules
+P:PMC5833205_01,Exam:albumin,UNDERWENT_EXAM,3,1,rules
+Exam:albumin,R:PMC5833205_01:Exam:albumin:1.8g/dl,HAS_RESULT,1,1,rules
+P:PMC5833205_01,Diagnosis:anemia,DIAGNOSED_WITH,1,1,rules
+P:PMC5833205_01,Exam:hemoglobin,UNDERWENT_EXAM,2,1,rules
+Exam:hemoglobin,R:PMC5833205_01:Exam:hemoglobin:6.4mg/dl,HAS_RESULT,1,1,rules
+P:PMC5833205_01,Exam:mean corpuscular volume,UNDERWENT_EXAM,1,1,rules
+P:PMC5833205_01,Exam:ferritin,UNDERWENT_EXAM,2,1,rules
+Exam:ferritin,R:PMC5833205_01:Exam:ferritin:4.9ng/l,HAS_RESULT,1,1,rules
+Exam:albumin,R:PMC5833205_01:Exam:albumin:1.6g/dl,HAS_RESULT,1,1,rules
+P:PMC5833205_01,Exam:total protein,UNDERWENT_EXAM,1,1,rules
+Exam:total protein,R:PMC5833205_01:Exam:total protein:3.0g/dl,HAS_RESULT,1,1,rules
+P:PMC5833205_01,Symptom:diarrhea,HAS_SYMPTOM,1,1,rules
+Exam:hemoglobin,R:PMC5833205_01:Exam:hemoglobin:11.8g/dl,HAS_RESULT,1,1,rules
+Exam:ferritin,R:PMC5833205_01:Exam:ferritin:29.4ng/l,HAS_RESULT,1,1,rules
+P:PMC9529523_01,Exam:ejection fraction,UNDERWENT_EXAM,2,1,rules
+Exam:ejection fraction,R:PMC9529523_01:Exam:ejection fraction:35%,HAS_RESULT,1,1,rules
+P:PMC9529523_01,Symptom:pain,HAS_SYMPTOM,1,1,rules
+P:PMC9529523_01,Treatment:drainage,TREATED_BY,2,1,rules
+P:PMC9529523_01,Exam:echocardiogram,UNDERWENT_EXAM,2,1,rules
+P:PMC9529523_01,Diagnosis:endocarditi,DIAGNOSED_WITH,1,1,rules
+P:PMC9529523_01,Exam:igg level,UNDERWENT_EXAM,1,1,rules
+Exam:igg level,R:PMC9529523_01:Exam:igg level:2317mg/dl,HAS_RESULT,1,1,rules
+P:PMC9529523_01,Exam:c3,UNDERWENT_EXAM,3,1,rules
+P:PMC9529523_01,Exam:c4,UNDERWENT_EXAM,2,1,rules
+P:PMC9529523_01,Exam:erythrocyte sedimentation rate,UNDERWENT_EXAM,1,1,rules
+P:PMC9529523_01,Exam:esr,UNDERWENT_EXAM,2,1,rules
+Exam:esr,R:PMC9529523_01:Exam:esr:77mm,HAS_RESULT,1,1,rules
+P:PMC9529523_01,Exam:c-reactive protein,UNDERWENT_EXAM,1,1,rules
+P:PMC9529523_01,Exam:crp,UNDERWENT_EXAM,1,1,rules
+Exam:crp,R:PMC9529523_01:Exam:crp:6.2mg/dl,HAS_RESULT,1,1,rules
+P:PMC9529523_01,Symptom:weight loss,HAS_SYMPTOM,1,1,rules
+P:PMC9529523_01,Exam:serum creatinine,UNDERWENT_EXAM,1,1,rules
+Exam:serum creatinine,R:PMC9529523_01:Exam:serum creatinine:2.14mg/dl,HAS_RESULT,1,1,rules
+Exam:c3,R:PMC9529523_01:Exam:c3:61mg/dl,HAS_RESULT,1,1,rules
+Exam:esr,R:PMC9529523_01:Exam:esr:90mm,HAS_RESULT,1,1,rules
+P:PMC9529523_01,Exam:creatinine,UNDERWENT_EXAM,1,1,rules
+P:PMC9529523_01,Exam:hydroxychloroquine level,UNDERWENT_EXAM,3,1,rules
+Exam:hydroxychloroquine level,R:PMC9529523_01:Exam:hydroxychloroquine level:1232.1ng/ml,HAS_RESULT,1,1,rules
+Exam:hydroxychloroquine level,R:PMC9529523_01:Exam:hydroxychloroquine level:1000ng/ml,HAS_RESULT,1,1,rules
+P:PMC9529523_01,Diagnosis:hypertension,DIAGNOSED_WITH,3,1,rules
+P:PMC9529523_01,Exam:forced vital capacity,UNDERWENT_EXAM,1,1,rules
+P:PMC9529523_01,Exam:fvc,UNDERWENT_EXAM,2,1,rules
+Exam:fvc,R:PMC9529523_01:Exam:fvc:78%,HAS_RESULT,1,1,rules
+P:PMC9529523_01,Exam:forced expiratory volume,UNDERWENT_EXAM,1,1,rules
+P:PMC9529523_01,Exam:fev1,UNDERWENT_EXAM,2,1,rules
+Exam:fev1,R:PMC9529523_01:Exam:fev1:83%,HAS_RESULT,1,1,rules
+Exam:fvc,R:PMC9529523_01:Exam:fvc:107%,HAS_RESULT,1,1,rules
+P:PMC9529523_01,Exam:diffusing capacity,UNDERWENT_EXAM,1,1,rules
+P:PMC9529523_01,Exam:dlco,UNDERWENT_EXAM,1,1,rules
+Exam:dlco,R:PMC9529523_01:Exam:dlco:37%,HAS_RESULT,1,1,rules
+P:PMC9529523_01,Exam:computed tomography,UNDERWENT_EXAM,1,1,rules
+P:PMC9529523_01,Diagnosis:sepsi,DIAGNOSED_WITH,1,1,rules
+P:PMC9529523_01,Exam:nt-probnp,UNDERWENT_EXAM,1,1,rules
+Exam:nt-probnp,R:PMC9529523_01:Exam:nt-probnp:995pg/ml,HAS_RESULT,1,1,rules
+P:PMC9529523_01,Exam:echocardiography,UNDERWENT_EXAM,1,1,rules
+P:PMC9529523_01,Exam:mri,UNDERWENT_EXAM,1,1,rules
+P:PMC9529523_01,Symptom:shortness of breath,HAS_SYMPTOM,1,1,rules
+P:PMC9529523_01,Symptom:dyspnea,HAS_SYMPTOM,1,1,rules
+P:PMC9529523_01,Exam:lvef,UNDERWENT_EXAM,1,1,rules
+Exam:lvef,R:PMC9529523_01:Exam:lvef:10%,HAS_RESULT,1,1,rules
+Exam:c4,R:PMC9529523_01:Exam:c4:17mg/dl,HAS_RESULT,1,1,rules
+Exam:hydroxychloroquine level,R:PMC9529523_01:Exam:hydroxychloroquine level:274ng/ml,HAS_RESULT,1,1,rules
+P:PMC9529523_01,Treatment:prednisone,TREATED_BY,1,1,rules
+P:PMC7086412_01,Exam:gtt,UNDERWENT_EXAM,1,1,rules
+P:PMC7086412_01,Treatment:monitoring,TREATED_BY,2,1,rules
+P:PMC7086412_01,Exam:hemoglobin,UNDERWENT_EXAM,1,1,rules
+P:PMC7086412_01,Exam:hemoglobin a1c,UNDERWENT_EXAM,4,1,rules
+Exam:hemoglobin a1c,R:PMC7086412_01:Exam:hemoglobin a1c:6.6%,HAS_RESULT,1,1,rules
+P:PMC7086412_02,Exam:hemoglobin a1c,UNDERWENT_EXAM,3,1,rules
+Exam:hemoglobin a1c,R:PMC7086412_02:Exam:hemoglobin a1c:5.0%,HAS_RESULT,1,1,rules
+P:PMC7086412_02,Exam:gtt,UNDERWENT_EXAM,4,1,rules
+Exam:gtt,R:PMC7086412_02:Exam:gtt:160mg/dl,HAS_RESULT,1,1,rules
+Exam:hemoglobin a1c,R:PMC7086412_02:Exam:hemoglobin a1c:6.6%,HAS_RESULT,1,1,rules
+P:PMC3557982_01,Exam:igm,UNDERWENT_EXAM,1,1,rules
+P:PMC3557982_01,Diagnosis:pneumonia,DIAGNOSED_WITH,2,1,rules
+P:PMC9815523_01,Treatment:antiplatelet therapy,TREATED_BY,2,1,rules
+P:PMC9815523_01,Treatment:physical therapy,TREATED_BY,2,1,rules
+P:PMC9815523_01,Symptom:bleeding,HAS_SYMPTOM,5,1,rules
+P:PMC9815523_01,Treatment:anticoagulation,TREATED_BY,5,1,rules
+P:PMC9815523_01,Treatment:blood transfusion,TREATED_BY,1,1,rules
+P:PMC9815523_01,Treatment:surgery,TREATED_BY,3,1,rules
+P:PMC9815523_01,Treatment:stent placement,TREATED_BY,1,1,rules
+P:PMC9815523_01,Treatment:heparin,TREATED_BY,1,1,rules
+P:PMC9815523_01,Diagnosis:pneumonia,DIAGNOSED_WITH,1,1,rules
+P:PMC9815523_01,Treatment:antibiotic,TREATED_BY,1,1,rules
+P:PMC4310058_01,Symptom:headache,HAS_SYMPTOM,1,1,rules
+P:PMC4310058_01,Exam:computed tomography,UNDERWENT_EXAM,1,1,rules
+P:PMC4310058_01,Exam:ct,UNDERWENT_EXAM,1,1,rules
+P:PMC4310058_01,Exam:mri,UNDERWENT_EXAM,1,1,rules
+P:PMC2817501_01,Symptom:dyspnea,HAS_SYMPTOM,1,1,rules
+P:PMC2817501_01,Exam:blood pressure,UNDERWENT_EXAM,1,1,rules
+Exam:blood pressure,R:PMC2817501_01:Exam:blood pressure:80mmhg,HAS_RESULT,1,1,rules
+P:PMC2817501_01,Exam:heart rate,UNDERWENT_EXAM,1,1,rules
+P:PMC2817501_01,Exam:echocardiography,UNDERWENT_EXAM,1,1,rules
+P:PMC2817501_01,Exam:ejection fraction,UNDERWENT_EXAM,1,1,rules
+Exam:ejection fraction,R:PMC2817501_01:Exam:ejection fraction:30%,HAS_RESULT,1,1,rules
+P:PMC2817501_01,Exam:echocardiogram,UNDERWENT_EXAM,1,1,rules
+P:PMC11783470_01,Symptom:dysphagia,HAS_SYMPTOM,1,1,rules
+P:PMC11783470_01,Symptom:odynophagia,HAS_SYMPTOM,1,1,rules
+P:PMC11783470_01,Symptom:heartburn,HAS_SYMPTOM,1,1,rules
+P:PMC11783470_01,Symptom:nausea,HAS_SYMPTOM,1,1,rules
+P:PMC11783470_01,Symptom:vomiting,HAS_SYMPTOM,1,1,rules
+P:PMC11783470_01,Symptom:abdominal pain,HAS_SYMPTOM,1,1,rules
+P:PMC11783470_01,Symptom:melena,HAS_SYMPTOM,1,1,rules
+P:PMC11783470_01,Symptom:hematochezia,HAS_SYMPTOM,1,1,rules
+P:PMC11783470_01,Symptom:weight loss,HAS_SYMPTOM,1,1,rules
+P:PMC11783470_01,Exam:hemoglobin,UNDERWENT_EXAM,1,1,rules
+Exam:hemoglobin,R:PMC11783470_01:Exam:hemoglobin:11.5g/dl,HAS_RESULT,1,1,rules
+P:PMC11783470_01,Exam:ferritin,UNDERWENT_EXAM,2,1,rules
+Exam:ferritin,R:PMC11783470_01:Exam:ferritin:200ng/ml,HAS_RESULT,1,1,rules
+Exam:ferritin,R:PMC11783470_01:Exam:ferritin:20%,HAS_RESULT,1,1,rules
+P:PMC11783470_01,Symptom:bleeding,HAS_SYMPTOM,1,1,rules
+P:PMC11783470_01,Treatment:resection,TREATED_BY,1,1,rules
+P:PMC11783470_01,Diagnosis:anemia,DIAGNOSED_WITH,1,1,rules
+Symptom:abdominal pain,Symptom:nausea,ASSOCIATED_WITH,1,1,rules
+Symptom:swelling,Symptom:abdominal distension,CAUSES,1,1,rules
+Exam:echocardiogram,Diagnosis:endocarditi,REVEALS,1,1,rules

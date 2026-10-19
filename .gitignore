@@ -1,2 +1,5 @@
 .DS_Store
 **/.DS_Store
+
+# Dados brutos grandes do MultiCaRe (baixar do Zenodo)
+**/data/raw/*.parquet

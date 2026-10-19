@@ -1,0 +1,10 @@
+modelo,ngram_max,macroF1_relações,F1_ponderado
+LogReg,1,0.4444,0.9483
+ComplementNB,1,0.3889,0.935
+LinearSVC,1,0.2222,0.926
+LogReg,2,0.4444,0.9483
+ComplementNB,2,0.3889,0.935
+LinearSVC,2,0.2222,0.9359
+LogReg,3,0.4444,0.9483
+ComplementNB,3,0.3889,0.935
+LinearSVC,3,0.2222,0.9359
