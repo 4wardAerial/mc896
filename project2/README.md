@@ -22,10 +22,9 @@ flowchart LR
     C -->|features| D
     B -->|rótulos BIO<br/>supervisão fraca| D[NER com CRF]
     B -->|gatilhos| E[Relações<br/>TF-IDF + LogReg/NB/SVM]
-    B -->|gatilhos NegEx| F[Negação<br/>TF-IDF + LogReg/NB/SVM]
     D --> G[Grafo de conhecimento<br/>regras × ML]
     E --> G
-    F --> G
+
     G --> H[Avaliação<br/>silver + conjunto ouro]
 ```
 
