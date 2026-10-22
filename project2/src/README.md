@@ -1,4 +1,4 @@
-# Código-fonte — Projeto 2
+# Código-fonte - Projeto 2
 
 ## Notebook (`../pipelines/notebooks/notebook_projeto2.ipynb`)
 
