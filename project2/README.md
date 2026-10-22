@@ -6,7 +6,7 @@ PDF da apresentação encontra-se em: [assets/slides/MC896-Projeto-2](assets/sli
 
 ## Demonstração Executável
 
-- **Notebook completo:** [`pipelines/notebooks/notebook.ipynb`](pipelines/notebooks/notebook.ipynb). As instruções de execução estão em [`src/README.md`](src/README.md).
+- **Notebook completo:** [`pipelines/notebooks/notebook_projeto2.ipynb`](pipelines/notebooks/notebook_projeto2.ipynb). As instruções de execução estão em [`src/README.md`](src/README.md).
 
 ## Metodologia
 
