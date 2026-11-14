@@ -1,2 +1,14 @@
 .DS_Store
 **/.DS_Store
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Segredos (chaves de API de LLMs)
+.env
+
+# Dados
+project*/data/raw/
