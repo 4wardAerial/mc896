@@ -12,3 +12,9 @@ venv/
 
 # Dados
 project*/data/raw/
+
+# Pesos de modelos treinados (grandes; gerados pelos notebooks)
+project*/models/
+
+# Recriado a partir de docs.csv.gz pelo notebook
+project*/data/interim/sentences.csv

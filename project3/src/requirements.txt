@@ -1,0 +1,12 @@
+pandas
+pyarrow
+scikit-learn
+sklearn-crfsuite
+networkx
+matplotlib
+torch
+transformers>=5
+accelerate
+anthropic
+pydantic
+python-dotenv

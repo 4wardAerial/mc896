@@ -1,0 +1,2 @@
+label,precision,recall,f1,tp,pred,gold
+CAUSE,0.275,0.864,0.418,19,69,22
