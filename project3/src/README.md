@@ -10,7 +10,7 @@ pip install -r project3/src/requirements.txt
 
 Rode o notebook **em ordem**, começando pela seção 0, que define caminhos, formatos e tipos usados por todas as outras. No Colab, a primeira célula clona o repositório sozinha. O treino dos modelos precisa de GPU (no Colab: *Ambiente de execução → Alterar tipo → GPU*).
 
-A seção 1 baixa o MACCROBAT sozinha. Os parquets do MultiCaRe (`cases.parquet`, `metadata.parquet`) vão à mão em `data/raw/multicare/`; sem eles, a seção 1 reaproveita os casos já gravados em `data/interim/docs.csv.gz`. A chave de API do LLM fica em um arquivo `.env` na raiz do repositório (`ANTHROPIC_API_KEY=...`), que não é versionado.
+A seção 1 baixa o MACCROBAT sozinha; se o download falhar (o figshare às vezes bloqueia o Colab), ela usa a cópia já processada em `data/interim/`. Os parquets do MultiCaRe (`cases.parquet`, `metadata.parquet`) vão à mão em `data/raw/multicare/`; sem eles, a seção 1 reaproveita os casos já gravados em `data/interim/docs.csv.gz`. A chave de API do LLM fica em um arquivo `.env` na raiz do repositório (`ANTHROPIC_API_KEY=...`), que não é versionado.
 
 As células de treino (3.2, 4.2, 6.3) pulam o treino quando o modelo já está gravado em `models/`; para treinar de novo, mude `RETRAIN = True` na seção 0. No Colab, os modelos ficam no Drive (`MyDrive/mc896_modelos`), para não sumirem quando a sessão fecha.
 
